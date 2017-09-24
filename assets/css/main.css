@@ -481,13 +481,13 @@ figcaption { font-size: 0.875rem; }
 
 .gist .lines { width: 100%; }
 
-a { color: #666; text-decoration: none; }
+a { color: #373D3F; text-decoration: none; }
 a:hover { color: #B509AC; text-decoration: none; }
 
-article a, .news a { color: #666; font-weight: 100; }
+article a, .news a { color: #373D3F; font-weight: 100; }
 article a:hover, .news a:hover { color: #B509AC; }
 
-.social a { color: #666; }
+.social a { color: #373D3F; }
 .social a:hover { color: #B509AC; }
 
 .measure { margin: 0 auto; max-width: 42rem; }
@@ -525,7 +525,7 @@ table > tbody + tbody { border-top: 2px solid #333; }
 
 html { font-size: 16px; }
 
-body { color: #666; font-weight: 100; }
+body { color: #373D3F; font-weight: 100; }
 
 abbr { border-bottom: 1px black dotted; cursor: help; }
 
