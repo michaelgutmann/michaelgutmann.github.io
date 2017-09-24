@@ -413,7 +413,7 @@ footer a:hover { color: #B509AC; }
 
 .bibliography { margin-bottom: 50px; margin-top: 20px; margin-left: 0px; list-style-type: none; list-style-position: outside;  /* For zebra-look. You will have to adjust the li margins and possible remove the FontAwesome item
 /* li:nth-child(odd) { background: lighten($light-gray, 10%);}  */ }
-.bibliography li { margin: 12px 0 0 0; position: relative; }
+.bibliography li { margin: 16px 0 0 0; position: relative; }
 .bibliography li span { display: block; }
 .bibliography li .title { font-weight: bolder; }
 .bibliography li .author a { border-bottom: 1px dashed #B509AC; }
