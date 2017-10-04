@@ -333,6 +333,8 @@ table.striped tr:nth-child(even) { background-color: #fff; }
 .header-bar h1 { color: #B509AC; font-size: 75px; }
 .header-bar h2 { font-size: 25px; }
 
+@media screen and (max-width: 600px) { .site-header { position: static; }
+  .site-nav { float: none; display: block; } }
 .site { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; min-height: 100vh; }
 
 .site-wrap { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1 0 auto; flex: 1 0 auto; }
@@ -341,6 +343,7 @@ footer { background-color: #424242; opacity: 0.95; border-top: thin solid #42424
 footer a { color: #fff; }
 footer a:hover { color: #B509AC; }
 
+@media screen and (max-width: 600px) { footer { position: static; } }
 .page-content { padding: 100px 0; /* VERTICAL PADDING FOR TITLE ON EVERY PAGE */ }
 
 .page-heading { font-size: 20px; }
