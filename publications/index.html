@@ -17,6 +17,7 @@
 
   <!-- added roboto font family -->
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet"  href="https://michaelgutmann.github.io/assets/css/w3.css">
 </head>
 
 
@@ -25,47 +26,87 @@
     <header class="site-header">
   <div class="wrapper">
   
-    <span class="site-title">
-      <!-- About -->
+    <div class="w3-bar w3-padding-small">
         
       
-      <strong>Michael</strong> U. Gutmann
-      
-    </span>
-    
-    <nav class="site-nav">
-      <a class="page-link" href="https://michaelgutmann.github.io/">home</a>
-      
-      
-      
-      
-      
-      <a class="page-link" href="https://michaelgutmann.github.io/publications/">publications</a> 
-      
-      
-      
-      <a class="page-link" href="https://michaelgutmann.github.io/talks/">talks</a> 
-      
-      
-      
-      <a class="page-link" href="https://michaelgutmann.github.io/code/">code</a> 
-      
-      
-      
-      <a class="page-link" href="https://michaelgutmann.github.io/teaching/">teaching</a> 
-      
-      
-      
-      <a class="page-link" href="https://michaelgutmann.github.io/contact/">contact</a> 
+      <a class="w3-bar-item w3-button w3-hover-none w3-border-white w3-hover-text-theme-color"  href="https://michaelgutmann.github.io/">  <strong>Michael</strong> U. Gutmann </a>
       
       
       
       
       
       
-    </nav>
-    
+      
+      
+      <a class="w3-bar-item w3-button w3-right w3-hover-none w3-border-white w3-hover-text-theme-color w3-hide-small" href="https://michaelgutmann.github.io/contact/">contact</a> 
+      
+      
+      
+      <a class="w3-bar-item w3-button w3-right w3-hover-none w3-border-white w3-hover-text-theme-color w3-hide-small" href="https://michaelgutmann.github.io/teaching/">teaching</a> 
+      
+      
+      
+      <a class="w3-bar-item w3-button w3-right w3-hover-none w3-border-white w3-hover-text-theme-color w3-hide-small" href="https://michaelgutmann.github.io/code/">code</a> 
+      
+      
+      
+      <a class="w3-bar-item w3-button w3-right w3-hover-none w3-border-white w3-hover-text-theme-color w3-hide-small" href="https://michaelgutmann.github.io/talks/">talks</a> 
+      
+      
+      
+      <a class="w3-bar-item w3-button w3-right w3-hover-none w3-border-white w3-hover-text-theme-color w3-hide-small" href="https://michaelgutmann.github.io/publications/">publications</a> 
+      
+      
+      
+      
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    </div>
   </div>
+
+   <div id="mobile" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">  
+      
+      
+      
+      
+      <a class="w3-bar-item w3-button " href="https://michaelgutmann.github.io/publications/">publications</a> 
+      
+      
+      
+      <a class="w3-bar-item w3-button " href="https://michaelgutmann.github.io/talks/">talks</a> 
+      
+      
+      
+      <a class="w3-bar-item w3-button " href="https://michaelgutmann.github.io/code/">code</a> 
+      
+      
+      
+      <a class="w3-bar-item w3-button " href="https://michaelgutmann.github.io/teaching/">teaching</a> 
+      
+      
+      
+      <a class="w3-bar-item w3-button " href="https://michaelgutmann.github.io/contact/">contact</a> 
+      
+      
+      
+      
+      
+      
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    </div>
+  </div>
+
+
+  <script>
+    function myFunction() {
+    var x = document.getElementById("mobile");
+    if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    } else { 
+    x.className = x.className.replace(" w3-show", "");
+    }
+    }
+  </script>
+  
 </header>
 
 
