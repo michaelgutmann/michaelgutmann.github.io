@@ -411,8 +411,6 @@ footer a:hover { color: #B509AC; }
 
 .button-disabled:hover, .button-disabled:active, .button-disabled:focus { cursor: not-allowed; background-color: #999; }
 
-.publications h2 { color: #B509AC; font-size: 32px; margin-bottom: 30px; text-align: center; }
-
 .year { border-top: 1px solid #ccc; color: #ccc; margin: 0 -3em -2.5ex -2em; padding-top: 1ex; text-align: right; }
 
 .bibliography { margin-bottom: 50px; margin-top: 20px; margin-left: 0px; list-style-type: none; list-style-position: outside;  /* For zebra-look. You will have to adjust the li margins and possible remove the FontAwesome item
