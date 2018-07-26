@@ -1,8 +1,5 @@
 @charset "UTF-8";
 /******************************************************************************/
-/* system typefaces */
-/* sans serif typefaces */
-/* serif typefaces */
 /******************************************************************************/
 /* portfolio tinkering */
 /*!
@@ -16,7 +13,7 @@
 
 */
 /* Basscss Base Buttons */
-button, .button { font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-size: inherit; font-weight: normal; text-decoration: none; cursor: pointer; display: inline-block; box-sizing: border-box; line-height: 1.125rem; padding: 0.5rem 1rem; margin: 0; height: auto; border: 1px solid transparent; vertical-align: middle; -webkit-appearance: none; }
+button, .button { font-family: "Roboto", Arial, Helvetica, sans-serif; font-size: inherit; font-weight: normal; text-decoration: none; cursor: pointer; display: inline-block; box-sizing: border-box; line-height: 1.125rem; padding: 0.5rem 1rem; margin: 0; height: auto; border: 1px solid transparent; vertical-align: middle; -webkit-appearance: none; }
 
 ::-moz-focus-inner { border: 0; padding: 0; }
 
@@ -46,9 +43,9 @@ img { max-width: 100%; }
 svg { max-height: 100%; }
 
 /* Basscss Base Typography */
-body { font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; line-height: 1.5; font-size: 100%; }
+body { font-family: "Roboto", Arial, Helvetica, sans-serif; line-height: 1.5; font-size: 100%; }
 
-h1, h2, h3, h4, h5, h6 { font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif; font-weight: 900; line-height: 1.25; margin-top: 1em; margin-bottom: .5em; }
+h1, h2, h3, h4, h5, h6 { font-family: "Roboto", Arial, Helvetica, sans-serif; font-weight: 900; line-height: 1.25; margin-top: 1em; margin-bottom: .5em; }
 
 p, dl, ol, ul { font-size: 1rem; margin-top: 0; margin-bottom: 1rem; }
 
@@ -421,7 +418,6 @@ footer a:hover { color: #B509AC; }
 /* li:nth-child(odd) { background: lighten($light-gray, 10%);}  */ }
 .bibliography li { margin: 18px 0 5px 0; position: relative; }
 .bibliography li span { display: block; }
-.bibliography li .title { font-weight: bolder; }
 .bibliography li .author a { border-bottom: 1px dashed #B509AC; }
 .bibliography li .author a:hover { border-bottom-style: solid; text-decoration: none; }
 .bibliography li .author > em { border-bottom: 1px solid; font-style: normal; }
@@ -529,9 +525,9 @@ table > thead > tr > th { vertical-align: bottom; border-bottom: 2px solid #333;
 table > caption + thead > tr:first-child > th, table > caption + thead > tr:first-child > td, table > colgroup + thead > tr:first-child > th, table > colgroup + thead > tr:first-child > td, table > thead:first-child > tr:first-child > th, table > thead:first-child > tr:first-child > td { border-top: 0; }
 table > tbody + tbody { border-top: 2px solid #333; }
 
-html { font-size: 16px; }
+html { font-size: 16px; font-weight: 500; }
 
-body { color: #333; font-weight: 100; }
+body { color: #333; font-weight: 500; }
 
 abbr { border-bottom: 1px black dotted; cursor: help; }
 
