@@ -484,13 +484,13 @@ figcaption { font-size: 0.875rem; }
 
 .gist .lines { width: 100%; }
 
-a { color: #333; text-decoration: none; }
+a { color: #373d3d; text-decoration: none; }
 a:hover { color: #B509AC; text-decoration: none; }
 
-article a, .news a { color: #333; font-weight: 100; }
+article a, .news a { color: #373d3d; font-weight: 100; }
 article a:hover, .news a:hover { color: #B509AC; }
 
-.social a { color: #333; }
+.social a { color: #373d3d; }
 .social a:hover { color: #B509AC; }
 
 .measure { margin: 0 auto; max-width: 42rem; }
@@ -526,9 +526,9 @@ table > thead > tr > th { vertical-align: bottom; border-bottom: 2px solid #333;
 table > caption + thead > tr:first-child > th, table > caption + thead > tr:first-child > td, table > colgroup + thead > tr:first-child > th, table > colgroup + thead > tr:first-child > td, table > thead:first-child > tr:first-child > th, table > thead:first-child > tr:first-child > td { border-top: 0; }
 table > tbody + tbody { border-top: 2px solid #333; }
 
-html { font-size: 16px; font-weight: 500; }
+html { font-size: 16px; font-weight: 400; }
 
-body { color: #333; font-weight: 500; }
+body { color: #373d3d; font-weight: 400; }
 
 abbr { border-bottom: 1px black dotted; cursor: help; }
 
