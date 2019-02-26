@@ -131,6 +131,126 @@
 
 
 
+<div id="Lintusaari2019a">
+  
+    <span class="title">Resolving outbreak dynamics using approximate Bayesian computation for stochastic birth-death models</span>
+    <span class="author">
+      
+      
+
+      
+            
+            J. Lintusaari,
+            
+            
+      
+      
+
+      
+            
+            P. Blomstedt,
+            
+            
+      
+      
+
+      
+            
+            T. Sivula,
+            
+            
+      
+      
+
+      
+            
+            M. Gutmann,
+            
+            
+      
+      
+
+      
+            
+            S. Kaski,
+            
+            
+      
+      
+            and
+
+            
+            J. Corander
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <i>Wellcome Open Research</i>
+    
+    
+      2019 (bioRxiv: 215533)
+    
+    </span>
+  
+
+  <span class="links">
+    
+    
+    
+    
+    
+    
+    [<a class="abstract">abs</a>]
+    
+    
+    [<a class="bibtex">bib</a>]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Earlier research has suggested that Approximate Bayesian Computation (ABC) makes it possible to fit intractable simulator-based stochastic birth-death models to investigate communicable disease outbreak dynamics and that the accuracy of ABC inference can be comparable to that of exact Bayesian inference based on for example particle-filtering Markov Chain Monte Carlo. However, recent findings have indicated that key parameters such as the reproductive number, R, may remain poorly identifiable from data generated under an infinite alleles model. Here we show that the identifiability issue can be resolved by taking into account disease-specific characteristics of the transmission process in closer detail in the birth-death model. Using tuberculosis (TB) in the San Francisco Bay area as a case-study, we consider the situation where the genotype data are generated as a mixture of two stochastic processes, each with their distinct dynamics and clear epidemiological interpretation. ABC inference based on the ELFI software yields stable and accurate posterior inferences about outbreak dynamics from aggregated annual case data with genotype information. We also show that under the proposed model the infectious population size can be reliably inferred and that it is approximately two orders of magnitude smaller than considered in the previous ABC studies focusing on the same data, which is much better aligned with epidemiological knowledge about active TB prevalence. Similarly, the reproductive number R related to the primary underlying transmission process is estimated to be nearly three-fold compared with the previous estimates, which has a substantial impact on the interpretation of the fitted outbreak model. Our Python codes implementing the simulator model and the inference algorithm are freely available for further research and use at GitHub.</p>
+  </span>
+  
+
+  <!-- Hidden bibtex block -->
+  
+  <span class="bibtex hidden">
+    <pre class="pre pre-scrollable collapse">@article{Lintusaari2019a,
+  title = {Resolving outbreak dynamics using approximate {B}ayesian computation for stochastic birth-death models},
+  author = {Lintusaari, Jarno and Blomstedt, Paul and Sivula, Tuomas and Gutmann, M.U. and Kaski, Samuel and Corander, Jukka},
+  journal = {Wellcome Open Research},
+  year = {2019 (bioRxiv: 215533)},
+  volume = {open review},
+  doi = {https://doi.org/10.1101/215533}
+}
+</pre>
+  </span>
+  
+  
+</div>
+
+
+</li>
+<li>
+  
+
+
+
+
+
 <div id="Dinev2018">
   
     <span class="title">Dynamic Likelihood-free Inference via Ratio Estimation (DIRE)</span>
@@ -221,16 +341,120 @@
 
 
 
-<div id="Kleinegesse2018">
+<div id="Neyton2018">
   
-    <span class="title">Efficient Bayesian Experimental Design for Implicit Models</span>
+    <span class="title">Multiomic definition of generalizable endotypes in human acute pancreatitis</span>
     <span class="author">
       
       
 
       
             
-            S. Kleinegesse,
+            L. Neyton,
+            
+            
+      
+      
+
+      
+            
+            X. Zheng,
+            
+            
+      
+      
+
+      
+            
+            C. Skouras,
+            
+            
+      
+      
+
+      
+            
+            A. Doeschl-Wilson,
+            
+            
+      
+      
+
+      
+            
+            M. Gutmann,
+            
+            
+      
+      
+
+      
+            
+            C. Yau,
+            
+            
+      
+      
+
+      
+            
+            C. Ponting,
+            
+            
+      
+      
+
+      
+            
+            I. Uings,
+            
+            
+      
+      
+
+      
+            
+            F. Rao,
+            
+            
+      
+      
+
+      
+            
+            A. Nicolas,
+            
+            
+      
+      
+
+      
+            
+            C. Marshall,
+            
+            
+      
+      
+
+      
+            
+            L. Wilson,
+            
+            
+      
+      
+
+      
+            
+            . APPreSci Consortium,
+            
+            
+      
+      
+
+      
+            
+            J. Baillie,
             
             
       
@@ -238,14 +462,14 @@
             and
 
             
-            M. Gutmann
+            D. Mole
         
       
     </span>
 
     <span class="periodical">
     
-      <i>arXiv:1810.09912</i>
+      <i>bioRxiv 539569</i>
     
     
       2018
@@ -260,13 +484,11 @@
     
     
     
-    [<a class="abstract">abs</a>]
-    
     
     [<a class="bibtex">bib</a>]
     
     
-    [<a href="https://arxiv.org/abs/1810.09912" target="_blank">url</a>]
+    [<a href="https://doi.org/10.1101/539569" target="_blank">url</a>]
     
     
     
@@ -280,110 +502,16 @@
 
   <!-- Hidden abstract block -->
   
-  <span class="abstract hidden">
-    <p>Bayesian experimental design involves the optimal allocation of resources in an experiment, with the aim of optimising cost and performance. For implicit models, where the likelihood is intractable but sampling from the model is possible, this task is particularly difficult and therefore largely unexplored. This is mainly due to technical difficulties associated with approximating posterior distributions and utility functions. We devise a novel experimental design framework for implicit models that improves upon previous work in two ways. First, we use the mutual information between parameters and data as the utility function, which has previously not been feasible. We achieve this by utilising Likelihood-Free Inference by Ratio Estimation (LFIRE) to approximate posterior distributions, instead of the traditional approximate Bayesian computation or synthetic likelihood methods. Secondly, we use Bayesian optimisation in order to solve the optimal design problem, as opposed to the typically used grid search. We find that this increases efficiency and allows us to consider higher design dimensions.</p>
-  </span>
-  
 
   <!-- Hidden bibtex block -->
   
   <span class="bibtex hidden">
-    <pre class="pre pre-scrollable collapse">@article{Kleinegesse2018,
-  title = {Efficient {B}ayesian Experimental Design for Implicit Models},
-  author = {Kleinegesse, Steven and Gutmann, M.U.},
-  journal = {arXiv:1810.09912},
+    <pre class="pre pre-scrollable collapse">@article{Neyton2018,
+  title = {Multiomic definition of generalizable endotypes in human acute pancreatitis},
+  author = {Neyton, L.P.A. and Zheng, X. and Skouras, C. and Doeschl-Wilson, A. and Gutmann, M.U. and Yau, C. and Ponting, C. and Uings, I. and Rao, F. and Nicolas, A. and Marshall, C. and Wilson, L.-M. and the APPreSci Consortium and Baillie, J.K. and Mole, D.J.},
+  journal = {bioRxiv 539569},
   year = {2018},
-  url = {https://arxiv.org/abs/1810.09912}
-}
-</pre>
-  </span>
-  
-  
-</div>
-
-
-</li>
-<li>
-  
-
-
-
-
-
-<div id="Rhodes2018">
-  
-    <span class="title">Variational Noise-Contrastive Estimation</span>
-    <span class="author">
-      
-      
-
-      
-            
-            B. Rhodes,
-            
-            
-      
-      
-            and
-
-            
-            M. Gutmann
-        
-      
-    </span>
-
-    <span class="periodical">
-    
-      <i>arXiv:1810.08010</i>
-    
-    
-      2018
-    
-    </span>
-  
-
-  <span class="links">
-    
-    
-    
-    
-    
-    
-    [<a class="abstract">abs</a>]
-    
-    
-    [<a class="bibtex">bib</a>]
-    
-    
-    [<a href="https://arxiv.org/abs/1810.08010" target="_blank">url</a>]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Unnormalised latent variable models are a broad and flexible class of statistical models. However, learning their parameters from data is intractable, and few estimation techniques are currently available for such models. To increase the number of techniques in our arsenal, we propose variational noise-contrastive estimation (VNCE), building on NCE which is a method that only applies to unnormalised models. The core idea is to use a variational lower bound to the NCE objective function, which can be optimised in the same fashion as the evidence lower bound (ELBO) in standard variational inference (VI). We prove that VNCE can be used for both parameter estimation of unnormalised models and posterior inference of latent variables. The developed theory shows that VNCE has the same level of generality as standard VI, meaning that advances made there can be directly imported to the unnormalised setting. We validate VNCE on toy models and apply it to a realistic problem of estimating an undirected graphical model from incomplete data.</p>
-  </span>
-  
-
-  <!-- Hidden bibtex block -->
-  
-  <span class="bibtex hidden">
-    <pre class="pre pre-scrollable collapse">@article{Rhodes2018,
-  title = {Variational Noise-Contrastive Estimation},
-  author = {Rhodes, Benjamin and Gutmann, M.U.},
-  journal = {arXiv:1810.08010},
-  year = {2018},
-  keywords = {noise-contrastive estimation, latent variables},
-  url = {https://arxiv.org/abs/1810.08010}
+  url = {https://doi.org/10.1101/539569}
 }
 </pre>
   </span>
@@ -505,238 +633,18 @@
 
 
 
-<div id="Lintusaari2017c">
-  
-    <span class="title">Resolving outbreak dynamics using approximate Bayesian computation for stochastic birth-death models</span>
-    <span class="author">
-      
-      
-
-      
-            
-            J. Lintusaari,
-            
-            
-      
-      
-
-      
-            
-            P. Blomstedt,
-            
-            
-      
-      
-
-      
-            
-            T. Sivula,
-            
-            
-      
-      
-
-      
-            
-            M. Gutmann,
-            
-            
-      
-      
-
-      
-            
-            S. Kaski,
-            
-            
-      
-      
-            and
-
-            
-            J. Corander
-        
-      
-    </span>
-
-    <span class="periodical">
-    
-      <i>bioRxiv: 215533</i>
-    
-    
-      2017
-    
-    </span>
-  
-
-  <span class="links">
-    
-    
-    
-    
-    
-    
-    [<a class="abstract">abs</a>]
-    
-    
-    [<a class="bibtex">bib</a>]
-    
-    
-    [<a href="https://www.biorxiv.org/content/early/2017/11/07/215533" target="_blank">url</a>]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Earlier research has suggested that Approximate Bayesian Computation (ABC) makes it possible to fit intractable simulator-based stochastic birth-death models to investigate communicable disease outbreak dynamics and that the accuracy of ABC inference can be comparable to that of exact Bayesian inference based on for example particle-filtering Markov Chain Monte Carlo. However, recent findings have indicated that key parameters such as the reproductive number, R, may remain poorly identifiable from data generated under an infinite alleles model. Here we show that the identifiability issue can be resolved by taking into account disease-specific characteristics of the transmission process in closer detail in the birth-death model. Using tuberculosis (TB) in the San Francisco Bay area as a case-study, we consider the situation where the genotype data are generated as a mixture of two stochastic processes, each with their distinct dynamics and clear epidemiological interpretation. ABC inference based on the ELFI software yields stable and accurate posterior inferences about outbreak dynamics from aggregated annual case data with genotype information. We also show that under the proposed model the infectious population size can be reliably inferred and that it is approximately two orders of magnitude smaller than considered in the previous ABC studies focusing on the same data, which is much better aligned with epidemiological knowledge about active TB prevalence. Similarly, the reproductive number R related to the primary underlying transmission process is estimated to be nearly three-fold compared with the previous estimates, which has a substantial impact on the interpretation of the fitted outbreak model. Our Python codes implementing the simulator model and the inference algorithm are freely available for further research and use at GitHub.</p>
-  </span>
-  
-
-  <!-- Hidden bibtex block -->
-  
-  <span class="bibtex hidden">
-    <pre class="pre pre-scrollable collapse">@article{Lintusaari2017c,
-  title = {Resolving outbreak dynamics using approximate {B}ayesian computation for stochastic birth-death models},
-  author = {Lintusaari, Jarno and Blomstedt, Paul and Sivula, Tuomas and Gutmann, M.U. and Kaski, Samuel and Corander, Jukka},
-  journal = {bioRxiv: 215533},
-  year = {2017},
-  doi = {https://doi.org/10.1101/215533},
-  url = {https://www.biorxiv.org/content/early/2017/11/07/215533}
-}
-</pre>
-  </span>
-  
-  
-</div>
-
-
-</li>
-<li>
-  
-
-
-
-
-
-<div id="Todorovic2017">
-  
-    <span class="title">Efficient Bayesian Inference of Atomistic Structure in Complex Functional Materials</span>
-    <span class="author">
-      
-      
-
-      
-            
-            M. Todorović,
-            
-            
-      
-      
-
-      
-            
-            M. Gutmann,
-            
-            
-      
-      
-
-      
-            
-            J. Corander,
-            
-            
-      
-      
-            and
-
-            
-            P. Rinke
-        
-      
-    </span>
-
-    <span class="periodical">
-    
-      <i>arXiv:1708.09274</i>
-    
-    
-      2017
-    
-    </span>
-  
-
-  <span class="links">
-    
-    
-    
-    
-    
-    
-    [<a class="abstract">abs</a>]
-    
-    
-    [<a class="bibtex">bib</a>]
-    
-    
-    [<a href="https://arxiv.org/abs/1708.09274" target="_blank">url</a>]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Tailoring the functional properties of advanced organic/inorganic heterogeonous devices to their intended technological applications requires knowledge and control of the microscopic structure inside the device. Atomistic quantum mechanical simulation methods deliver accurate energies and properties for individual configurations, however, finding the most favourable configurations remains computationally prohibitive. We propose a ’building block’-based Bayesian Optimisation Structure Search (BOSS) approach for addressing extended organic/inorganic interface problems and demonstrate its feasibility in a molecular surface adsorption study. In BOSS, a likelihood-free Bayesian scheme accelerates the identification of material energy landscapes with the number of sampled configurations during active learning, enabling structural inference with high chemical accuracy and featuring large simulation cells. This allowed us to identify several most favourable molecular adsorption configurations for C60 on the (101) surface of TIO2 anatase and clarify the key molecule-surface interactions governing structural assembly. Inferred structures were in good agreement with detailed experimental images of this surface adsorbate, demonstrating good predictive power of BOSS and opening the route towards large-scale surface adsorption studies of molecular aggregates and films.</p>
-  </span>
-  
-
-  <!-- Hidden bibtex block -->
-  
-  <span class="bibtex hidden">
-    <pre class="pre pre-scrollable collapse">@article{Todorovic2017,
-  title = {Efficient {B}ayesian Inference of Atomistic Structure in Complex Functional Materials},
-  author = {Todorovi\'c, Milica and Gutmann, M.U. and Corander, Jukka and Rinke, Patrick},
-  journal = {arXiv:1708.09274},
-  year = {2017},
-  keywords = {Atomistic structure search, quantum mechanical simulation, Bayesian optimisation},
-  url = {https://arxiv.org/abs/1708.09274}
-}
-</pre>
-  </span>
-  
-  
-</div>
-
-
-</li>
-<li>
-  
-
-
-
-
-
-<div id="Dutta2016">
+<div id="Thomas2016">
   
     <span class="title">Likelihood-Free Inference by Ratio Estimation</span>
     <span class="author">
+      
+      
+
+      
+            
+            O. Thomas,
+            
+            
       
       
 
@@ -798,8 +706,6 @@
     
     
     
-    [<a href="/assets/papers/Dutta2016.slides.pdf" target="_blank">slides</a>]
-    
     
     
     
@@ -818,9 +724,9 @@
   <!-- Hidden bibtex block -->
   
   <span class="bibtex hidden">
-    <pre class="pre pre-scrollable collapse">@article{Dutta2016,
+    <pre class="pre pre-scrollable collapse">@article{Thomas2016,
   title = {Likelihood-Free Inference by Ratio Estimation},
-  author = {Dutta, R. and Corander, J. and Kaski, S. and Gutmann, M.U.},
+  author = {Thomas, O. and Dutta, R. and Corander, J. and Kaski, S. and Gutmann, M.U.},
   journal = {arXiv:1611.10242},
   year = {2016},
   keywords = {approximate Bayesian computation, synthetic likelihood, summary statistics selection, density-ratio estimation; logistic regression; probabilistic classification, stochastic dynamical systems},
@@ -837,6 +743,377 @@
 
 <h3 id="refereed-papers">Refereed papers</h3>
 <ol class="bibliography"><li>
+  
+
+
+
+
+
+<div id="Chen2019">
+  
+    <span class="title">Adaptive Gaussian Copula ABC</span>
+    <span class="author">
+      
+      
+
+      
+            
+            Y. Chen,
+            
+            
+      
+      
+            and
+
+            
+            M. Gutmann
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <i>In Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>
+    
+    
+      2019
+    
+    </span>
+  
+
+  <span class="links">
+    
+    
+    
+    
+    
+    
+    [<a class="abstract">abs</a>]
+    
+    
+    [<a class="bibtex">bib</a>]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Approximate Bayesian computation (ABC) is a set of techniques for Bayesian inference when the likelihood is intractable but sampling from the model is possible. This work presents a simple yet effective ABC algorithm based on the combination of two classical ABC approaches — regression ABC and sequential ABC. The key idea is that rather than learning the posterior directly, we first target another auxiliary distribution that can be learned accurately by existing methods, through which we then subsequently learn the desired posterior with the help of a Gaussian copula. During this process, the complexity of the model changes adaptively according to the data at hand. Experiments on a synthetic dataset as well as three real-world inference tasks demonstrates that our method is fast, accurate, and easy to use.</p>
+  </span>
+  
+
+  <!-- Hidden bibtex block -->
+  
+  <span class="bibtex hidden">
+    <pre class="pre pre-scrollable collapse">@inproceedings{Chen2019,
+  title = {Adaptive {G}aussian Copula {ABC}},
+  author = {Chen, Y. and Gutmann, M.U.},
+  booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year = {2019}
+}
+</pre>
+  </span>
+  
+  
+</div>
+
+
+</li>
+<li>
+  
+
+
+
+
+
+<div id="Kleinegesse2019">
+  
+    <span class="title">Efficient Bayesian Experimental Design for Implicit Models</span>
+    <span class="author">
+      
+      
+
+      
+            
+            S. Kleinegesse,
+            
+            
+      
+      
+            and
+
+            
+            M. Gutmann
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <i>In Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>
+    
+    
+      2019
+    
+    </span>
+  
+
+  <span class="links">
+    
+    
+    
+    
+    
+    
+    [<a class="abstract">abs</a>]
+    
+    
+    [<a class="bibtex">bib</a>]
+    
+    
+    [<a href="https://arxiv.org/abs/1810.09912" target="_blank">url</a>]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Bayesian experimental design involves the optimal allocation of resources in an experiment, with the aim of optimising cost and performance. For implicit models, where the likelihood is intractable but sampling from the model is possible, this task is particularly difficult and therefore largely unexplored. This is mainly due to technical difficulties associated with approximating posterior distributions and utility functions. We devise a novel experimental design framework for implicit models that improves upon previous work in two ways. First, we use the mutual information between parameters and data as the utility function, which has previously not been feasible. We achieve this by utilising Likelihood-Free Inference by Ratio Estimation (LFIRE) to approximate posterior distributions, instead of the traditional approximate Bayesian computation or synthetic likelihood methods. Secondly, we use Bayesian optimisation in order to solve the optimal design problem, as opposed to the typically used grid search. We find that this increases efficiency and allows us to consider higher design dimensions.</p>
+  </span>
+  
+
+  <!-- Hidden bibtex block -->
+  
+  <span class="bibtex hidden">
+    <pre class="pre pre-scrollable collapse">@inproceedings{Kleinegesse2019,
+  title = {Efficient {B}ayesian Experimental Design for Implicit Models},
+  author = {Kleinegesse, S. and Gutmann, M.U.},
+  booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year = {2019},
+  url = {https://arxiv.org/abs/1810.09912}
+}
+</pre>
+  </span>
+  
+  
+</div>
+
+
+</li>
+<li>
+  
+
+
+
+
+
+<div id="Rhodes2019">
+  
+    <span class="title">Variational Noise-Contrastive Estimation</span>
+    <span class="author">
+      
+      
+
+      
+            
+            B. Rhodes,
+            
+            
+      
+      
+            and
+
+            
+            M. Gutmann
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <i>In Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>
+    
+    
+      2019
+    
+    </span>
+  
+
+  <span class="links">
+    
+    
+    
+    
+    
+    
+    [<a class="abstract">abs</a>]
+    
+    
+    [<a class="bibtex">bib</a>]
+    
+    
+    [<a href="https://arxiv.org/abs/1810.08010" target="_blank">url</a>]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Unnormalised latent variable models are a broad and flexible class of statistical models. However, learning their parameters from data is intractable, and few estimation techniques are currently available for such models. To increase the number of techniques in our arsenal, we propose variational noise-contrastive estimation (VNCE), building on NCE which is a method that only applies to unnormalised models. The core idea is to use a variational lower bound to the NCE objective function, which can be optimised in the same fashion as the evidence lower bound (ELBO) in standard variational inference (VI). We prove that VNCE can be used for both parameter estimation of unnormalised models and posterior inference of latent variables. The developed theory shows that VNCE has the same level of generality as standard VI, meaning that advances made there can be directly imported to the unnormalised setting. We validate VNCE on toy models and apply it to a realistic problem of estimating an undirected graphical model from incomplete data.</p>
+  </span>
+  
+
+  <!-- Hidden bibtex block -->
+  
+  <span class="bibtex hidden">
+    <pre class="pre pre-scrollable collapse">@inproceedings{Rhodes2019,
+  title = {Variational Noise-Contrastive Estimation},
+  author = {Rhodes, B. and Gutmann, M.U.},
+  booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year = {2019},
+  keywords = {noise-contrastive estimation, latent variables},
+  url = {https://arxiv.org/abs/1810.08010}
+}
+</pre>
+  </span>
+  
+  
+</div>
+
+
+</li>
+<li>
+  
+
+
+
+
+
+<div id="Todorovic2019">
+  
+    <span class="title">Efficient Bayesian Inference of Atomistic Structure in Complex Functional Materials</span>
+    <span class="author">
+      
+      
+
+      
+            
+            M. Todorović,
+            
+            
+      
+      
+
+      
+            
+            M. Gutmann,
+            
+            
+      
+      
+
+      
+            
+            J. Corander,
+            
+            
+      
+      
+            and
+
+            
+            P. Rinke
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <i>Accepted to npj Computational Materials</i>
+    
+    
+      2019
+    
+    </span>
+  
+
+  <span class="links">
+    
+    
+    
+    
+    
+    
+    [<a class="abstract">abs</a>]
+    
+    
+    [<a class="bibtex">bib</a>]
+    
+    
+    [<a href="https://arxiv.org/abs/1708.09274" target="_blank">url</a>]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Computational materials design with accurate but costly simulation methods stands to benefit greatly from the artificial intelligence (AI) techniques designed for small datasets. Our Bayesian Optimisation Structure Search (BOSS) framework combines an AI for complex optimisation with quantum mechanics. We employ this general structure search method to infer the microscopic structure of organic/inorganic interfaces with the aim to enhance the functionality of prospective photovoltaic devices. Here, we demonstrate the feasibility, robustness and predictive power of the BOSS approach in predicting the structure of single C60/TiO2 molecular surface adsorbates. BOSS efficiently delivered global minima structures that match experimental data. The resulting multi-dimensional energy landscapes supplied both chemical insight and all local minima information.</p>
+  </span>
+  
+
+  <!-- Hidden bibtex block -->
+  
+  <span class="bibtex hidden">
+    <pre class="pre pre-scrollable collapse">@article{Todorovic2019,
+  title = {Efficient {B}ayesian Inference of Atomistic Structure in Complex Functional Materials},
+  author = {Todorovi\'c, Milica and Gutmann, M.U. and Corander, Jukka and Rinke, Patrick},
+  journal = {Accepted to npj Computational Materials},
+  year = {2019},
+  keywords = {Atomistic structure search, quantum mechanical simulation, Bayesian optimisation},
+  url = {https://arxiv.org/abs/1708.09274}
+}
+</pre>
+  </span>
+  
+  
+</div>
+
+
+</li>
+<li>
   
 
 
@@ -2173,7 +2450,7 @@ GP model selection step. Finally, based on the understanding gained with toy exa
   
   <span class="bibtex hidden">
     <pre class="pre pre-scrollable collapse">@inproceedings{Srivastava2017,
-  title = {VEEGAN: Reducing Mode Collapse in {GAN}s using Implicit Variational Learning},
+  title = {{VEEGAN}: Reducing Mode Collapse in {GAN}s using Implicit Variational Learning},
   author = {Srivastava, A. and Valkov, A. and Russell, C. and Gutmann, M.U. and Sutton, C.},
   booktitle = {Advances in Neural Information Processing Systems 30 (NIPS)},
   year = {2017},
@@ -5106,11 +5383,11 @@ We propose that the pooling that emerges allows the features to code for realist
 
   <div class="wrapper">
     
-        Last updated: 30 Nov 2018.
+        Last updated: 26 February 2019.
     
     Powered by <a href="http://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> and <a href="https://github.com/inukshuk/jekyll-scholar/">Jekyll-Scholar</a>.
 
-    &copy; Copyright 2018 Michael U. Gutmann.
+    &copy; Copyright 2019 Michael U. Gutmann.
   </div>
 
 </footer>
