@@ -131,16 +131,16 @@
 
 
 
-<div id="Ikonomov2019">
+<div id="Kleinegesse2020a">
   
-    <span class="title">Robust Optimisation Monte Carlo</span>
+    <span class="title">Bayesian Experimental Design for Implicit Models by Mutual Information Neural Estimation</span>
     <span class="author">
       
       
 
       
             
-            B. Ikonomov,
+            S. Kleinegesse,
             
             
       
@@ -155,115 +155,10 @@
 
     <span class="periodical">
     
-      <i>arXiv:1904.00670</i>
+      <i>arXiv:2002.08129</i>
     
     
-      2019
-    
-    </span>
-  
-
-  <span class="links">
-    
-    
-    
-    
-    
-    
-    [<a class="abstract">abs</a>]
-    
-    
-    [<a class="bibtex">bib</a>]
-    
-    
-    [<a href="https://arxiv.org/abs/1904.00670" target="_blank">url</a>]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>This paper is on Bayesian inference for parametric statistical models that are implicitly defined by a stochastic simulator which specifies how data is generated. While exact sampling is possible, evaluating the likelihood function is typically prohibitively expensive. Approximate Bayesian Computation (ABC) is a framework to perform approximate inference in such situations. While basic ABC algorithms are widely applicable, they are notoriously slow and much research has focused on increasing their efficiency. Optimisation Monte Carlo (OMC) has recently been proposed as an efficient and embarrassingly parallel method that leverages optimisation to accelerate the inference. In this paper, we demonstrate a previously unrecognised important failure mode of OMC: It generates strongly overconfident approximations by collapsing regions of similar or near-constant posterior density into a single point. We propose an efficient, robust generalisation of OMC that corrects this. It makes fewer assumptions, retains the main benefits of OMC, and can be performed either as part of OMC or entirely as post-processing. We demonstrate the effectiveness of the proposed Robust OMC on toy examples and tasks in inverse-graphics where we perform Bayesian inference with a complex image renderer.</p>
-  </span>
-  
-
-  <!-- Hidden bibtex block -->
-  
-  <span class="bibtex hidden">
-    <pre class="pre pre-scrollable collapse">@article{Ikonomov2019,
-  title = {Robust Optimisation {M}onte {C}arlo},
-  author = {Ikonomov, B. and Gutmann, M.U.},
-  journal = {arXiv:1904.00670},
-  year = {2019},
-  url = {https://arxiv.org/abs/1904.00670}
-}
-</pre>
-  </span>
-  
-  
-</div>
-
-
-</li>
-<li>
-  
-
-
-
-
-
-<div id="Jarvenpaa2019a">
-  
-    <span class="title">Parallel Gaussian process surrogate method to accelerate likelihood-free inference</span>
-    <span class="author">
-      
-      
-
-      
-            
-            M. Järvenpää,
-            
-            
-      
-      
-
-      
-            
-            M. Gutmann,
-            
-            
-      
-      
-
-      
-            
-            A. Vehtari,
-            
-            
-      
-      
-            and
-
-            
-            P. Marttinen
-        
-      
-    </span>
-
-    <span class="periodical">
-    
-      <i>arXiv:1905.01252</i>
-    
-    
-      2019
+      2020
     
     </span>
   
@@ -281,7 +176,8 @@
     [<a class="bibtex">bib</a>]
     
     
-    [<a href="https://arxiv.org/abs/1905.01252" target="_blank">url</a>]
+    
+    [<a href="https://arxiv.org/abs/2002.08129" target="_blank">arxiv</a>]
     
     
     
@@ -296,19 +192,19 @@
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>We consider Bayesian inference when only a limited number of noisy log-likelihood evaluations can be obtained. This occurs for example when complex simulator-based statistical models are fitted to data, and synthetic likelihood (SL) is used to form the noisy log-likelihood estimates using computationally costly forward simulations. We frame the inference task as a Bayesian sequential design problem, where the log-likelihood function is modelled with a hierarchical Gaussian process (GP) surrogate model, which is used to efficiently select additional log-likelihood evaluation locations. Motivated by recent progress in batch Bayesian optimisation, we develop various batch-sequential strategies where multiple simulations are adaptively selected to minimise either the expected or median loss function measuring the uncertainty in the resulting posterior. We analyse the properties of the resulting method theoretically and empirically. Experiments with toy problems and three simulation models suggest that our method is robust, highly parallelisable, and sample-efficient.</p>
+    <p>Implicit stochastic models, where the data-generation distribution is intractable but sampling is possible, are ubiquitous in the natural sciences. The models typically have free parameters that need to be inferred from data collected in scientific experiments. A fundamental question is how to design the experiments so that the collected data are most useful. The field of Bayesian experimental design advocates that, ideally, we should choose designs that maximise the mutual information (MI) between the data and the parameters. For implicit models, however, this approach is severely hampered by the high computational cost of computing posteriors and maximising MI, in particular when we have more than a handful of design variables to optimise. In this paper, we propose a new approach to Bayesian experimental design for implicit models that leverages recent advances in neural MI estimation to deal with these issues. We show that training a neural network to maximise a lower bound on MI allows us to jointly determine the optimal design and the posterior. Simulation studies illustrate that this gracefully extends Bayesian experimental design for implicit models to higher design dimensions.</p>
   </span>
   
 
   <!-- Hidden bibtex block -->
   
   <span class="bibtex hidden">
-    <pre class="pre pre-scrollable collapse">@article{Jarvenpaa2019a,
-  title = {Parallel Gaussian process surrogate method to accelerate likelihood-free inference},
-  author = {J\"arvenp\"a\"a, Marko and Gutmann, Michael and Vehtari, Aki and Marttinen, Pekka},
-  journal = {arXiv:1905.01252},
-  year = {2019},
-  url = {https://arxiv.org/abs/1905.01252}
+    <pre class="pre pre-scrollable collapse">@article{Kleinegesse2020a,
+  title = {Bayesian Experimental Design for Implicit Models by Mutual Information Neural Estimation},
+  author = {Kleinegesse, S. and Gutmann, M.U.},
+  journal = {arXiv:2002.08129},
+  year = {2020},
+  arxiv = {https://arxiv.org/abs/2002.08129}
 }
 </pre>
   </span>
@@ -325,16 +221,16 @@
 
 
 
-<div id="Lintusaari2019a">
+<div id="Simola2019">
   
-    <span class="title">Resolving outbreak dynamics using approximate Bayesian computation for stochastic birth-death models</span>
+    <span class="title">Adaptive Approximate Bayesian Computation Tolerance Selection</span>
     <span class="author">
       
       
 
       
             
-            J. Lintusaari,
+            U. Simola,
             
             
       
@@ -342,15 +238,7 @@
 
       
             
-            P. Blomstedt,
-            
-            
-      
-      
-
-      
-            
-            T. Sivula,
+            J. Cisewski-Kehe,
             
             
       
@@ -359,14 +247,6 @@
       
             
             M. Gutmann,
-            
-            
-      
-      
-
-      
-            
-            S. Kaski,
             
             
       
@@ -381,7 +261,7 @@
 
     <span class="periodical">
     
-      <i>Wellcome Open Research</i>
+      <i>arXiv:1907.01505</i>
     
     
       2019
@@ -402,7 +282,8 @@
     [<a class="bibtex">bib</a>]
     
     
-    [<a href="https://wellcomeopenresearch.org/articles/4-14/" target="_blank">url</a>]
+    
+    [<a href="https://arxiv.org/abs/1907.01505" target="_blank">arxiv</a>]
     
     
     
@@ -417,21 +298,19 @@
   <!-- Hidden abstract block -->
   
   <span class="abstract hidden">
-    <p>Earlier research has suggested that Approximate Bayesian Computation (ABC) makes it possible to fit intractable simulator-based stochastic birth-death models to investigate communicable disease outbreak dynamics and that the accuracy of ABC inference can be comparable to that of exact Bayesian inference based on for example particle-filtering Markov Chain Monte Carlo. However, recent findings have indicated that key parameters such as the reproductive number, R, may remain poorly identifiable from data generated under an infinite alleles model. Here we show that the identifiability issue can be resolved by taking into account disease-specific characteristics of the transmission process in closer detail in the birth-death model. Using tuberculosis (TB) in the San Francisco Bay area as a case-study, we consider the situation where the genotype data are generated as a mixture of two stochastic processes, each with their distinct dynamics and clear epidemiological interpretation. ABC inference based on the ELFI software yields stable and accurate posterior inferences about outbreak dynamics from aggregated annual case data with genotype information. We also show that under the proposed model the infectious population size can be reliably inferred and that it is approximately two orders of magnitude smaller than considered in the previous ABC studies focusing on the same data, which is much better aligned with epidemiological knowledge about active TB prevalence. Similarly, the reproductive number R related to the primary underlying transmission process is estimated to be nearly three-fold compared with the previous estimates, which has a substantial impact on the interpretation of the fitted outbreak model. Our Python codes implementing the simulator model and the inference algorithm are freely available for further research and use at GitHub.</p>
+    <p>Approximate Bayesian Computation (ABC) methods are increasingly used for inference in situations in which the likelihood function is either computationally costly or intractable to evaluate. Extensions of the basic ABC rejection algorithm have improved the computational efficiency of the procedure and broadened its applicability. The ABC-Population Monte Carlo (ABC-PMC) approach of Beaumont et al. (2009) has become a popular choice for approximate sampling from the posterior. ABC-PMC is a sequential sampler with an iteratively decreasing value of the tolerance, which specifies how close the simulated data need to be to the real data for acceptance. We propose a method for adaptively selecting a sequence of tolerances that improves the computational efficiency of the algorithm over other common techniques. In addition we define a stopping rule as a by-product of the adaptation procedure, which assists in automating termination of sampling. The proposed automatic ABC-PMC algorithm can be easily implemented and we present several examples demonstrating its benefits in terms of computational efficiency.</p>
   </span>
   
 
   <!-- Hidden bibtex block -->
   
   <span class="bibtex hidden">
-    <pre class="pre pre-scrollable collapse">@article{Lintusaari2019a,
-  title = {Resolving outbreak dynamics using approximate {B}ayesian computation for stochastic birth-death models},
-  author = {Lintusaari, Jarno and Blomstedt, Paul and Sivula, Tuomas and Gutmann, M.U. and Kaski, Samuel and Corander, Jukka},
-  journal = {Wellcome Open Research},
+    <pre class="pre pre-scrollable collapse">@article{Simola2019,
+  title = {Adaptive Approximate Bayesian Computation Tolerance Selection},
+  author = {Simola, Umberto and Cisewski-Kehe, Jessica and Gutmann, Michael U. and Corander, Jukka},
+  journal = {arXiv:1907.01505},
   year = {2019},
-  volume = {open review},
-  doi = {https://doi.org/10.1101/215533},
-  url = {https://wellcomeopenresearch.org/articles/4-14/}
+  arxiv = {https://arxiv.org/abs/1907.01505}
 }
 </pre>
   </span>
@@ -493,7 +372,8 @@
     [<a class="bibtex">bib</a>]
     
     
-    [<a href="https://arxiv.org/abs/1810.09899" target="_blank">url</a>]
+    
+    [<a href="https://arxiv.org/abs/1810.09899" target="_blank">arxiv</a>]
     
     
     
@@ -520,8 +400,8 @@
   author = {Dinev, Traiko and Gutmann, M.U.},
   journal = {arXiv:1810.09899},
   year = {2018},
-  keywords = {likelihood-free inference, approximate Bayesian computation, time-series},
-  url = {https://arxiv.org/abs/1810.09899}
+  arxiv = {https://arxiv.org/abs/1810.09899},
+  keywords = {likelihood-free inference, approximate Bayesian computation, time-series}
 }
 </pre>
   </span>
@@ -685,7 +565,8 @@
     [<a class="bibtex">bib</a>]
     
     
-    [<a href="https://doi.org/10.1101/539569" target="_blank">url</a>]
+    
+    [<a href="https://doi.org/10.1101/539569" target="_blank">arxiv</a>]
     
     
     
@@ -708,112 +589,7 @@
   author = {Neyton, L.P.A. and Zheng, X. and Skouras, C. and Doeschl-Wilson, A. and Gutmann, M.U. and Yau, C. and Ponting, C. and Uings, I. and Rao, F. and Nicolas, A. and Marshall, C. and Wilson, L.-M. and the APPreSci Consortium and Baillie, J.K. and Mole, D.J.},
   journal = {bioRxiv 539569},
   year = {2018},
-  url = {https://doi.org/10.1101/539569}
-}
-</pre>
-  </span>
-  
-  
-</div>
-
-
-</li>
-<li>
-  
-
-
-
-
-
-<div id="Srivastava2018">
-  
-    <span class="title">Ratio Matching MMD Nets: Low dimensional projections for effective deep generative models</span>
-    <span class="author">
-      
-      
-
-      
-            
-            A. Srivastava,
-            
-            
-      
-      
-
-      
-            
-            K. Xu,
-            
-            
-      
-      
-
-      
-            
-            M. Gutmann,
-            
-            
-      
-      
-            and
-
-            
-            C. Sutton
-        
-      
-    </span>
-
-    <span class="periodical">
-    
-      <i>arXiv:1806.00101</i>
-    
-    
-      2018
-    
-    </span>
-  
-
-  <span class="links">
-    
-    
-    
-    
-    
-    
-    [<a class="abstract">abs</a>]
-    
-    
-    [<a class="bibtex">bib</a>]
-    
-    
-    [<a href="https://arxiv.org/abs/1806.00101" target="_blank">url</a>]
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  </span>
-
-  <!-- Hidden abstract block -->
-  
-  <span class="abstract hidden">
-    <p>Deep generative models can learn to generate realistic-looking images on several natural image datasets, but many of the most effective methods are adversarial methods, which require careful balancing of training between a generator network and a discriminator network. Maximum mean discrepancy networks (MMD-nets) avoid this issue using the kernel trick, but unfortunately they have not on their own been able to match the performance of adversarial training. We present a new method of training MMD-nets, based on learning a mapping of samples from the data and from the model into a lower dimensional space, in which MMD training can be more effective. We call these networks ratio matching MMD networks (RMMMDnets). We train the mapping to preserve density ratios between the densities over the low-dimensional space and the original space. This ensures that matching the model distribution to the data in the low-dimensional space will also match the original distributions. We show that RM-MMDnets have better performance and better stability than recent adversarial methods for training MMD-nets.</p>
-  </span>
-  
-
-  <!-- Hidden bibtex block -->
-  
-  <span class="bibtex hidden">
-    <pre class="pre pre-scrollable collapse">@article{Srivastava2018,
-  title = {Ratio Matching {MMD} Nets: Low dimensional projections for effective deep generative models},
-  author = {Srivastava, Akash and Xu, Kai and Gutmann, M.U. and Sutton, Charles},
-  journal = {arXiv:1806.00101},
-  year = {2018},
-  url = {https://arxiv.org/abs/1806.00101}
+  arxiv = {https://doi.org/10.1101/539569}
 }
 </pre>
   </span>
@@ -899,7 +675,8 @@
     [<a class="bibtex">bib</a>]
     
     
-    [<a href="https://arxiv.org/abs/1611.10242" target="_blank">url</a>]
+    
+    [<a href="https://arxiv.org/abs/1611.10242" target="_blank">arxiv</a>]
     
     
     
@@ -926,8 +703,8 @@
   author = {Thomas, O. and Dutta, R. and Corander, J. and Kaski, S. and Gutmann, M.U.},
   journal = {arXiv:1611.10242},
   year = {2016},
-  keywords = {approximate Bayesian computation, synthetic likelihood, summary statistics selection, density-ratio estimation; logistic regression; probabilistic classification, stochastic dynamical systems},
-  url = {https://arxiv.org/abs/1611.10242}
+  arxiv = {https://arxiv.org/abs/1611.10242},
+  keywords = {approximate Bayesian computation, synthetic likelihood, summary statistics selection, density-ratio estimation; logistic regression; probabilistic classification, stochastic dynamical systems}
 }
 </pre>
   </span>
@@ -940,6 +717,599 @@
 
 <h3 id="refereed-papers">Refereed papers</h3>
 <ol class="bibliography"><li>
+  
+
+
+
+
+
+<div id="Li2020">
+  
+    <span class="title">Genome-wide CRISPR screen Identifies Host Dependency Factors for Influenza A Virus Infection</span>
+    <span class="author">
+      
+      
+
+      
+            
+            B. Li,
+            
+            
+      
+      
+
+      
+            
+            S. Clohisey,
+            
+            
+      
+      
+
+      
+            
+            B. Chia,
+            
+            
+      
+      
+
+      
+            
+            B. Wang,
+            
+            
+      
+      
+
+      
+            
+            A. Cui,
+            
+            
+      
+      
+
+      
+            
+            T. Eisenhaure,
+            
+            
+      
+      
+
+      
+            
+            L. Schweitzer,
+            
+            
+      
+      
+
+      
+            
+            P. Hoover,
+            
+            
+      
+      
+
+      
+            
+            N. Parkinson,
+            
+            
+      
+      
+
+      
+            
+            A. Nachshon,
+            
+            
+      
+      
+
+      
+            
+            N. Smith,
+            
+            
+      
+      
+
+      
+            
+            T. Regan,
+            
+            
+      
+      
+
+      
+            
+            D. Farr,
+            
+            
+      
+      
+
+      
+            
+            M. Gutmann,
+            
+            
+      
+      
+
+      
+            
+            S. Bukhari,
+            
+            
+      
+      
+
+      
+            
+            A. Law,
+            
+            
+      
+      
+
+      
+            
+            M. Sangesland,
+            
+            
+      
+      
+
+      
+            
+            I. Gat-viks,
+            
+            
+      
+      
+
+      
+            
+            P. Digard,
+            
+            
+      
+      
+
+      
+            
+            S. Vasudevan,
+            
+            
+      
+      
+
+      
+            
+            D. Lingwood,
+            
+            
+      
+      
+
+      
+            
+            D. Dockrell,
+            
+            
+      
+      
+
+      
+            
+            J. Doench,
+            
+            
+      
+      
+
+      
+            
+            J. Baillie,
+            
+            
+      
+      
+            and
+
+            
+            N. Hacohen
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <i>Nature Communications</i>
+    
+    
+      2020
+    
+    </span>
+  
+
+  <span class="links">
+    
+    [<a href="/assets/papers/Li2020.pdf" target="_blank">pdf</a>]
+    
+    
+    
+    
+    
+    
+    [<a class="abstract">abs</a>]
+    
+    
+    [<a class="bibtex">bib</a>]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Host dependency factors that are required for influenza A virus infection may serve as therapeutic targets as the virus is less likely to bypass them under drug-mediated selection pressure. Previous attempts to identify host factors have produced largely divergent results, with few overlapping hits across different studies. Here, we perform a genome-wide CRISPR/Cas9 screen and devise a new approach, meta-analysis by information content (MAIC) to systematically combine our results with prior evidence for influenza host factors. MAIC out33 performs other meta-analysis methods when using our CRISPR screen as validation data. We validate the host factors, WDR7, CCDC115 and TMEM199, demonstrating that these genes are essential for viral entry and regulation of V-type ATPase assembly. We also find that CMTR1, a human mRNA cap methyltransferase, is required for efficient viral cap snatching and regulation of a cell autonomous immune response, and provides synergistic protection with the influenza endonuclease inhibitor Xofluza.
+Host dependency factors that are required for influenza A virus infection may serve as therapeutic targets as the virus is less likely to bypass them under drug-mediated selection pressure. Previous attempts to identify host factors have produced largely divergent results, with few overlapping hits across different studies. Here, we perform a genome-wide CRISPR/Cas9 screen and devise a new approach, meta-analysis by information content (MAIC) to systematically combine our results with prior evidence for influenza host factors. MAIC out33 performs other meta-analysis methods when using our CRISPR screen as validation data. We validate the host factors, WDR7, CCDC115 and TMEM199, demonstrating that these genes are essential for viral entry and regulation of V-type ATPase assembly. We also find that CMTR1, a human mRNA cap methyltransferase, is required for efficient viral cap snatching and regulation of a cell autonomous immune response, and provides synergistic protection with the influenza endonuclease inhibitor Xofluza.</p>
+  </span>
+  
+
+  <!-- Hidden bibtex block -->
+  
+  <span class="bibtex hidden">
+    <pre class="pre pre-scrollable collapse">@article{Li2020,
+  title = {Genome-wide CRISPR screen Identifies Host Dependency Factors for Influenza A Virus Infection},
+  author = {Li, Bo and Clohisey, Sara M. and Chia, Bing Shao and Wang, Bo and Cui, Ang and Eisenhaure, Thomas and Schweitzer, Lawrence D. and Hoover, Paul and Parkinson, Nicholas J. and Nachshon, Aharon and Smith, Nikki and Regan, Tim and Farr, David and Gutmann, Michael U. and Bukhari, Syed Irfan and Law, Andrew and Sangesland, Maya and Gat-viks, Irit and Digard, Paul and Vasudevan, Shobha and Lingwood, Daniel and Dockrell, David H. and Doench, John G. and Baillie, J. Kenneth and Hacohen, Nir},
+  journal = {Nature Communications},
+  year = {2020},
+  month = jan,
+  number = {1},
+  pages = {164--},
+  volume = {11},
+  doi = {https://doi.org/10.1038/s41467-019-13965-x},
+  issn = {2041-1723},
+  month_numeric = {1}
+}
+</pre>
+  </span>
+  
+  
+</div>
+
+
+</li>
+<li>
+  
+
+
+
+
+
+<div id="Ikonomov2020">
+  
+    <span class="title">Robust Optimisation Monte Carlo</span>
+    <span class="author">
+      
+      
+
+      
+            
+            B. Ikonomov,
+            
+            
+      
+      
+            and
+
+            
+            M. Gutmann
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <i>In Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>
+    
+    
+      2020
+    
+    </span>
+  
+
+  <span class="links">
+    
+    [<a href="/assets/papers/Ikonomov2020.pdf" target="_blank">pdf</a>]
+    
+    
+    
+    
+    
+    
+    [<a class="abstract">abs</a>]
+    
+    
+    [<a class="bibtex">bib</a>]
+    
+    
+    
+    [<a href="https://arxiv.org/abs/1904.00670" target="_blank">arxiv</a>]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>This paper is on Bayesian inference for parametric statistical models that are implicitly defined by a stochastic simulator which specifies how data is generated. While exact sampling is possible, evaluating the likelihood function is typically prohibitively expensive. Approximate Bayesian Computation (ABC) is a framework to perform approximate inference in such situations. While basic ABC algorithms are widely applicable, they are notoriously slow and much research has focused on increasing their efficiency. Optimisation Monte Carlo (OMC) has recently been proposed as an efficient and embarrassingly parallel method that leverages optimisation to accelerate the inference. In this paper, we demonstrate a previously unrecognised important failure mode of OMC: It generates strongly overconfident approximations by collapsing regions of similar or near-constant posterior density into a single point. We propose an efficient, robust generalisation of OMC that corrects this. It makes fewer assumptions, retains the main benefits of OMC, and can be performed either as part of OMC or entirely as post-processing. We demonstrate the effectiveness of the proposed Robust OMC on toy examples and tasks in inverse-graphics where we perform Bayesian inference with a complex image renderer.</p>
+  </span>
+  
+
+  <!-- Hidden bibtex block -->
+  
+  <span class="bibtex hidden">
+    <pre class="pre pre-scrollable collapse">@inproceedings{Ikonomov2020,
+  title = {Robust Optimisation {M}onte {C}arlo},
+  author = {Ikonomov, B. and Gutmann, M.U.},
+  booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year = {2020},
+  arxiv = {https://arxiv.org/abs/1904.00670}
+}
+</pre>
+  </span>
+  
+  
+</div>
+
+
+</li>
+<li>
+  
+
+
+
+
+
+<div id="Jarvenpaa2020">
+  
+    <span class="title">Parallel Gaussian process surrogate Bayesian inference with noisy likelihood evaluations</span>
+    <span class="author">
+      
+      
+
+      
+            
+            M. Järvenpää,
+            
+            
+      
+      
+
+      
+            
+            M. Gutmann,
+            
+            
+      
+      
+
+      
+            
+            A. Vehtari,
+            
+            
+      
+      
+            and
+
+            
+            P. Marttinen
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <i>Bayesian analysis</i>
+    
+    
+      2020
+    
+    </span>
+  
+
+  <span class="links">
+    
+    
+    
+    
+    
+    
+    [<a class="abstract">abs</a>]
+    
+    
+    [<a class="bibtex">bib</a>]
+    
+    
+    
+    [<a href="https://arxiv.org/abs/1905.01252" target="_blank">arxiv</a>]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>We consider Bayesian inference when only a limited number of noisy log-likelihood evaluations can be obtained. This occurs for example when complex simulator-based statistical models are fitted to data, and synthetic likelihood (SL) method is used to form the noisy log-likelihood estimates using computationally costly forward simulations. We frame the inference task as a sequential Bayesian experimental design problem, where the log-likelihood function is modelled with a hierarchical Gaussian process (GP) surrogate model, which is used to efficiently select additional log-likelihood evaluation locations. Motivated by recent progress in the related problem of batch Bayesian optimisation, we develop various batch-sequential design strategies which allow to run some of the potentially costly simulations in parallel. We analyse the properties of the resulting method theoretically and empirically. Experiments with several toy problems and simulation models suggest that our method is robust, highly parallelisable, and sample-efficient.
+We consider Bayesian inference when only a limited number of noisy log-likelihood evaluations can be obtained. This occurs for example when complex simulator-based statistical models are fitted to data, and synthetic likelihood (SL) method is used to form the noisy log-likelihood estimates using computationally costly forward simulations. We frame the inference task as a sequential Bayesian experimental design problem, where the log-likelihood function is modelled with a hierarchical Gaussian process (GP) surrogate model, which is used to efficiently select additional log-likelihood evaluation locations. Motivated by recent progress in the related problem of batch Bayesian optimisation, we develop various batch-sequential design strategies which allow to run some of the potentially costly simulations in parallel. We analyse the properties of the resulting method theoretically and empirically. Experiments with several toy problems and simulation models suggest that our method is robust, highly parallelisable, and sample-efficient.</p>
+  </span>
+  
+
+  <!-- Hidden bibtex block -->
+  
+  <span class="bibtex hidden">
+    <pre class="pre pre-scrollable collapse">@article{Jarvenpaa2020,
+  title = {Parallel Gaussian process surrogate Bayesian inference with noisy likelihood evaluations},
+  author = {J\"arvenp\"a\"a, Marko and Gutmann, Michael U. and Vehtari, Aki and Marttinen, Pekka},
+  journal = {Bayesian analysis},
+  year = {2020},
+  arxiv = {https://arxiv.org/abs/1905.01252},
+  issn = {1931-6690}
+}
+</pre>
+  </span>
+  
+  
+</div>
+
+
+</li>
+<li>
+  
+
+
+
+
+
+<div id="Srivastava2020">
+  
+    <span class="title">Generative Ratio Matching Networks</span>
+    <span class="author">
+      
+      
+
+      
+            
+            A. Srivastava,
+            
+            
+      
+      
+
+      
+            
+            K. Xu,
+            
+            
+      
+      
+
+      
+            
+            M. Gutmann,
+            
+            
+      
+      
+            and
+
+            
+            C. Sutton
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <i>In Proceedings of the International Conference on Learning Representations (ICLR)</i>
+    
+    
+      2020
+    
+    </span>
+  
+
+  <span class="links">
+    
+    [<a href="/assets/papers/Srivastava2020.pdf" target="_blank">pdf</a>]
+    
+    
+    
+    
+    
+    
+    [<a class="abstract">abs</a>]
+    
+    
+    [<a class="bibtex">bib</a>]
+    
+    
+    [<a href="https://openreview.net/forum?id=SJg7spEYDS" target="_blank">url</a>]
+    
+    
+    [<a href="https://arxiv.org/abs/1806.00101" target="_blank">arxiv</a>]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Deep generative models can learn to generate realistic-looking images on several natural image datasets, but many of the most effective methods are adversarial methods, which require careful balancing of training between a generator network and a discriminator network. Maximum mean discrepancy networks (MMD-nets) avoid this issue using the kernel trick, but unfortunately they have not on their own been able to match the performance of adversarial training. We present a new method of training MMD-nets, based on learning a mapping of samples from the data and from the model into a lower dimensional space, in which MMD training can be more effective. We call these networks ratio matching MMD networks (RMMMDnets). We train the mapping to preserve density ratios between the densities over the low-dimensional space and the original space. This ensures that matching the model distribution to the data in the low-dimensional space will also match the original distributions. We show that RM-MMDnets have better performance and better stability than recent adversarial methods for training MMD-nets.</p>
+  </span>
+  
+
+  <!-- Hidden bibtex block -->
+  
+  <span class="bibtex hidden">
+    <pre class="pre pre-scrollable collapse">@inproceedings{Srivastava2020,
+  title = {Generative Ratio Matching Networks},
+  author = {Srivastava, Akash and Xu, Kai and Gutmann, M.U. and Sutton, Charles},
+  booktitle = {Proceedings of the International Conference on Learning Representations (ICLR)},
+  year = {2020},
+  arxiv = {https://arxiv.org/abs/1806.00101},
+  journal = {arXiv:1806.00101},
+  url = {https://openreview.net/forum?id=SJg7spEYDS}
+}
+</pre>
+  </span>
+  
+  
+</div>
+
+
+</li>
+<li>
   
 
 
@@ -980,6 +1350,10 @@
 
   <span class="links">
     
+    [<a href="/assets/papers/Chen2019.pdf" target="_blank">pdf</a>]
+    
+    
+    [<a href="/assets/papers/Chen2019.supp.pdf" target="_blank">supp</a>]
     
     
     
@@ -991,7 +1365,10 @@
     [<a class="bibtex">bib</a>]
     
     
-    [<a href="https://arxiv.org/abs/1902.10704" target="_blank">url</a>]
+    [<a href="http://proceedings.mlr.press/v89/chen19d" target="_blank">url</a>]
+    
+    
+    [<a href="https://arxiv.org/abs/1902.10704" target="_blank">arxiv</a>]
     
     
     
@@ -1018,7 +1395,8 @@
   author = {Chen, Y. and Gutmann, M.U.},
   booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)},
   year = {2019},
-  url = {https://arxiv.org/abs/1902.10704}
+  arxiv = {https://arxiv.org/abs/1902.10704},
+  url = {http://proceedings.mlr.press/v89/chen19d}
 }
 </pre>
   </span>
@@ -1069,6 +1447,8 @@
 
   <span class="links">
     
+    [<a href="/assets/papers/Kleinegesse2019.pdf" target="_blank">pdf</a>]
+    
     
     
     
@@ -1080,7 +1460,10 @@
     [<a class="bibtex">bib</a>]
     
     
-    [<a href="https://arxiv.org/abs/1810.09912" target="_blank">url</a>]
+    [<a href="http://proceedings.mlr.press/v89/kleinegesse19a" target="_blank">url</a>]
+    
+    
+    [<a href="https://arxiv.org/abs/1810.09912" target="_blank">arxiv</a>]
     
     
     
@@ -1107,7 +1490,137 @@
   author = {Kleinegesse, S. and Gutmann, M.U.},
   booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)},
   year = {2019},
-  url = {https://arxiv.org/abs/1810.09912}
+  arxiv = {https://arxiv.org/abs/1810.09912},
+  url = {http://proceedings.mlr.press/v89/kleinegesse19a}
+}
+</pre>
+  </span>
+  
+  
+</div>
+
+
+</li>
+<li>
+  
+
+
+
+
+
+<div id="Lintusaari2019a">
+  
+    <span class="title">Resolving outbreak dynamics using approximate Bayesian computation for stochastic birth-death models</span>
+    <span class="author">
+      
+      
+
+      
+            
+            J. Lintusaari,
+            
+            
+      
+      
+
+      
+            
+            P. Blomstedt,
+            
+            
+      
+      
+
+      
+            
+            B. Rose,
+            
+            
+      
+      
+
+      
+            
+            T. Sivula,
+            
+            
+      
+      
+
+      
+            
+            M. Gutmann,
+            
+            
+      
+      
+
+      
+            
+            S. Kaski,
+            
+            
+      
+      
+            and
+
+            
+            J. Corander
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <i>Wellcome Open Research</i>
+    
+    
+      2019
+    
+    </span>
+  
+
+  <span class="links">
+    
+    [<a href="/assets/papers/Lintusaari2019a.pdf" target="_blank">pdf</a>]
+    
+    
+    
+    
+    
+    
+    
+    [<a class="bibtex">bib</a>]
+    
+    
+    [<a href="https://wellcomeopenresearch.org/articles/4-14/v2" target="_blank">url</a>]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+
+  <!-- Hidden bibtex block -->
+  
+  <span class="bibtex hidden">
+    <pre class="pre pre-scrollable collapse">@article{Lintusaari2019a,
+  title = {Resolving outbreak dynamics using approximate {B}ayesian computation for stochastic birth-death models},
+  author = {Lintusaari, J and Blomstedt, P and Rose, B and Sivula, T and Gutmann, MU and Kaski, S and Corander, J},
+  journal = {Wellcome Open Research},
+  year = {2019},
+  number = {14},
+  volume = {4},
+  doi = {10.12688/wellcomeopenres.15048.2},
+  url = {https://wellcomeopenresearch.org/articles/4-14/v2}
 }
 </pre>
   </span>
@@ -1158,6 +1671,10 @@
 
   <span class="links">
     
+    [<a href="/assets/papers/Rhodes2019.pdf" target="_blank">pdf</a>]
+    
+    
+    [<a href="/assets/papers/Rhodes2019.supp.pdf" target="_blank">supp</a>]
     
     
     
@@ -1169,7 +1686,10 @@
     [<a class="bibtex">bib</a>]
     
     
-    [<a href="https://arxiv.org/abs/1810.08010" target="_blank">url</a>]
+    [<a href="http://proceedings.mlr.press/v89/rhodes19a" target="_blank">url</a>]
+    
+    
+    [<a href="https://arxiv.org/abs/1810.08010" target="_blank">arxiv</a>]
     
     
     
@@ -1196,8 +1716,9 @@
   author = {Rhodes, B. and Gutmann, M.U.},
   booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)},
   year = {2019},
+  arxiv = {https://arxiv.org/abs/1810.08010},
   keywords = {noise-contrastive estimation, latent variables},
-  url = {https://arxiv.org/abs/1810.08010}
+  url = {http://proceedings.mlr.press/v89/rhodes19a}
 }
 </pre>
   </span>
@@ -1278,6 +1799,7 @@
     
     
     [<a href="https://www.nature.com/articles/s41524-019-0175-2" target="_blank">url</a>]
+    
     
     
     
@@ -1423,6 +1945,7 @@
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -1514,6 +2037,7 @@
     
     
     [<a href="http://proceedings.mlr.press/v80/ceylan18a.html" target="_blank">url</a>]
+    
     
     
     
@@ -1631,6 +2155,7 @@
     
     
     [<a href="https://doi.org/10.1007/s11222-017-9738-6" target="_blank">url</a>]
+    
     
     
     
@@ -1760,6 +2285,7 @@
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -1864,6 +2390,7 @@ GP model selection step. Finally, based on the understanding gained with toy exa
     
     
     [<a href="https://arxiv.org/abs/1704.00520" target="_blank">url</a>]
+    
     
     
     
@@ -2022,6 +2549,7 @@ GP model selection step. Finally, based on the understanding gained with toy exa
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -2044,6 +2572,134 @@ GP model selection step. Finally, based on the understanding gained with toy exa
   volume = {19},
   keywords = {Likelihood-free inference, approximate Bayesian computation, Python, software, parallel computing},
   url = {http://jmlr.org/papers/v19/17-374.html}
+}
+</pre>
+  </span>
+  
+  
+</div>
+
+
+</li>
+<li>
+  
+
+
+
+
+
+<div id="LopezGuevara2018">
+  
+    <span class="title">To Stir or Not to Stir: Online Estimation of Liquid Properties for Pouring Actions</span>
+    <span class="author">
+      
+      
+
+      
+            
+            T. Lopez Guevara,
+            
+            
+      
+      
+
+      
+            
+            R. Pucci,
+            
+            
+      
+      
+
+      
+            
+            N. Taylor,
+            
+            
+      
+      
+
+      
+            
+            M. Gutmann,
+            
+            
+      
+      
+
+      
+            
+            S. Ramamoorthy,
+            
+            
+      
+      
+            and
+
+            
+            K. Subr
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <i>In Workshop on Learning and Inference in Robotics: Integrating Structure, Priors and Models</i>
+    
+    
+      2018
+    
+    </span>
+  
+
+  <span class="links">
+    
+    [<a href="/assets/papers/LopezGuevara2018.pdf" target="_blank">pdf</a>]
+    
+    
+    
+    
+    
+    
+    [<a class="abstract">abs</a>]
+    
+    
+    [<a class="bibtex">bib</a>]
+    
+    
+    [<a href="https://drive.google.com/file/d/1qHdn03oZZe6aQiKxEyFTIiy_Y68OzQ1N/view" target="_blank">url</a>]
+    
+    
+    [<a href="https://arxiv.org/abs/1904.02431" target="_blank">arxiv</a>]
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Our brains are able to exploit coarse physical models of fluids to solve complex manipulation tasks. There has been considerable interest in developing such a capability in robots so that they can autonomously manipulate fluids adapting to different conditions. In this paper, we investigate the problem of adaptation to liquids with different characteristics. We develop a simple training task (stirring with a stick) that enables rapid inference of the parameters of the liquid with relatively inexpensive measurement equipment (standard webcams) that robots may be assumed to have access to in the wild. We perform the inference in the space of simulation parameters rather than on physically accurate parameters. This facilitates prediction and optimization tasks since the inferred parameters may be fed directly to the simulator. First, we +demonstrate that our âstirringâ learner performs better than when the robot is trained with pouring actions. Further, we show that our method is able to infer properties of three very different liquids â water, glycerin and gel â and improve spillage with increased training. We present various experimental results performed by executing stirring and pouring actions on a UR10. We believe that this decoupling of the training actions from the goal task is a significant first step towards simple and autonomous learning of the behavior of different fluids in unstructured environments.
+Our brains are able to exploit coarse physical models of fluids to solve complex manipulation tasks. There has been considerable interest in developing such a capability in robots so that they can autonomously manipulate fluids adapting to different conditions. In this paper, we investigate the problem of adaptation to liquids with different characteristics. We develop a simple training task (stirring with a stick) that enables rapid inference of the parameters of the liquid with relatively inexpensive measurement equipment (standard webcams) that robots may be assumed to have access to in the wild. We perform the inference in the space of simulation parameters rather than on physically accurate parameters. This facilitates prediction and optimization tasks since the inferred parameters may be fed directly to the simulator. First, we +demonstrate that our âstirringâ learner performs better than when the robot is trained with pouring actions. Further, we show that our method is able to infer properties of three very different liquids â water, glycerin and gel â and improve spillage with increased training. We present various experimental results performed by executing stirring and pouring actions on a UR10. We believe that this decoupling of the training actions from the goal task is a significant first step towards simple and autonomous learning of the behavior of different fluids in unstructured environments.</p>
+  </span>
+  
+
+  <!-- Hidden bibtex block -->
+  
+  <span class="bibtex hidden">
+    <pre class="pre pre-scrollable collapse">@inproceedings{LopezGuevara2018,
+  title = {To Stir or Not to Stir: Online Estimation of Liquid Properties for Pouring Actions},
+  author = {Lopez Guevara, Tatiana and Pucci, Rita and Taylor, Nicholas and Gutmann, Michael U. and Ramamoorthy, Subramanian and Subr, Kartic},
+  booktitle = {Workshop on Learning and Inference in Robotics: Integrating Structure, Priors and Models},
+  year = {2018},
+  arxiv = {https://arxiv.org/abs/1904.02431},
+  url = {https://drive.google.com/file/d/1qHdn03oZZe6aQiKxEyFTIiy_Y68OzQ1N/view}
 }
 </pre>
   </span>
@@ -2132,6 +2788,7 @@ GP model selection step. Finally, based on the understanding gained with toy exa
     
     
     [<a href="http://proceedings.mlr.press/v78/lopez-guevara17a.html" target="_blank">url</a>]
+    
     
     
     
@@ -2254,6 +2911,7 @@ GP model selection step. Finally, based on the understanding gained with toy exa
     
     
     [<a href="http://dx.doi.org/10.1093/sysbio/syw077" target="_blank">url</a>]
+    
     
     
     
@@ -2412,6 +3070,7 @@ GP model selection step. Finally, based on the understanding gained with toy exa
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -2514,6 +3173,7 @@ GP model selection step. Finally, based on the understanding gained with toy exa
     
     
     [<a href="http://dx.doi.org/10.1162/neco_a_01006" target="_blank">url</a>]
+    
     
     
     
@@ -2643,6 +3303,7 @@ GP model selection step. Finally, based on the understanding gained with toy exa
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -2759,6 +3420,7 @@ GP model selection step. Finally, based on the understanding gained with toy exa
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -2848,6 +3510,7 @@ GP model selection step. Finally, based on the understanding gained with toy exa
     
     
     [<a href="http://jmlr.org/papers/v17/15-017.html" target="_blank">url</a>]
+    
     
     
     
@@ -2967,6 +3630,7 @@ GP model selection step. Finally, based on the understanding gained with toy exa
     
     
     [<a href="https://doi.org/10.1534/genetics.115.180034" target="_blank">url</a>]
+    
     
     
     
@@ -3159,6 +3823,7 @@ GP model selection step. Finally, based on the understanding gained with toy exa
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -3279,6 +3944,7 @@ GP model selection step. Finally, based on the understanding gained with toy exa
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -3388,6 +4054,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     [<a href="http://dx.doi.org/10.1371%2Fjournal.pone.0086481" target="_blank">url</a>]
+    
     
     
     
@@ -3518,6 +4185,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -3632,6 +4300,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -3717,6 +4386,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     [<a href="http://www.sciencedirect.com/science/article/pii/S0928425713000028" target="_blank">url</a>]
+    
     
     
     
@@ -3828,6 +4498,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -3927,6 +4598,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     [<a href="http://dx.doi.org/10.1007/978-3-642-40991-2_38" target="_blank">url</a>]
+    
     
     
     
@@ -4045,6 +4717,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -4133,6 +4806,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     [<a href="http://www.jmlr.org/papers/v13/gutmann12a.html" target="_blank">url</a>]
+    
     
     
     
@@ -4228,6 +4902,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     [<a class="bibtex">bib</a>]
+    
     
     
     
@@ -4347,6 +5022,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -4442,6 +5118,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -4527,6 +5204,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     [<a href="https://link.springer.com/chapter/10.1007/978-3-642-21735-7_40" target="_blank">url</a>]
+    
     
     
     
@@ -4647,6 +5325,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -4731,6 +5410,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     [<a href="http://proceedings.mlr.press/v9/gutmann10a.html" target="_blank">url</a>]
+    
     
     
     
@@ -4838,6 +5518,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -4920,6 +5601,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     [<a href="https://link.springer.com/chapter/10.1007/978-3-642-04277-5_63" target="_blank">url</a>]
+    
     
     
     
@@ -5013,6 +5695,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     [<a class="bibtex">bib</a>]
+    
     
     
     
@@ -5130,6 +5813,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -5214,6 +5898,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     [<a href="https://link.springer.com/article/10.1007/s10015-007-0471-7" target="_blank">url</a>]
+    
     
     
     
@@ -5326,6 +6011,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -5418,6 +6104,7 @@ The model does not include explicit selection on individual genes, suggesting th
     
     
     [<a href="https://bmcneurosci.biomedcentral.com/articles/10.1186/1471-2202-6-12" target="_blank">url</a>]
+    
     
     
     
@@ -5544,6 +6231,7 @@ We propose that the pooling that emerges allows the features to code for realist
     
     
     
+    
   </span>
 
   <!-- Hidden abstract block -->
@@ -5589,11 +6277,11 @@ We propose that the pooling that emerges allows the features to code for realist
 
   <div class="wrapper">
     
-        Last updated: 3 April 2019.
+        Last updated: 2 March 2020.
     
     Powered by <a href="http://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> and <a href="https://github.com/inukshuk/jekyll-scholar/">Jekyll-Scholar</a>.
 
-    &copy; Copyright 2019 Michael U. Gutmann.
+    &copy; Copyright 2020 Michael U. Gutmann.
   </div>
 
 </footer>
