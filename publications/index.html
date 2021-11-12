@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -75,22 +75,9 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
-<!--[if IE]>
-  <style>
-    /* old IE unsupported flexbox fixes */
-    .greedy-nav .site-title {
-      padding-right: 3em;
-    }
-    .greedy-nav button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-    }
-  </style>
-<![endif]-->
 
 
     <!-- start custom head snippets -->
@@ -103,7 +90,6 @@
 
   <body class="layout--single wide">
     <nav class="skip-links">
-  <h2 class="screen-reader-text">Skip links</h2>
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
@@ -205,7 +191,7 @@
 
 
 
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Publications">
     
     
@@ -214,15 +200,17 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Publications
-</h1>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://michaelgutmann.github.io/publications/" class="u-url" itemprop="url">Publications
+</a>
+          </h1>
           
 
 
         </header>
       
 
-      <section class="page__content" itemprop="text">
+      <section class="page__content e-content" itemprop="text">
         
         <p><br />
 <a href="#manuscripts"> <button class="btn btn--inverse btn--small">Manuscripts</button></a>
@@ -534,8 +522,6 @@ function toggleBibtexSimola2020(parameter) {
     <a href="/assets/papers/Kleinegesse2020b.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
     
     
-    <a href="https://projecteuclid.org/euclid.ba/1596160819"><button class="btn btn--inverse btn--small">url</button></a>
-    
     
     <button class="btn btn--inverse btn--small" onclick="toggleBibtexKleinegesse2020b()">bib</button>
     
@@ -554,12 +540,13 @@ function toggleBibtexSimola2020(parameter) {
   journal = {Bayesian Analysis},
   title = {Sequential {B}ayesian Experimental Design for Implicit Models via Mutual Information},
   year = {2021},
-  pages = {1--30},
+  number = {16},
+  pages = {773--802},
+  volume = {3},
   arxiv = {https://arxiv.org/abs/2003.09379},
   doi = {10.1214/20-BA1225},
   keywords = {Approximate Bayesian Computation, Bayesian experimental design, implicit models, likelihood-free inference, mutual information},
-  publisher = {International Society for Bayesian Analysis},
-  url = {https://projecteuclid.org/euclid.ba/1596160819}
+  publisher = {International Society for Bayesian Analysis}
 }
 </pre>
   </div>
@@ -666,6 +653,180 @@ function toggleBibtexKleinegesse2020b(parameter) {
 <script>
 function toggleBibtexChen2021a(parameter) {
     var x= document.getElementById('aChen2021a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Ivanova2021">
+  <span class="title">Implicit Deep Adaptive Design: Policy–Based Experimental Design without Likelihoods</span>
+  <span class="author">
+    
+    
+    D. Ivanova,    
+    
+    
+    
+    A. Foster,    
+    
+    
+    
+    S. Kleinegesse,    
+    
+    
+    
+    M. Gutmann,    
+    
+    
+    
+    and T. Rainforth
+    
+    
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the Thirty-fifth Conference on Neural Information Processing Systems (NeuRIPS 2021)</i>
+    
+    
+    2021
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexIvanova2021()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2111.02329"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aIvanova2021" style="display: none;">
+    <pre>@inproceedings{Ivanova2021,
+  author = {Ivanova, Desi R and Foster, Adam and Kleinegesse, Steven and Gutmann, Michael U and Rainforth, Tom},
+  booktitle = {Proceedings of the Thirty-fifth Conference on Neural Information Processing Systems (NeuRIPS 2021)},
+  title = {Implicit Deep Adaptive Design: Policy–Based Experimental Design without Likelihoods},
+  year = {2021},
+  publisher = {Neural Information Processing Systems},
+  arxiv = {https://arxiv.org/abs/2111.02329},
+  keywords = {Experimental design}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexIvanova2021(parameter) {
+    var x= document.getElementById('aIvanova2021');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Valentin2021a">
+  <span class="title">Bayesian Optimal Experimental Design for Simulator Models of Cognition</span>
+  <span class="author">
+    
+    
+    S. Valentin,    
+    
+    
+    
+    S. Kleinegesse,    
+    
+    
+    
+    N. Bramley,    
+    
+    
+    
+    M. Gutmann,    
+    
+    
+    
+    and C. Lucas
+    
+    
+  </span>
+
+  <span class="periodical">
+    
+    <i>In NeurIPS 2021 Workshop "AI for Science"</i>
+    
+    
+    2021
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexValentin2021a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2110.15632"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aValentin2021a" style="display: none;">
+    <pre>@conference{Valentin2021a,
+  author = {Valentin, Simon and Kleinegesse, Steven and Bramley, Neil R and Gutmann, Michael U and Lucas, Christopher G},
+  title = {Bayesian Optimal Experimental Design for Simulator Models of Cognition},
+  booktitle = {NeurIPS 2021 Workshop {"}AI for Science{"}},
+  year = {2021},
+  arxiv = {https://arxiv.org/abs/2110.15632}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexValentin2021a(parameter) {
+    var x= document.getElementById('aValentin2021a');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
@@ -1449,7 +1610,7 @@ function toggleBibtexThomas2020(parameter) {
 
   <span class="periodical">
     
-    <i>In Advances in Neural Information Processing Systems 34 (NIPS 2020)</i>
+    <i>In Advances in Neural Information Processing Systems 34 (NeurIPS 2020)</i>
     
     
     2020
@@ -1478,7 +1639,7 @@ function toggleBibtexThomas2020(parameter) {
   <div id="aRhodes2020a" style="display: none;">
     <pre>@inproceedings{Rhodes2020a,
   author = {Rhodes, B. and Xu, K. and Gutmann, M. U.},
-  booktitle = {Advances in Neural Information Processing Systems 34 (NIPS 2020)},
+  booktitle = {Advances in Neural Information Processing Systems 34 (NeurIPS 2020)},
   title = {Telescoping Density-Ratio Estimation},
   year = {2020},
   editor = {Larochelle, H. and Ranzato, M. and Hadsell, R. and Balcan, M. F. and Lin, H.},
@@ -5856,7 +6017,6 @@ function toggleBibtexGutmann2009d(parameter) {
 
         
 
-
       </footer>
 
       
@@ -5870,7 +6030,6 @@ function toggleBibtexGutmann2009d(parameter) {
   
   
 </div>
-
     </div>
 
     

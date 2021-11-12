@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
   Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -75,22 +75,9 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 
-<!--[if IE]>
-  <style>
-    /* old IE unsupported flexbox fixes */
-    .greedy-nav .site-title {
-      padding-right: 3em;
-    }
-    .greedy-nav button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-    }
-  </style>
-<![endif]-->
 
 
     <!-- start custom head snippets -->
@@ -103,7 +90,6 @@
 
   <body class="layout--single">
     <nav class="skip-links">
-  <h2 class="screen-reader-text">Skip links</h2>
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
@@ -253,7 +239,7 @@
 
       <!--
   <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
       <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
     </a>
   </li>
@@ -267,7 +253,7 @@
 
 
 
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     
     
     
@@ -283,7 +269,7 @@
         </header>
       
 
-      <section class="page__content" itemprop="text">
+      <section class="page__content e-content" itemprop="text">
         
         <p>I am a <a href="https://en.wikipedia.org/wiki/Senior_lecturer">Senior
 Lecturer</a> in Machine Learning at the <a href="http://www.ed.ac.uk/informatics"> School of Informatics</a> of the
@@ -299,19 +285,16 @@ natural sciences.</p>
 
 <ul>
   <li>
+    <p><a href="publications/index.html#Ivanova2021"> NeuRIPS 2021 paper: <em>Implicit Deep Adaptive Design: Policy–Based Experimental Design without Likelihoods</em> </a></p>
+  </li>
+  <li>
+    <p><a href="publications/index.html#Valentin2021a"> NeuRIPS 2021 AI for Science Workshop paper: <em>Bayesian Optimal Experimental Design for Simulator Models of Cognition</em> </a></p>
+  </li>
+  <li>
     <p><a href="publications/index.html#Kleinegesse2021a"> New on arXiv: <em>Gradient-based Bayesian Experimental Design for Implicit Models using Mutual Information Lower Bounds</em>  </a></p>
   </li>
   <li>
     <p><a href="publications/index.html#Chen2021a"> Accepted to ICLR 2021: <em>Neural Approximate Sufficient Statistics for Implicit Models</em> (Spotlight) </a></p>
-  </li>
-  <li>
-    <p><a href="publications/index.html#Rhodes2020a"> Accepted to NeuRIPS 2020: <em>Telescoping Density-Ratio Estimation</em> (Spotlight, top 4% of submissions) </a></p>
-  </li>
-  <li>
-    <p><a href="publications/index.html#Thomas2020"> Appearing in Bayesian Analysis: <em>Likelihood-Free Inference by Ratio Estimation</em>  </a></p>
-  </li>
-  <li>
-    <p><a href="publications/index.html#Kleinegesse2020b"> New paper in Bayesian Analysis: <em>Sequential Bayesian Experimental Design for Implicit Models via Mutual Information</em> </a></p>
   </li>
 </ul>
 
@@ -340,7 +323,6 @@ who have resided in the UK for the past 3 years. -->
 
         
 
-
       </footer>
 
       
@@ -354,7 +336,6 @@ who have resided in the UK for the past 3 years. -->
   
   
 </div>
-
     </div>
 
     
