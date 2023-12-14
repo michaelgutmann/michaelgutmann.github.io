@@ -183,6 +183,8 @@
           
             <li><a href="https://www.semanticscholar.org/author/Michael-U-Gutmann/145992652">Semantic Scholar</a></li>
           
+            <li><a href="https://www.research.ed.ac.uk/portal/en/persons/michael-gutmann(a25fe4a7-1e8d-4d9d-a5b7-6595ed60d1fb).html">Edinburgh Research Explorer</a></li>
+          
         </ul>
         
       </li>
@@ -221,33 +223,25 @@
 <a href="#teaching-materials"> <button class="btn btn--inverse btn--small">Teaching materials</button></a>
 <a href="#workshop-and-other-papers"> <button class="btn btn--inverse btn--small"> Workshop and other papers</button></a>
 <a href="https://scholar.google.com/citations?user=CPhI2jYAAAAJ"> <button class="btn btn--inverse btn--small"> Google Scholar</button></a>
-<a href="https://www.semanticscholar.org/author/Michael-U-Gutmann/145992652"> <button class="btn btn--inverse btn--small"> Semantic Scholar</button></a></p>
+<a href="https://www.semanticscholar.org/author/Michael-U-Gutmann/145992652"> <button class="btn btn--inverse btn--small"> Semantic Scholar</button></a>
+<a href="https://www.research.ed.ac.uk/portal/en/persons/michael-gutmann(a25fe4a7-1e8d-4d9d-a5b7-6595ed60d1fb).html"> <button class="btn btn--inverse btn--small"> Edinburgh Research Explorer</button></a></p>
 
 <h2 id="manuscripts">Manuscripts</h2>
+<ul class="bibliography"></ul>
+
+<h2 id="refereed-papers">Refereed papers</h2>
 <ul class="bibliography"><li>
   
 
 
 
-<div id="Valentin2023a">
-  <span class="title">Designing Optimal Behavioral Experiments Using Machine Learning</span>
+<div id="Gkolemis2023a">
+  <span class="title">An Extendable Python Implementation of Robust Optimisation Monte Carlo</span>
   <span class="author">
     
       
       
-      S. Valentin,    
-      
-      
-      
-      S. Kleinegesse,    
-      
-      
-      
-      N. Bramley,    
-      
-      
-      
-      P. Seriès,    
+      V. Gkolemis,    
       
       
       
@@ -255,7 +249,7 @@
       
       
       
-      and C. Lucas
+      and H. Pesonen
       
       
      
@@ -263,7 +257,7 @@
 
   <span class="periodical">
     
-    <i>arXiv:2305.07721</i>
+    <i>Journal of Statistical Software</i>
     
     
     2023
@@ -274,10 +268,8 @@
     
     
     
-    <button class="btn btn--inverse btn--small" onclick="toggleBibtexValentin2023a()">bib</button>
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGkolemis2023a()">bib</button>
     
-    
-    <a href="http://arxiv.org/abs/2305.07721"><button class="btn btn--inverse btn--small">arxiv</button></a>
     
     
     
@@ -285,13 +277,20 @@
 
   <!-- Toggle bib block -->
   
-  <div id="aValentin2023a" style="display: none;">
-    <pre>@article{Valentin2023a,
-  author = {Valentin, Simon and Kleinegesse, Steven and Bramley, Neil R. and Seriès, Peggy and Gutmann, Michael U. and Lucas, Christopher G.},
-  journal = {arXiv:2305.07721},
-  title = {Designing Optimal Behavioral Experiments Using Machine Learning},
+  <div id="aGkolemis2023a" style="display: none;">
+    <pre>@article{Gkolemis2023a,
+  author = {Gkolemis, Vasilis and Gutmann, Michael and Pesonen, Henri},
+  journal = {Journal of Statistical Software},
+  title = {An Extendable {P}ython Implementation of {R}obust {O}ptimisation {M}onte {C}arlo},
   year = {2023},
-  arxiv = {http://arxiv.org/abs/2305.07721}
+  month = sep,
+  pages = {1--25},
+  day = {15},
+  issn = {1548-7660},
+  keywords = {Bayesian inference, implicit models, likelihood-free, Python, ELFI},
+  language = {English},
+  publisher = {University of California at Los Angeles},
+  month_numeric = {9}
 }
 </pre>
   </div>
@@ -303,8 +302,8 @@
 
 
 <script>
-function toggleBibtexValentin2023a(parameter) {
-    var x= document.getElementById('aValentin2023a');
+function toggleBibtexGkolemis2023a(parameter) {
+    var x= document.getElementById('aGkolemis2023a');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
@@ -315,10 +314,8 @@ function toggleBibtexValentin2023a(parameter) {
 
 
 
-</li></ul>
-
-<h2 id="refereed-papers">Refereed papers</h2>
-<ul class="bibliography"><li>
+</li>
+<li>
   
 
 
@@ -515,7 +512,7 @@ function toggleBibtexSrivastava2023a(parameter) {
 
   <span class="periodical">
     
-    <i>Accepted to Journal of Machine Learning Research</i>
+    <i>Journal of Machine Learning Research</i>
     
     
     2023
@@ -525,7 +522,7 @@ function toggleBibtexSrivastava2023a(parameter) {
   <span class="links">
     
     
-    <a href="https://arxiv.org/abs/2111.13180"><button class="btn btn--inverse btn--small">url</button></a>
+    <a href="http://jmlr.org/papers/v24/21-1373.html"><button class="btn btn--inverse btn--small">url</button></a>
     
     
     <button class="btn btn--inverse btn--small" onclick="toggleBibtexSimkus2023a()">bib</button>
@@ -542,12 +539,15 @@ function toggleBibtexSrivastava2023a(parameter) {
   <div id="aSimkus2023a" style="display: none;">
     <pre>@article{Simkus2023a,
   author = {Simkus, Vaidotas and Rhodes, Benjamin and Gutmann, Michael U.},
-  journal = {Accepted to Journal of Machine Learning Research},
+  journal = {Journal of Machine Learning Research},
   title = {Variational {{Gibbs}} Inference for Statistical Model Estimation from Incomplete Data},
   year = {2023},
+  number = {196},
+  pages = {1--72},
+  volume = {24},
   arxiv = {https://arxiv.org/abs/2111.13180},
   keywords = {Statistical Model Estimation, Variational Inference, Gibbs Sampling, Missing Data, Amortised Inference},
-  url = {https://arxiv.org/abs/2111.13180}
+  url = {http://jmlr.org/papers/v24/21-1373.html}
 }
 </pre>
   </div>
@@ -641,6 +641,179 @@ function toggleBibtexSimkus2023a(parameter) {
 <script>
 function toggleBibtexChen2023a(parameter) {
     var x= document.getElementById('aChen2023a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Valentin2023a">
+  <span class="title">Designing Optimal Behavioral Experiments Using Machine Learning</span>
+  <span class="author">
+    
+      
+      
+      S. Valentin,    
+      
+      
+      
+      S. Kleinegesse,    
+      
+      
+      
+      N. Bramley,    
+      
+      
+      
+      P. Seriès,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and C. Lucas
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>accepted to eLife</i>
+    
+    
+    2023
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexValentin2023a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2305.07721"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aValentin2023a" style="display: none;">
+    <pre>@article{Valentin2023a,
+  author = {Valentin, Simon and Kleinegesse, Steven and Bramley, Neil R. and Seriès, Peggy and Gutmann, Michael U. and Lucas, Christopher G.},
+  journal = {accepted to eLife},
+  title = {Designing Optimal Behavioral Experiments Using Machine Learning},
+  year = {2023},
+  arxiv = {https://arxiv.org/abs/2305.07721}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexValentin2023a(parameter) {
+    var x= document.getElementById('aValentin2023a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Simkus2023b">
+  <span class="title">Conditional Sampling of Variational Autoencoders via Iterated Approximate Ancestral Sampling</span>
+  <span class="author">
+    
+      
+      
+      V. Simkus,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Transactions on Machine Learning Research</i>
+    
+    
+    2023
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://openreview.net/forum?id=I5sJ6PU6JN"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexSimkus2023b()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2308.09078"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aSimkus2023b" style="display: none;">
+    <pre>@article{Simkus2023b,
+  author = {Simkus, Vaidotas and Gutmann, Michael U.},
+  journal = {Transactions on Machine Learning Research},
+  title = {Conditional Sampling of Variational Autoencoders via Iterated Approximate Ancestral Sampling},
+  year = {2023},
+  arxiv = {https://arxiv.org/abs/2308.09078},
+  issn = {2835-8856},
+  keywords = {Variational Autoencoder, MCMC, Importance Sampling, Probabilistic Inference, Missing Data},
+  url = {https://openreview.net/forum?id=I5sJ6PU6JN}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexSimkus2023b(parameter) {
+    var x= document.getElementById('aSimkus2023b');
     if (x.style.display === 'none') {
         x.style.display = 'block';
     } else {
