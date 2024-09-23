@@ -1,0 +1,107 @@
+% Encoding: UTF-8
+
+@Inproceedings{LopezGuevara2018,
+  author    = {Lopez Guevara, Tatiana and Pucci, Rita and Taylor, Nicholas and Gutmann, Michael U. and Ramamoorthy, Subramanian and Subr, Kartic},
+  booktitle = {Workshop on Learning and Inference in Robotics: Integrating Structure, Priors and Models},
+  title     = {To Stir or Not to Stir: Online Estimation of Liquid Properties for Pouring Actions},
+  year      = {2018},
+  abstract  = {Our brains are able to exploit coarse physical models of fluids to solve complex manipulation tasks. There has been considerable interest in developing such a capability in robots so that they can autonomously manipulate fluids adapting to different conditions. In this paper, we investigate the problem of adaptation to liquids with different characteristics. We develop a simple training task (stirring with a stick) that enables rapid inference of the parameters of the liquid with relatively inexpensive measurement equipment (standard webcams) that robots may be assumed to have access to in the wild. We perform the inference in the space of simulation parameters rather than on physically accurate parameters. This facilitates prediction and optimization tasks since the inferred parameters may be fed directly to the simulator. First, we +demonstrate that our âstirringâ learner performs better than when the robot is trained with pouring actions. Further, we show that our method is able to infer properties of three very different liquids â water, glycerin and gel â and improve spillage with increased training. We present various experimental results performed by executing stirring and pouring actions on a UR10. We believe that this decoupling of the training actions from the goal task is a significant first step towards simple and autonomous learning of the behavior of different fluids in unstructured environments.
+Our brains are able to exploit coarse physical models of fluids to solve complex manipulation tasks. There has been considerable interest in developing such a capability in robots so that they can autonomously manipulate fluids adapting to different conditions. In this paper, we investigate the problem of adaptation to liquids with different characteristics. We develop a simple training task (stirring with a stick) that enables rapid inference of the parameters of the liquid with relatively inexpensive measurement equipment (standard webcams) that robots may be assumed to have access to in the wild. We perform the inference in the space of simulation parameters rather than on physically accurate parameters. This facilitates prediction and optimization tasks since the inferred parameters may be fed directly to the simulator. First, we +demonstrate that our âstirringâ learner performs better than when the robot is trained with pouring actions. Further, we show that our method is able to infer properties of three very different liquids â water, glycerin and gel â and improve spillage with increased training. We present various experimental results performed by executing stirring and pouring actions on a UR10. We believe that this decoupling of the training actions from the goal task is a significant first step towards simple and autonomous learning of the behavior of different fluids in unstructured environments.},
+  arxiv     = {https://arxiv.org/abs/1904.02431},
+  file      = {LopezGuevara2018.pdf:LopezGuevara2018.pdf:PDF},
+  owner     = {mgutmann},
+  timestamp = {2020.03.02},
+  url       = {https://drive.google.com/file/d/1qHdn03oZZe6aQiKxEyFTIiy_Y68OzQ1N/view},
+}
+
+@Article{Gutmann2015b,
+  author    = {Gutmann, M.U. and Corander, J. and Dutta, R. and Kaski, S.},
+  journal   = {arXiv:1502.05503},
+  title     = {Classification and {B}ayesian Optimization for Likelihood-Free Inference},
+  year      = {2015},
+  arxiv     = {https://arxiv.org/abs/1502.05503},
+  file      = {Gutmann2015b.pdf:gutmann_publ/Gutmann2015b.pdf:PDF},
+  owner     = {gutmann},
+  timestamp = {2015.02.20},
+}
+
+@Inproceedings{Sasaki2011,
+  author    = {Sasaki, H. and Gutmann, M.U. and Shouno, H. and Hyv\"arinen, A.},
+  booktitle = {Workshop on Deep Learning and Unsupervised Feature Learning, NIPS},
+  title     = {{L}earning topographic representations for linearly correlated components},
+  year      = {2011},
+  file      = {:/home/mgutmann/2-Reference/Michael-Gutmann/myPapers/Sasaki2011.pdf:PDF},
+  owner     = {gutmann},
+  timestamp = {2011.12.19},
+  url       = {https://deeplearningworkshopnips2011.wordpress.com/contributions/},
+}
+
+@Inproceedings{Gutmann2009d,
+  author    = {Gutmann, M. and Hyv\"arinen, A.},
+  booktitle = {NIPS Workshop on Generative Discriminative Learning Interface},
+  title     = {{U}nsupervised learning by discriminating data from artificial noise},
+  year      = {2009},
+  file      = {Gutmann2009d.pdf:/home/mgutmann/2-Reference/Michael-Gutmann/myPapers/Gutmann2009d.pdf:PDF},
+  owner     = {gutmann},
+  timestamp = {2010.01.19},
+  url       = {http://gen-disc2009.wikidot.com/},
+}
+
+@Article{Gutmann2009c,
+  author        = {Gutmann, Michael and Hyv\"arinen, Aapo},
+  journal       = {BMC Neuroscience},
+  title         = {Learning spike-timings based representations of sensory stimuli with leaky integrate-and-fire neurons},
+  year          = {2009},
+  month         = jul,
+  number        = {1},
+  pages         = {P144},
+  volume        = {10},
+  __markedentry = {[mgutmann:]},
+  doi           = {https://doi.org/10.1186/1471-2202-10-S1-P144},
+  file          = {:/home/mgutmann/2-Reference/Michael-Gutmann/myPapers/Gutmann2009c.pdf:PDF},
+  issn          = {1471-2202},
+  owner         = {mgutmann},
+  refid         = {Gutmann2009},
+  timestamp     = {2020.09.14},
+  url           = {https://link.springer.com/article/10.1186/1471-2202-10-S1-P144},
+}
+
+@Article{Dinev2018,
+  author    = {Dinev, T. and Gutmann, M.U.},
+  journal   = {arXiv:1810.09899},
+  title     = {Dynamic Likelihood-free Inference via Ratio Estimation ({DIRE})},
+  year      = {2018},
+  abstract  = {Parametric statistical models that are implicitly defined in terms of a stochastic data generating process are used in a wide range of scientific disciplines because they enable accurate modeling. However, learning the parameters from observed data is generally very difficult because their likelihood function is typically intractable. Likelihood-free Bayesian inference methods have been proposed which include the frameworks of approximate Bayesian computation (ABC), synthetic likelihood, and its recent generalization that performs likelihood-free inference by ratio estimation (LFIRE). A major difficulty in all these methods is choosing summary statistics that reduce the dimensionality of the data to facilitate inference. While several methods for choosing summary statistics have been proposed for ABC, the literature for synthetic likelihood and LFIRE is very thin to date. We here address this gap in the literature, focusing on the important special case of time-series models. We show that convolutional neural networks trained to predict the input parameters from the data provide suitable summary statistics for LFIRE. On a wide range of time-series models, a single neural network architecture produced equally or more accurate posteriors than alternative methods.},
+  arxiv     = {https://arxiv.org/abs/1810.09899},
+  keywords  = {likelihood-free inference, approximate Bayesian computation, time-series},
+  owner     = {mgutmann},
+  timestamp = {2018.10.24},
+}
+
+@Inproceedings{Valentin2021,
+  author    = {Simon Valentin and Steven Kleinegesse and Bramley, {Neil R} and Gutmann, {Michael U} and Lucas, {Christopher G}},
+  booktitle = {NeurIPS 2021 Workshop {"}AI for Science{"}},
+  title     = {Bayesian Optimal Experimental Design for Simulator Models of Cognition},
+  year      = {2021},
+  month     = oct,
+  abstract  = {Bayesian optimal experimental design (BOED) is a methodology to identify experiments that are expected to yield informative data. Recent work in cognitive science considered BOED for computational models of human behavior with tractable and known likelihood functions. However, tractability often comes at the cost of realism; simulator models that can capture the richness of human behavior are often intractable. In this work, we combine recent advances in BOED and approximate inference for intractable models, using machine-learning methods to find optimal experimental designs, approximate sufficient summary statistics and amortized posterior distributions. Our simulation experiments on multi-armed bandit tasks show that our method results in improved model discrimination and parameter estimation, as compared to experimental designs commonly used in the literature.},
+  arxiv     = {https://arxiv.org/abs/2110.15632},
+  day       = {22},
+  language  = {English},
+  url       = {https://ai4sciencecommunity.github.io/index.html},
+}
+
+@Article{Kleinegesse2021a,
+  author    = {Steven Kleinegesse and Michael U. Gutmann},
+  journal   = {arXiv:2105.04379},
+  title     = {Gradient-based {B}ayesian Experimental Design for Implicit Models using Mutual Information Lower Bounds},
+  year      = {2021},
+  abstract  = {We introduce a framework for Bayesian experimental design (BED) with implicit models, where the data-generating distribution is intractable but sampling from it is still possible. In order to find optimal experimental designs for such models, our approach maximises mutual information lower bounds that are parametrised by neural networks. By training a neural network on sampled data, we simultaneously update network parameters and designs using stochastic gradient-ascent. The framework enables experimental design with a variety of prominent lower bounds and can be applied to a wide range of scientific tasks, such as parameter estimation, model discrimination and improving future predictions. Using a set of intractable toy models, we provide a comprehensive empirical comparison of prominent lower bounds applied to the aforementioned tasks. We further validate our framework on a challenging system of stochastic differential equations from epidemiology.},
+  arxiv     = {https://arxiv.org/abs/2105.04379},
+  keywords  = {Bayesian Experimental Design, Likelihood-Free Inference, Mutual Information, Implicit Models, Parameter Estimation, Model Discrimination},
+  owner     = {mgutmann},
+  timestamp = {2021.06.15},
+  url       = {https://arxiv.org/abs/2105.04379},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
