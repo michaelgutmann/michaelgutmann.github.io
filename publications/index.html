@@ -1,117 +1,7445 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  
-  <link rel="stylesheet" href="/https://michaelgutmann.github.io/css/jtd.css">
-<link rel="icon" href="/https://michaelgutmann.github.io/assets/favicon.ico">
-<!--fontawesome icons, see https://www.w3schools.com/icons/fontawesome5_intro.asp -->
-<link rel="stylesheet" href="/https://michaelgutmann.github.io/css/fontawesome-free-5.15.4-web/css/all.css" >
-<!--for google scholar icons etc -->
-<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"> 
-<style>
-  /* #148 wrap long header */
-  .franklin-content a.header-anchor,
-  .franklin-toc li a
-   {
-    word-wrap: break-word;
-    white-space: normal;
-  }
-</style>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
 
-   <title>Publications</title>  
-</head>
-<body>                      <!-- closed in foot.html -->
-<div class="page-wrap">   <!-- closed in foot.html -->
-  <!-- SIDE BAR -->
-  <div class="side-bar">
-    <div class="header">
-      <a href="/https://michaelgutmann.github.io/" class="title">
-        Michael U. Gutmann
-      </a>
+<!-- begin _includes/seo.html --><title>Publications - Michael Gutmann</title>
+<meta name="description" content="Research homepage of Michael U. Gutmann, University of Edinburgh. Research topics include machine learning, approximate Bayesian inference, experimental design, energy-based models.">
+
+
+  <meta name="author" content="Michael Gutmann">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Michael Gutmann">
+<meta property="og:title" content="Publications">
+<meta property="og:url" content="https://michaelgutmann.github.io/publications/">
+
+
+  <meta property="og:description" content="Research homepage of Michael U. Gutmann, University of Edinburgh. Research topics include machine learning, approximate Bayesian inference, experimental design, energy-based models.">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="https://michaelgutmann.github.io/publications/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "https://michaelgutmann.github.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Michael Gutmann Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Michael Gutmann
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/publications/">Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/teaching/">Teaching</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contact/">Contact</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
     </div>
-    <label for="show-menu" class="show-menu">MENU</label>
-    <input type="checkbox" id="show-menu" role="button">
-    <div class="menu" id="side-menu">
-      <ul class="menu-list">
-        <li class="menu-list-item "><a href="/https://michaelgutmann.github.io/" class="menu-list-link ">Home</a>
-        <li class="menu-list-item active"><a href="/https://michaelgutmann.github.io/publications/" class="menu-list-link">Publications</a>
-          <ul class="menu-list-child-list ">
-            <li class="menu-list-item "><a href="/https://michaelgutmann.github.io/publications/#manuscripts" class="menu-list-link">Manuscripts</a>
-            <li class="menu-list-item "><a href="/https://michaelgutmann.github.io/publications/#refereed_papers" class="menu-list-link">Refereed papers</a>
-            <li class="menu-list-item "><a href="/https://michaelgutmann.github.io/publications/#workshop_and_other_papers" class="menu-list-link">Other papers</a>
-          </ul>
-        <li class="menu-list-item"><a href="https://github.com/gutmanngroup" class="menu-list-link">Code</a>    
-        <li class="menu-list-item "><a href="/https://michaelgutmann.github.io/presentations/" class="menu-list-link">Presentations</a>
-          <ul class="menu-list-child-list ">
-          <li class="menu-list-item "><a href="/https://michaelgutmann.github.io/presentations/#research_talks" class="menu-list-link">Research talks</a>
-          <li class="menu-list-item "><a href="/https://michaelgutmann.github.io/presentations/#tutorials_summer_schools_and_guest_lectures" class="menu-list-link">Tutorials</a>
-        </ul> 
-        <li class="menu-list-item "><a href="/https://michaelgutmann.github.io/teaching/" class="menu-list-link">Teaching</a>
-          <ul class="menu-list-child-list ">
-            <li class="menu-list-item "><a href="/https://michaelgutmann.github.io/teaching/#teaching_materials" class="menu-list-link">Materials</a>
-            <li class="menu-list-item "><a href="/https://michaelgutmann.github.io/teaching/#courses_at_the_university_of_edinburgh" class="menu-list-link">University of Edinburgh</a>
-            <li class="menu-list-item "><a href="/https://michaelgutmann.github.io/teaching/#courses_at_the_university_of_helsinki" class="menu-list-link">University of Helsinki</a>
-          </ul>  
-        <li class="menu-list-item "><a href="/https://michaelgutmann.github.io/contact/" class="menu-list-link">Contact</a>  
-      </ul>
-    </div> <!-- Menu -->
-    <div class="footer">
-      <table style="border-spacing: 0px;"align="right">
-        <tr>
-          <td style="border:none; padding:5px;"><i class="fa fa-envelope" style="font-size:15px;"></i></td>
-          <td style="border:none; padding:5px;"><a href="mailto:michael.gutmann@ed.ac.uk">Email</a></td>
-        </tr>
-        <tr>
-          <td style="border:none; padding:5px;"><i class="fab fa-fw fa-github" style="font-size:15px;"></i></td>
-          <td style="border:none; padding:5px;"><a href="https://github.com/gutmanngroup">Github</a></td>
-        </tr>
-        <tr>
-          <td style="border:none; padding:5px;"><i class="ai ai-fw ai-google-scholar" style="font-size:15px;"></i></td>
-          <td style="border:none; padding:5px;"><a href="https://scholar.google.com/citations?user=CPhI2jYAAAAJ">Google Scholar</a></td>
-        </tr>
-        <tr>
-          <td style="border:none; padding:5px;"><i class="ai ai-fw ai-semantic-scholar" style="font-size:15px;"></i></td>
-          <td style="border:none; padding:5px;"><a href="https://www.semanticscholar.org/author/Michael-U-Gutmann/145992652">Semantic Scholar</a></td>
-        </tr>
-        <tr>
-          <td style="border:none; padding:5px;"><i class="fas fa-fw fa-link" style="font-size:15px;"></i></td>
-          <td style="border:none; padding:5px;"><a href="https://www.research.ed.ac.uk/portal/en/persons/michael-gutmann(a25fe4a7-1e8d-4d9d-a5b7-6595ed60d1fb).html">UoE Paper Repo</a></td>
-        </tr>        
-       </table> 
-    </div><!--footer -->
-  </div>  <!--side-bar -->
-  <!-- CONTENT -->
-  <div class="main-content-wrap"> <!-- closed in foot.html -->
-    <div class="main-content">    <!-- closed in foot.html -->
-      <div class="main-header">
-        <a id="github" href="/https://michaelgutmann.github.io//github.com/michaelgutmann/michaelgutmann.github.io"> Source on GitHub</a>
-      </div>  <!-- main-header -->
+  </div>
+</div>
+
+
+    <div class="initial-content">
       
 
-<!-- Content appended here (in class franklin-content) -->
-<div class="franklin-content"><h1 id="publications"><a href="#publications" class="header-anchor">Publications</a></h1>
-<p><div class="franklin-toc"><ol><li><a href="#manuscripts">Manuscripts</a></li><li><a href="#refereed_papers">Refereed papers</a></li><li><a href="#workshop_and_other_papers">Workshop and other papers</a></li></ol></div> </p>
-<h2 id="manuscripts"><a href="#manuscripts" class="header-anchor">Manuscripts</a></h2>
 
-<h2 id="refereed_papers"><a href="#refereed_papers" class="header-anchor">Refereed papers</a></h2>
-<div id="Simkus2024a"><span class="title">Improving Variational Autoencoder Estimation from Incomplete Data with Mixture Variational Families</span><br><span class="author">V. Simkus, M. U. Gutmann, </span> <br><i>Transactions on Machine Learning Research (TMLR)</i>, 2024<br><a href="https://openreview.net/forum?id=lLVmIvZfry">[url]</a>  <a href="https://arxiv.org/abs/2403.03069">[arxiv]</a></div><br><div id="Valentin2024"><span class="title">Designing optimal behavioral experiments using machine learning</span><br><span class="author">S. Valentin, S. Kleinegesse, N. R. Bramley, P. Seri&#232;s, M. U. Gutmann, C. G. Lucas, </span> <br><i>eLife</i>, 2024<br><a href="https://doi.org/10.7554/eLife.86224">[url]</a>  <a href="https://arxiv.org/abs/2305.07721">[arxiv]</a></div><br><div id="Simkus2023b"><span class="title">Conditional Sampling of Variational Autoencoders via Iterated Approximate Ancestral Sampling</span><br><span class="author">V. Simkus, M. U. Gutmann, </span> <br><i>Transactions on Machine Learning Research</i>, 2023<br><a href="https://openreview.net/forum?id=I5sJ6PU6JN">[url]</a>  <a href="https://arxiv.org/abs/2308.09078">[arxiv]</a></div><br><div id="Gkolemis2023a"><span class="title">An Extendable Python Implementation of Robust Optimisation Monte Carlo</span><br><span class="author">V. Gkolemis, M. Gutmann, H. Pesonen, </span> <br><i>Journal of Statistical Software</i>, 2023<br><a href="">[url]</a>  <a href="https://arxiv.org/abs/2309.10612">[arxiv]</a></div><br><div id="Chen2023a"><span class="title">Is Learning Summary Statistics Necessary for Likelihood-free Inference?</span><br><span class="author">Y. Chen, M. U. Gutmann, A. Weller, </span> <br><i>Proceedings of the 40th International Conference on Machine Learning (ICML)</i>, 2023<br><a href="https://openreview.net/forum?id=jjzJ768iV1">[url]</a></div><br><div id="Simkus2023a"><span class="title">Variational Gibbs Inference for Statistical Model Estimation from Incomplete Data</span><br><span class="author">V. Simkus, B. Rhodes, M. U. Gutmann, </span> <br><i>Journal of Machine Learning Research</i>, 2023<br><a href="http://jmlr.org/papers/v24/21-1373.html">[url]</a>  <a href="https://arxiv.org/abs/2111.13180">[arxiv]</a></div><br><div id="Srivastava2023a"><span class="title">Estimating the Density Ratio between Distributions with High Discrepancy using Multinomial Logistic Regression</span><br><span class="author">A. Srivastava, S. Han, K. Xu, B. Rhodes, M. U. Gutmann, </span> <br><i>Transactions on Machine Learning Research</i>, 2023<br><a href="https://openreview.net/forum?id=jM8nzUzBWr">[url]</a>  <a href="https://arxiv.org/abs/2305.00869">[arxiv]</a></div><br><div id="Eduardo2023a"><span class="title">Bayesian Optimization with Informative Covariance</span><br><span class="author">A. Eduardo, M. U. Gutmann, </span> <br><i>Transactions on Machine Learning Research</i>, 2023<br><a href="https://openreview.net/forum?id=JwgVBv18RG">[url]</a>  <a href="https://arxiv.org/abs/2208.02704">[arxiv]</a></div><br><div id="Rhodes2022a"><span class="title">Enhanced gradient-based MCMC in discrete spaces</span><br><span class="author">B. Rhodes, M. U. Gutmann, </span> <br><i>Transactions on Machine Learning Research</i>, 2022<br><a href="https://openreview.net/forum?id=j2Mid5hFUJ">[url]</a>  <a href="https://arxiv.org/abs/2208.00040">[arxiv]</a></div><br><div id="Ocal2022"><span class="title">Inference and uncertainty quantification of stochastic gene expression via synthetic models</span><br><span class="author">K. &#214;cal, M. U. Gutmann, G. Sanguinetti, R. Grima, </span> <br><i>Journal of The Royal Society Interface</i>, 2022<br><a href="https://doi.org/10.1098/rsif.2022.0153">[url]</a>  <a href="https://www.biorxiv.org/content/10.1101/2022.01.25.477666v1">[arxiv]</a></div><br><div id="Wang2022a"><span class="title">Systematic comparison of ranking aggregation methods for gene lists in experimental results</span><br><span class="author">B. Wang, A. Law, T. Regan, N. Parkinson, J. Cole, C. D. Russell, D. H. Dockrell, M. U. Gutmann, J. K. Baillie, </span> <br><i>Bioinformatics</i>, 2022<br><a href="https://doi.org/10.1093/bioinformatics/btac621">[url]</a>  <a href="https://www.biorxiv.org/content/early/2022/01/10/2022.01.09.475491">[arxiv]</a></div><br><div id="Gutmann2022a"><span class="title">Statistical applications of contrastive learning</span><br><span class="author">M. U. Gutmann, S. Kleinegesse, B. Rhodes, </span> <br><i>Behaviormetrika</i>, 2022<br><a href="https://doi.org/10.1007/s41237-022-00168-w">[url]</a>  <a href="https://arxiv.org/abs/2204.13999">[arxiv]</a></div><br><div id="Valentin2021a"><span class="title">Bayesian Optimal Experimental Design for Simulator Models of Cognition</span><br><span class="author">S. Valentin, S. Kleinegesse, N. R. Bramley, M. U. Gutmann, C. G. Lucas, </span> <br><i>NeurIPS 2021 Workshop "AI for Science"</i>, 2021<br><a href="">[url]</a>  <a href="https://arxiv.org/abs/2110.15632">[arxiv]</a></div><br><div id="Ivanova2021"><span class="title">Implicit Deep Adaptive Design: Policy-Based Experimental Design without Likelihoods</span><br><span class="author">D. R. Ivanova, A. Foster, S. Kleinegesse, M. U. Gutmann, T. Rainforth, </span> <br><i>Proceedings of the Thirty-fifth Conference on Neural Information Processing Systems (NeuRIPS 2021)</i>, 2021<br><a href="https://papers.nips.cc/paper/2021/hash/d811406316b669ad3d370d78b51b1d2e-Abstract.html">[url]</a>  <a href="https://arxiv.org/abs/2111.02329">[arxiv]</a></div><br><div id="Chen2021a"><span class="title">Neural Approximate Sufficient Statistics for Implicit Models</span><br><span class="author">Y. Chen, D. Zhang, M. U. Gutmann, A. Courville, Z. Zhu, </span> <br><i>International Conference on Learning Representations (ICLR)</i>, 2021<br><a href="https://openreview.net/forum?id=SRDuJssQud">[url]</a>  <a href="https://arxiv.org/abs/2010.10079">[arxiv]</a></div><br><div id="Kleinegesse2020b"><span class="title">Sequential Bayesian Experimental Design for Implicit Models via Mutual Information</span><br><span class="author">S. Kleinegesse, C. Drovandi, M. U. Gutmann, </span> <br><i>Bayesian Analysis</i>, 2021<br><a href="">[url]</a>  <a href="https://arxiv.org/abs/2003.09379">[arxiv]</a></div><br><div id="Simola2020"><span class="title">Adaptive Approximate Bayesian Computation Tolerance Selection</span><br><span class="author">U. Simola, J. Cisewski-Kehe, M. U. Gutmann, J. Corander, </span> <br><i>Bayesian Analysis</i>, 2021<br><a href="https://doi.org/10.1214/20-BA1211">[url]</a>  <a href="https://arxiv.org/abs/1907.01505">[arxiv]</a></div><br><div id="Jarvenpaa2020"><span class="title">Parallel Gaussian process surrogate Bayesian inference with noisy likelihood evaluations</span><br><span class="author">M. J&#228;rvenp&#228;&#228;, M. U. Gutmann, A. Vehtari, P. Marttinen, </span> <br><i>Bayesian Analysis</i>, 2021<br><a href="https://doi.org/10.1214/20-BA1200">[url]</a>  <a href="https://arxiv.org/abs/1905.01252">[arxiv]</a></div><br><div id="Rhodes2020a"><span class="title">Telescoping Density-Ratio Estimation</span><br><span class="author">B. Rhodes, K. Xu, M. U. Gutmann, </span> <br><i>Advances in Neural Information Processing Systems 34 (NeurIPS 2020)</i>, 2020<br><a href="https://papers.nips.cc/paper/2020/hash/33d3b157ddc0896addfb22fa2a519097-Abstract.html">[url]</a>  <a href="https://arxiv.org/abs/2006.12204">[arxiv]</a></div><br><div id="Thomas2020"><span class="title">Likelihood-Free Inference by Ratio Estimation</span><br><span class="author">O. Thomas, R. Dutta, J. Corander, S. Kaski, M. U. Gutmann, </span> <br><i>Bayesian Analysis</i>, 2020<br><a href="https://projecteuclid.org/journals/bayesian-analysis/volume-17/issue-1/Likelihood-Free-Inference-by-Ratio-Estimation/10.1214/20-BA1238.full">[url]</a>  <a href="https://arxiv.org/abs/1611.10242">[arxiv]</a></div><br><div id="LopezGuevara2020"><span class="title">Stir to Pour: Efficient Calibration of Liquid Properties for Pouring Actions</span><br><span class="author">T. Lopez Guevara, R. Pucci, N. Taylor, M. U. Gutmann, R. Ramamoorthy, K. Subr, </span> <br><i>Proceedings of the 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2020)</i>, 2020<br><a href="https://www.iros2020.org/index.html">[url]</a></div><br><div id="Ikonomov2020"><span class="title">Robust Optimisation Monte Carlo</span><br><span class="author">B. Ikonomov, M. U. Gutmann, </span> <br><i>Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics (AISTATS)</i>, 2020<br><a href="http://proceedings.mlr.press/v108/ikonomov20a.html">[url]</a>  <a href="https://arxiv.org/abs/1904.00670">[arxiv]</a></div><br><div id="Neyton2020"><span class="title">Molecular Patterns in Acute Pancreatitis Reflect Generalizable Endotypes of the Host Response to Systemic Injury in Humans</span><br><span class="author">L. P. Neyton, X. Zheng, C. Skouras, A. Doeschl-Wilson, M. U. Gutmann, I. Uings, F. V. Rao, A. Nicolas, C. Marshall, L. Wilson, J. K. Baillie, D. J. Mole, </span> <br><i>Annals of Surgery</i>, 2020<br><a href="https://journals.lww.com/annalsofsurgery/Fulltext/9000/Molecular_Patterns_in_Acute_Pancreatitis_Reflect.94475.aspx">[url]</a>  <a href="https://www.biorxiv.org/content/10.1101/539569v3">[arxiv]</a></div><br><div id="Kleinegesse2020a"><span class="title">Bayesian Experimental Design for Implicit Models by Mutual Information Neural Estimation</span><br><span class="author">S. Kleinegesse, M. U. Gutmann, </span> <br><i>Proceedings of the 37th International Conference on Machine Learning (ICML)</i>, 2020<br><a href="http://proceedings.mlr.press/v119/kleinegesse20a.html">[url]</a>  <a href="https://arxiv.org/abs/2002.08129">[arxiv]</a></div><br><div id="Srivastava2020"><span class="title">Generative Ratio Matching Networks</span><br><span class="author">A. Srivastava, K. Xu, M. U. Gutmann, C. Sutton, </span> <br><i>Proceedings of the International Conference on Learning Representations (ICLR)</i>, 2020<br><a href="https://openreview.net/forum?id=SJg7spEYDS">[url]</a>  <a href="https://arxiv.org/abs/1806.00101">[arxiv]</a></div><br><div id="Li2020"><span class="title">Genome-wide CRISPR screen Identifies Host Dependency Factors for Influenza A Virus Infection</span><br><span class="author">B. Li, S. M. Clohisey, B. S. Chia, B. Wang, A. Cui, T. Eisenhaure, L. D. Schweitzer, P. Hoover, N. J. Parkinson, A. Nachshon, N. Smith, T. Regan, D. Farr, M. U. Gutmann, S. I. Bukhari, A. Law, M. Sangesland, I. Gat-viks, P. Digard, S. Vasudevan, D. Lingwood, D. H. Dockrell, J. G. Doench, J. K. Baillie, N. Hacohen, </span> <br><i>Nature Communications</i>, 2020<br><a href="https://doi.org/10.1038/s41467-019-13965-x">[url]</a></div><br><div id="Kleinegesse2019"><span class="title">Efficient Bayesian Experimental Design for Implicit Models</span><br><span class="author">S. Kleinegesse, M. U. Gutmann, </span> <br><i>Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>, 2019<br><a href="http://proceedings.mlr.press/v89/kleinegesse19a">[url]</a>  <a href="https://arxiv.org/abs/1810.09912">[arxiv]</a></div><br><div id="Todorovic2019"><span class="title">Bayesian inference of atomistic structure in functional materials</span><br><span class="author">M. Todorovi&#263;, M. U. Gutmann, J. Corander, P. Rinke, </span> <br><i>npj Computational Materials</i>, 2019<br><a href="https://www.nature.com/articles/s41524-019-0175-2">[url]</a>  <a href="https://arxiv.org/abs/1708.09274">[arxiv]</a></div><br><div id="Rhodes2019"><span class="title">Variational Noise-Contrastive Estimation</span><br><span class="author">B. Rhodes, M. U. Gutmann, </span> <br><i>Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>, 2019<br><a href="http://proceedings.mlr.press/v89/rhodes19a">[url]</a>  <a href="https://arxiv.org/abs/1810.08010">[arxiv]</a></div><br><div id="Lintusaari2019a"><span class="title">Resolving outbreak dynamics using approximate Bayesian computation for stochastic birth-death models</span><br><span class="author">J. Lintusaari, P. Blomstedt, B. Rose, T. Sivula, M. U. Gutmann, S. Kaski, J. Corander, </span> <br><i>Wellcome Open Research</i>, 2019<br><a href="https://wellcomeopenresearch.org/articles/4-14/v2">[url]</a>  <a href="https://www.biorxiv.org/content/10.1101/215533v2">[arxiv]</a></div><br><div id="Jarvenpaa2019a"><span class="title">Efficient acquisition rules for model-based approximate Bayesian computation</span><br><span class="author">M. J&#228;rvenp&#228;&#228;, M. U. Gutmann, A. Vehtari, P. Marttinen, </span> <br><i>Bayesian Analysis</i>, 2019<br><a href="https://projecteuclid.org/euclid.ba/1537258134">[url]</a>  <a href="https://arxiv.org/abs/1704.00520">[arxiv]</a></div><br><div id="Chen2019"><span class="title">Adaptive Gaussian Copula ABC</span><br><span class="author">Y. Chen, M. U. Gutmann, </span> <br><i>Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>, 2019<br><a href="http://proceedings.mlr.press/v89/chen19d">[url]</a>  <a href="https://arxiv.org/abs/1902.10704">[arxiv]</a></div><br><div id="Lintusaari2018"><span class="title">ELFI: Engine for Likelihood-Free Inference</span><br><span class="author">J. Lintusaari, H. Vuollekoski, A. Kangasr&#228;&#228;si&#246;, K. Skyt&#233;n, M. J&#228;rvenp&#228;&#228;, P. Marttinen, M. U. Gutmann, A. Vehtari, J. Corander, </span> <br><i>Journal of Machine Learning Research</i>, 2018<br><a href="http://jmlr.org/papers/v19/17-374.html">[url]</a>  <a href="https://arxiv.org/abs/1708.00707">[arxiv]</a></div><br><div id="Jarvenpaa2018"><span class="title">Gaussian process modeling in approximate Bayesian computation to estimate horizontal gene transfer in bacteria</span><br><span class="author">M. J&#228;rvenp&#228;&#228;, M. U. Gutmann, A. Vehtari, P. Marttinen, </span> <br><i>The Annals of Applied Statistics</i>, 2018<br><a href="https://projecteuclid.org/euclid.aoas/1542078043">[url]</a>  <a href="https://arxiv.org/abs/1610.06462">[arxiv]</a></div><br><div id="Gutmann2018"><span class="title">Likelihood-free inference via classification</span><br><span class="author">M. U. Gutmann, R. Dutta, S. Kaski, J. Corander, </span> <br><i>Statistics and Computing</i>, 2018<br><a href="https://doi.org/10.1007/s11222-017-9738-6">[url]</a>  <a href="https://arxiv.org/abs/1407.4981">[arxiv]</a></div><br><div id="Ceylan2018"><span class="title">Conditional Noise-Contrastive Estimation of Unnormalised Models</span><br><span class="author">C. Ceylan, M. U. Gutmann, </span> <br><i>Proceedings of the 35th International Conference on Machine Learning (ICML)</i>, 2018<br><a href="http://proceedings.mlr.press/v80/ceylan18a.html">[url]</a>  <a href="https://arxiv.org/abs/1806.03664">[arxiv]</a></div><br><div id="Arnold2018"><span class="title">Weak Epistasis May Drive Adaptation in Recombining Bacteria</span><br><span class="author">B. Arnold, M. U. Gutmann, Y. Grad, S. Sheppard, J. Corander, M. Lipsitch, W. Hanage, </span> <br><i>Genetics</i>, 2018<br><a href="https://www.genetics.org/content/208/3/1247">[url]</a>  <a href="https://www.biorxiv.org/content/10.1101/119958v1">[arxiv]</a></div><br><div id="Tietavainen2017"><span class="title">Bayesian inference of physiologically meaningful parameters from body sway measurements</span><br><span class="author">A. Tiet&#228;v&#228;inen, M. U. Gutmann, E. Keski-Vakkuri, J. Corander, E. Haeggstr&#246;m, </span> <br><i>Scientific Reports</i>, 2017<br><a href="https://www.nature.com/articles/s41598-017-02372-1">[url]</a></div><br><div id="Srivastava2017"><span class="title">VEEGAN: Reducing Mode Collapse in GANs using Implicit Variational Learning</span><br><span class="author">A. Srivastava, A. Valkov, C. Russell, M. U. Gutmann, C. Sutton, </span> <br><i>Advances in Neural Information Processing Systems 30 (NIPS 2017)</i>, 2017<br><a href="http://papers.nips.cc/paper/6923-veegan-reducing-mode-collapse-in-gans-using-implicit-variational-learning">[url]</a>  <a href="https://arxiv.org/abs/1705.07761">[arxiv]</a></div><br><div id="Sasaki2017"><span class="title">Simultaneous Estimation of Non-Gaussian Components and their Correlation Structure</span><br><span class="author">H. Sasaki, M. U. Gutmann, H. Shouno, A. Hyv&#228;rinen, </span> <br><i>Neural Computation</i>, 2017<br><a href="http://dx.doi.org/10.1162/neco_a_01006">[url]</a>  <a href="https://arxiv.org/abs/1506.05666">[arxiv]</a></div><br><div id="LopezGuevara2017a"><span class="title">Adaptable Pouring: Teaching Robots Not to Spill using Fast but Approximate Fluid Simulation</span><br><span class="author">T. Lopez-Guevara, N. Taylor, M. U. Gutmann, S. Ramamoorthy, K. Subr, </span> <br><i>Proceedings of the 1st Annual Conference on Robot Learning (CoRL)</i>, 2017<br><a href="http://proceedings.mlr.press/v78/lopez-guevara17a.html">[url]</a></div><br><div id="Lintusaari2017"><span class="title">Fundamentals and Recent Developments in Approximate Bayesian Computation</span><br><span class="author">J. Lintusaari, M. U. Gutmann, R. Dutta, S. Kaski, J. Corander, </span> <br><i>Systematic Biology</i>, 2017<br><a href="http://dx.doi.org/10.1093/sysbio/syw077">[url]</a></div><br><div id="Corander2017"><span class="title">Frequency-dependent selection in vaccine-associated pneumococcal population dynamics</span><br><span class="author">J. Corander, C. Fraser, M. U. Gutmann, B. Arnold, W. Hanage, S. Bentley, M. Lipsitch, N. Croucher, </span> <br><i>Nature Ecology & Evolution</i>, 2017<br><a href="https://www.nature.com/articles/s41559-017-0337-x">[url]</a></div><br><div id="Numminen2016"><span class="title">The impact of host metapopulation structure on the population genetics of colonizing bacteria</span><br><span class="author">E. Numminen, M. U. Gutmann, M. Shubin, P. Marttinen, G. M&#233;ric, W. Schaik, T. Coque, F. Baquero, R. Willems, S. Sheppard, E. Feil, W. Hanage, J. Corander, </span> <br><i>Journal of Theoretical Biology</i>, 2016<br><a href="http://www.sciencedirect.com/science/article/pii/S0022519316001156">[url]</a>  <a href="https://www.biorxiv.org/content/10.1101/027581v1">[arxiv]</a></div><br><div id="Lintusaari2016"><span class="title">On the identifiability of transmission dynamic models for infectious diseases</span><br><span class="author">J. Lintusaari, M. U. Gutmann, S. Kaski, J. Corander, </span> <br><i>Genetics</i>, 2016<br><a href="https://www.genetics.org/content/202/3/911">[url]</a>  <a href="https://www.biorxiv.org/content/10.1101/021972v2">[arxiv]</a></div><br><div id="Gutmann2016a"><span class="title">Bayesian optimization for likelihood-free inference of simulator-based statistical models</span><br><span class="author">M. U. Gutmann, J. Corander, </span> <br><i>Journal of Machine Learning Research</i>, 2016<br><a href="http://jmlr.org/papers/v17/15-017.html">[url]</a>  <a href="http://arxiv.org/abs/1501.03291">[arxiv]</a></div><br><div id="Marttinen2015"><span class="title">Recombination produces coherent bacterial species clusters in both core and accessory genomes</span><br><span class="author">P. Marttinen, N. Croucher, M. U. Gutmann, J. Corander, W. Hanage, </span> <br><i>Microbial Genomics</i>, 2015<br><a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000038">[url]</a></div><br><div id="Sasaki2014"><span class="title">Estimating dependency structures for non-Gaussian components with linear and energy correlations</span><br><span class="author">H. Sasaki, M. U. Gutmann, H. Shouno, A. Hyv&#228;rinen, </span> <br><i>Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>, 2014<br><a href="http://proceedings.mlr.press/v33/sasaki14.html">[url]</a></div><br><div id="Liu2014"><span class="title">Direct learning of sparse changes in Markov networks by density ratio estimation</span><br><span class="author">S. Liu, J. Quinn, M. U. Gutmann, T. Suzuki, M. Sugiyama, </span> <br><i>Neural Computation</i>, 2014<br><a href="https://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00589">[url]</a>  <a href="https://arxiv.org/abs/1304.6803">[arxiv]</a></div><br><div id="Gutmann2014"><span class="title">Spatio-chromatic adaptation via higher-order canonical correlation analysis of natural images</span><br><span class="author">M. U. Gutmann, V. Laparra, A. Hyv&#228;rinen, J. Malo, </span> <br><i>PLOS ONE</i>, 2014<br><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0086481">[url]</a></div><br><div id="Sasaki2013"><span class="title">Correlated topographic analysis: estimating an ordering of correlated components</span><br><span class="author">H. Sasaki, M. U. Gutmann, H. Shouno, A. Hyv&#228;rinen, </span> <br><i>Machine Learning</i>, 2013<br><a href="https://link.springer.com/article/10.1007/s10994-013-5351-x">[url]</a></div><br><div id="Liu2013"><span class="title">Direct learning of sparse changes in Markov networks by density ratio estimation</span><br><span class="author">S. Liu, J. Quinn, M. U. Gutmann, M. Sugiyama, </span> <br><i>Machine Learning and Knowledge Discovery in Databases (ECML PKDD)</i>, 2013<br><a href="https://link.springer.com/chapter/10.1007%2F978-3-642-40991-2_38">[url]</a></div><br><div id="Gutmann2013b"><span class="title">Estimation of unnormalized statistical models without numerical integration</span><br><span class="author">M. U. Gutmann, A. Hyv&#228;rinen, </span> <br><i>Proceedings of the Workshop on Information Theoretic Methods in Science and Engineering</i>, 2013<br><a href="http://www.me.inf.kyushu-u.ac.jp/witmse2013/">[url]</a></div><br><div id="Gutmann2013"><span class="title">A three-layer model of natural image statistics</span><br><span class="author">M. U. Gutmann, A. Hyv&#228;rinen, </span> <br><i>Journal of Physiology-Paris</i>, 2013<br><a href="http://www.sciencedirect.com/science/article/pii/S0928425713000028">[url]</a></div><br><div id="Sasaki2012"><span class="title">Topographic analysis of correlated components</span><br><span class="author">H. Sasaki, M. U. Gutmann, H. Shouno, A. Hyv&#228;rinen, </span> <br><i>JMLR: Workshop and Conference Proceedings</i>, 2012<br><a href="http://proceedings.mlr.press/v25/sasaki12">[url]</a></div><br><div id="Gutmann2012b"><span class="title">Learning a selectivity--invariance--selectivity feature extraction architecture for images</span><br><span class="author">M. U. Gutmann, A. Hyv&#228;rinen, </span> <br><i>Proceedings of the International Conference on Pattern Recognition (ICPR)</i>, 2012<br><a href="https://ieeexplore.ieee.org/document/6460284">[url]</a></div><br><div id="Gutmann2012a"><span class="title">Noise-contrastive estimation of unnormalized statistical models, with applications to natural image statistics</span><br><span class="author">M. U. Gutmann, A. Hyv&#228;rinen, </span> <br><i>Journal of Machine Learning Research</i>, 2012<br><a href="http://www.jmlr.org/papers/v13/gutmann12a.html">[url]</a></div><br><div id="Laparra2011"><span class="title">Complex-valued independent component analysis of natural images</span><br><span class="author">V. Laparra, M. U. Gutmann, J. Malo, A. Hyv&#228;rinen, </span> <br><i>Proceedings of the International Conference on Artificial Neural Networks (ICANN)</i>, 2011<br><a href="https://link.springer.com/chapter/10.1007/978-3-642-21738-8_28">[url]</a></div><br><div id="Gutmann2011a"><span class="title">Extracting coactivated features from multiple data sets</span><br><span class="author">M. U. Gutmann, A. Hyv&#228;rinen, </span> <br><i>Proceedings of the International Conference on Artificial Neural Networks (ICANN)</i>, 2011<br><a href="https://link.springer.com/chapter/10.1007/978-3-642-21735-7_40">[url]</a></div><br><div id="Gutmann2011b"><span class="title">Bregman divergence as general framework to estimate unnormalized statistical models</span><br><span class="author">M. U. Gutmann, J. Hirayama, </span> <br><i>Proceedings of the Conference on Uncertainty in Artificial Intelligence (UAI)</i>, 2011<br><a href="https://arxiv.org/abs/1202.3727">[url]</a>  <a href="https://arxiv.org/abs/1202.3727">[arxiv]</a></div><br><div id="Pihlaja2010"><span class="title">A family of computationally efficient and simple estimators for unnormalized statistical models</span><br><span class="author">M. Pihlaja, M. U. Gutmann, A. Hyv&#228;rinen, </span> <br><i>Proceedings of the Conference on Uncertainty in Artificial Intelligence (UAI)</i>, 2010<br><a href="">[url]</a>  <a href="https://arxiv.org/abs/1203.3506">[arxiv]</a></div><br><div id="Gutmann2010"><span class="title">Noise-contrastive estimation: A new estimation principle for unnormalized statistical models</span><br><span class="author">M. U. Gutmann, A. Hyv&#228;rinen, </span> <br><i>Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>, 2010<br><a href="http://proceedings.mlr.press/v9/gutmann10a.html">[url]</a></div><br><div id="Koster2009"><span class="title">Learning natural image structure with a horizonal product model</span><br><span class="author">U. K&#246;ster, J. Lindgren, M. U. Gutmann, A. Hyv&#228;rinen, </span> <br><i>Proceedings on the International Conference on Independent Component Analysis and Signal Separation</i>, 2009<br><a href="https://link.springer.com/chapter/10.1007/978-3-642-00599-2_64">[url]</a></div><br><div id="Gutmann2009"><span class="title">Learning reconstruction and prediction of natural stimuli by a population of spiking neurons</span><br><span class="author">M. U. Gutmann, A. Hyv&#228;rinen, </span> <br><i>European Symposium on Artificial Neural Networks (ESANN)</i>, 2009<br><a href="https://www.esann.org/proceedings/2009">[url]</a></div><br><div id="Gutmann2009b"><span class="title">Learning features by contrasting natural images with noise</span><br><span class="author">M. U. Gutmann, A. Hyv&#228;rinen, </span> <br><i>Proceedings of the International Conference on Artificial Neural Networks (ICANN)</i>, 2009<br><a href="https://link.springer.com/chapter/10.1007/978-3-642-04277-5_63">[url]</a></div><br><div id="Gutmann2008c"><span class="title">Learning encoding and decoding filters for data representation with a spiking neuron</span><br><span class="author">M. Gutmann, A. Hyv&#228;rinen, K. Aihara, </span> <br><i>Proceedings of the International Joint Conference on Neural Networks (IJCNN)</i>, 2008<br><a href="https://doi.org/10.1109/IJCNN.2008.4633797">[url]</a></div><br><div id="Gutmann2008"><span class="title">Toward data representation with spiking neurons</span><br><span class="author">M. U. Gutmann, K. Aihara, </span> <br><i>Artificial Life and Robotics</i>, 2008<br><a href="https://link.springer.com/article/10.1007/s10015-007-0471-7">[url]</a></div><br><div id="Hyvarinen2005b"><span class="title">Statistical models of images and early vision</span><br><span class="author">A. Hyv&#228;rinen, P. Hoyer, J. Hurri, M. Gutmann, </span> <br><i>Proceedings of the International and Interdisciplinary Conference on Adaptive Knowledge Representation and Reasoning (AKRR)</i>, 2005<br><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.147.3281">[url]</a></div><br><div id="Hyvarinen2005"><span class="title">Statistical model of natural stimuli predicts edge-like pooling of spatial frequency channels in V2</span><br><span class="author">A. Hyv&#228;rinen, M. Gutmann, P. Hoyer, </span> <br><i>BMC Neuroscience</i>, 2005<br><a href="https://bmcneurosci.biomedcentral.com/articles/10.1186/1471-2202-6-12">[url]</a></div><br>
-<h2 id="workshop_and_other_papers"><a href="#workshop_and_other_papers" class="header-anchor">Workshop and other papers</a></h2>
-<div id="Kleinegesse2021a"><span class="title">Gradient-based Bayesian Experimental Design for Implicit Models using Mutual Information Lower Bounds</span><br><span class="author">S. Kleinegesse, M. U. Gutmann, </span> <br><i>arXiv:2105.04379</i>, 2021<br><a href="https://arxiv.org/abs/2105.04379">[url]</a>  <a href="https://arxiv.org/abs/2105.04379">[arxiv]</a></div><br><div id="Valentin2021"><span class="title">Bayesian Optimal Experimental Design for Simulator Models of Cognition</span><br><span class="author">S. Valentin, S. Kleinegesse, . R. Bramley, . U. Gutmann, . G. Lucas, </span> <br><i>NeurIPS 2021 Workshop "AI for Science"</i>, 2021<br><a href="https://ai4sciencecommunity.github.io/index.html">[url]</a>  <a href="https://arxiv.org/abs/2110.15632">[arxiv]</a></div><br><div id="Dinev2018"><span class="title">Dynamic Likelihood-free Inference via Ratio Estimation (DIRE)</span><br><span class="author">T. Dinev, M. Gutmann, </span> <br><i>arXiv:1810.09899</i>, 2018<br><a href="">[url]</a>  <a href="https://arxiv.org/abs/1810.09899">[arxiv]</a></div><br><div id="LopezGuevara2018"><span class="title">To Stir or Not to Stir: Online Estimation of Liquid Properties for Pouring Actions</span><br><span class="author">T. Lopez Guevara, R. Pucci, N. Taylor, M. U. Gutmann, S. Ramamoorthy, K. Subr, </span> <br><i>Workshop on Learning and Inference in Robotics: Integrating Structure, Priors and Models</i>, 2018<br><a href="https://drive.google.com/file/d/1qHdn03oZZe6aQiKxEyFTIiy_Y68OzQ1N/view">[url]</a>  <a href="https://arxiv.org/abs/1904.02431">[arxiv]</a></div><br><div id="Gutmann2015b"><span class="title">Classification and Bayesian Optimization for Likelihood-Free Inference</span><br><span class="author">M. Gutmann, J. Corander, R. Dutta, S. Kaski, </span> <br><i>arXiv:1502.05503</i>, 2015<br><a href="">[url]</a>  <a href="https://arxiv.org/abs/1502.05503">[arxiv]</a></div><br><div id="Sasaki2011"><span class="title">Learning topographic representations for linearly correlated components</span><br><span class="author">H. Sasaki, M. Gutmann, H. Shouno, A. Hyv&#228;rinen, </span> <br><i>Workshop on Deep Learning and Unsupervised Feature Learning, NIPS</i>, 2011<br><a href="https://deeplearningworkshopnips2011.wordpress.com/contributions/">[url]</a></div><br><div id="Gutmann2009c"><span class="title">Learning spike-timings based representations of sensory stimuli with leaky integrate-and-fire neurons</span><br><span class="author">M. Gutmann, A. Hyv&#228;rinen, </span> <br><i>BMC Neuroscience</i>, 2009<br><a href="https://link.springer.com/article/10.1186/1471-2202-10-S1-P144">[url]</a></div><br><div id="Gutmann2009d"><span class="title">Unsupervised learning by discriminating data from artificial noise</span><br><span class="author">M. Gutmann, A. Hyv&#228;rinen, </span> <br><i>NIPS Workshop on Generative Discriminative Learning Interface</i>, 2009<br><a href="http://gen-disc2009.wikidot.com/">[url]</a></div><br>
-<hr>  
-<div class="page-foot">
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> Michael U. Gutmann. Last modified: September 20, 2024.
-   <a href="/https://michaelgutmann.github.io/accessibility/"><i class="fas fa-check-circle" style="font-size:15px;"></i> Accessibility.</a>
-   Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
-   
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          <a href="/publications"><span class="nav__sub-title">On this page</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="/publications/#manuscripts">Manuscripts</a></li>
+          
+            <li><a href="/publications/#refereed-papers">Refereed papers</a></li>
+          
+            <li><a href="/publications/#teaching-materials">Teaching materials</a></li>
+          
+            <li><a href="/publications/#workshop-and-other-papers">Other papers</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          <a href="/publications"><span class="nav__sub-title">Search engines</span></a>
+        
+
+        
+        <ul>
+          
+            <li><a href="https://scholar.google.com/citations?user=CPhI2jYAAAAJ">Google Scholar</a></li>
+          
+            <li><a href="https://www.semanticscholar.org/author/Michael-U-Gutmann/145992652">Semantic Scholar</a></li>
+          
+            <li><a href="https://www.research.ed.ac.uk/portal/en/persons/michael-gutmann(a25fe4a7-1e8d-4d9d-a5b7-6595ed60d1fb).html">Edinburgh Research Explorer</a></li>
+          
+        </ul>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Publications">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Publications
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p><br />
+<a href="#manuscripts"> <button class="btn btn--inverse btn--small">Manuscripts</button></a>
+<a href="#refereed-papers"> <button class="btn btn--inverse btn--small">Refereed papers</button></a>
+<a href="#teaching-materials"> <button class="btn btn--inverse btn--small">Teaching materials</button></a>
+<a href="#workshop-and-other-papers"> <button class="btn btn--inverse btn--small"> Workshop and other papers</button></a>
+<a href="https://scholar.google.com/citations?user=CPhI2jYAAAAJ"> <button class="btn btn--inverse btn--small"> Google Scholar</button></a>
+<a href="https://www.semanticscholar.org/author/Michael-U-Gutmann/145992652"> <button class="btn btn--inverse btn--small"> Semantic Scholar</button></a>
+<a href="https://www.research.ed.ac.uk/portal/en/persons/michael-gutmann(a25fe4a7-1e8d-4d9d-a5b7-6595ed60d1fb).html"> <button class="btn btn--inverse btn--small"> Edinburgh Research Explorer</button></a></p>
+
+<h2 id="manuscripts">Manuscripts</h2>
+<ul class="bibliography"><li>
+  
+
+
+
+<div id="Simkus2024a">
+  <span class="title">Improving Variational Autoencoder Estimation from Incomplete Data with Mixture Variational Families</span>
+  <span class="author">
+    
+      
+      
+      V. Simkus,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>arXiv:2403.03069</i>
+    
+    
+    2024
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexSimkus2024a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2403.03069"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aSimkus2024a" style="display: none;">
+    <pre>@article{Simkus2024a,
+  author = {Simkus, Vaidotas and Gutmann, Michael U.},
+  journal = {arXiv:2403.03069},
+  title = {Improving Variational Autoencoder Estimation from Incomplete Data with Mixture Variational Families},
+  year = {2024},
+  arxiv = {https://arxiv.org/abs/2403.03069},
+  keywords = {variational autoencoders, missing data, incomplete data, mixture models}
+}
+</pre>
+  </div>
+  
+  
 </div>
-</div><!-- CONTENT ENDS HERE -->
-    </div> <!-- end of class main-content -->
-    </div> <!-- end of class main-content-wrap -->
-    </div> <!-- end of class page-wrap-->
+
+
+
+
+<script>
+function toggleBibtexSimkus2024a(parameter) {
+    var x= document.getElementById('aSimkus2024a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li></ul>
+
+<h2 id="refereed-papers">Refereed papers</h2>
+<ul class="bibliography"><li>
+  
+
+
+
+<div id="Valentin2024">
+  <span class="title">Designing optimal behavioral experiments using machine learning</span>
+  <span class="author">
+    
+      
+      
+      S. Valentin,    
+      
+      
+      
+      S. Kleinegesse,    
+      
+      
+      
+      N. Bramley,    
+      
+      
+      
+      P. Seriès,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and C. Lucas
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>eLife</i>
     
     
+    2024
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://doi.org/10.7554/eLife.86224"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexValentin2024()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2305.07721"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aValentin2024" style="display: none;">
+    <pre>@article{Valentin2024,
+  author = {Valentin, Simon and Kleinegesse, Steven and Bramley, Neil R. and Seri\`es, Peggy and Gutmann, Michael U. and Lucas, Christopher G.},
+  journal = {eLife},
+  title = {Designing optimal behavioral experiments using machine learning},
+  year = {2024},
+  month = jan,
+  pages = {e86224},
+  volume = {13},
+  arxiv = {https://arxiv.org/abs/2305.07721},
+  doi = {https://doi.org/10.7554/eLife.86224},
+  editor = {Gold, Joshua I.},
+  issn = {2050-084X},
+  keywords = {experimental design, machine learning, computational modeling},
+  publisher = {eLife Sciences Publications, Ltd},
+  url = {https://doi.org/10.7554/eLife.86224},
+  month_numeric = {1}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexValentin2024(parameter) {
+    var x= document.getElementById('aValentin2024');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gkolemis2023a">
+  <span class="title">An Extendable Python Implementation of Robust Optimisation Monte Carlo</span>
+  <span class="author">
+    
+      
+      
+      V. Gkolemis,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and H. Pesonen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Journal of Statistical Software</i>
+    
+    
+    2023
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGkolemis2023a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2309.10612"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGkolemis2023a" style="display: none;">
+    <pre>@article{Gkolemis2023a,
+  author = {Gkolemis, Vasilis and Gutmann, Michael and Pesonen, Henri},
+  journal = {Journal of Statistical Software},
+  title = {An Extendable {P}ython Implementation of {R}obust {O}ptimisation {M}onte {C}arlo},
+  year = {2023},
+  month = sep,
+  pages = {1--25},
+  arxiv = {https://arxiv.org/abs/2309.10612},
+  day = {15},
+  issn = {1548-7660},
+  keywords = {Bayesian inference, implicit models, likelihood-free, Python, ELFI},
+  language = {English},
+  publisher = {University of California at Los Angeles},
+  month_numeric = {9}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGkolemis2023a(parameter) {
+    var x= document.getElementById('aGkolemis2023a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Eduardo2023a">
+  <span class="title">Bayesian Optimization with Informative Covariance</span>
+  <span class="author">
+    
+      
+      
+      A. Eduardo,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Transactions on Machine Learning Research</i>
+    
+    
+    2023
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://openreview.net/forum?id=JwgVBv18RG"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexEduardo2023a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2208.02704"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aEduardo2023a" style="display: none;">
+    <pre>@article{Eduardo2023a,
+  author = {Eduardo, Afonso and Gutmann, Michael U.},
+  journal = {Transactions on Machine Learning Research},
+  title = {Bayesian Optimization with Informative Covariance},
+  year = {2023},
+  arxiv = {https://arxiv.org/abs/2208.02704},
+  issn = {2835-8856},
+  keywords = {Bayesian Optimization, Gaussian processes},
+  url = {https://openreview.net/forum?id=JwgVBv18RG}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexEduardo2023a(parameter) {
+    var x= document.getElementById('aEduardo2023a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Srivastava2023a">
+  <span class="title">Estimating the Density Ratio between Distributions with High Discrepancy using Multinomial Logistic Regression</span>
+  <span class="author">
+    
+      
+      
+      A. Srivastava,    
+      
+      
+      
+      S. Han,    
+      
+      
+      
+      K. Xu,    
+      
+      
+      
+      B. Rhodes,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Transactions on Machine Learning Research</i>
+    
+    
+    2023
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://openreview.net/forum?id=jM8nzUzBWr"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexSrivastava2023a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2305.00869"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aSrivastava2023a" style="display: none;">
+    <pre>@article{Srivastava2023a,
+  author = {Srivastava, Akash and Han, Seungwook and Xu, Kai and Rhodes, Benjamin and Gutmann, Michael U.},
+  journal = {Transactions on Machine Learning Research},
+  title = {Estimating the Density Ratio between Distributions with High Discrepancy using Multinomial Logistic Regression},
+  year = {2023},
+  arxiv = {https://arxiv.org/abs/2305.00869},
+  issn = {2835-8856},
+  url = {https://openreview.net/forum?id=jM8nzUzBWr}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexSrivastava2023a(parameter) {
+    var x= document.getElementById('aSrivastava2023a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Simkus2023a">
+  <span class="title">Variational Gibbs Inference for Statistical Model Estimation from Incomplete Data</span>
+  <span class="author">
+    
+      
+      
+      V. Simkus,    
+      
+      
+      
+      B. Rhodes,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Journal of Machine Learning Research</i>
+    
+    
+    2023
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="http://jmlr.org/papers/v24/21-1373.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexSimkus2023a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2111.13180"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aSimkus2023a" style="display: none;">
+    <pre>@article{Simkus2023a,
+  author = {Simkus, Vaidotas and Rhodes, Benjamin and Gutmann, Michael U.},
+  journal = {Journal of Machine Learning Research},
+  title = {Variational {{Gibbs}} Inference for Statistical Model Estimation from Incomplete Data},
+  year = {2023},
+  number = {196},
+  pages = {1--72},
+  volume = {24},
+  arxiv = {https://arxiv.org/abs/2111.13180},
+  keywords = {Statistical Model Estimation, Variational Inference, Gibbs Sampling, Missing Data, Amortised Inference},
+  url = {http://jmlr.org/papers/v24/21-1373.html}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexSimkus2023a(parameter) {
+    var x= document.getElementById('aSimkus2023a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Chen2023a">
+  <span class="title">Is Learning Summary Statistics Necessary for Likelihood-free Inference?</span>
+  <span class="author">
+    
+      
+      
+      Y. Chen,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and A. Weller
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Proceedings of the 40th International Conference on Machine Learning (ICML)</i>
+    
+    
+    2023
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://openreview.net/forum?id=jjzJ768iV1"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexChen2023a()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aChen2023a" style="display: none;">
+    <pre>@article{Chen2023a,
+  author = {Chen, Yanzhi and Gutmann, Michael U. and Weller, Adrian},
+  journal = {Proceedings of the 40th International Conference on Machine Learning (ICML)},
+  title = {Is Learning Summary Statistics Necessary for Likelihood-free Inference?},
+  year = {2023},
+  url = {https://openreview.net/forum?id=jjzJ768iV1}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexChen2023a(parameter) {
+    var x= document.getElementById('aChen2023a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Simkus2023b">
+  <span class="title">Conditional Sampling of Variational Autoencoders via Iterated Approximate Ancestral Sampling</span>
+  <span class="author">
+    
+      
+      
+      V. Simkus,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Transactions on Machine Learning Research</i>
+    
+    
+    2023
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://openreview.net/forum?id=I5sJ6PU6JN"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexSimkus2023b()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2308.09078"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aSimkus2023b" style="display: none;">
+    <pre>@article{Simkus2023b,
+  author = {Simkus, Vaidotas and Gutmann, Michael U.},
+  journal = {Transactions on Machine Learning Research},
+  title = {Conditional Sampling of Variational Autoencoders via Iterated Approximate Ancestral Sampling},
+  year = {2023},
+  arxiv = {https://arxiv.org/abs/2308.09078},
+  issn = {2835-8856},
+  keywords = {Variational Autoencoder, MCMC, Importance Sampling, Probabilistic Inference, Missing Data},
+  url = {https://openreview.net/forum?id=I5sJ6PU6JN}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexSimkus2023b(parameter) {
+    var x= document.getElementById('aSimkus2023b');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Wang2022a">
+  <span class="title">Systematic comparison of ranking aggregation methods for gene lists in experimental results</span>
+  <span class="author">
+    
+      
+      
+      B. Wang,    
+      
+      
+      
+      A. Law,    
+      
+      
+      
+      T. Regan,    
+      
+      
+      
+      N. Parkinson,    
+      
+      
+      
+      J. Cole,    
+      
+      
+      
+      C. Russell,    
+      
+      
+      
+      D. Dockrell,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and J. Baillie
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Bioinformatics</i>
+    
+    
+    2022
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://doi.org/10.1093/bioinformatics/btac621"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexWang2022a()">bib</button>
+    
+    
+    <a href="https://www.biorxiv.org/content/early/2022/01/10/2022.01.09.475491"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aWang2022a" style="display: none;">
+    <pre>@article{Wang2022a,
+  author = {Wang, Bo and Law, Andy and Regan, Tim and Parkinson, Nicholas and Cole, Joby and Russell, Clark D. and Dockrell, David H. and Gutmann, Michael U. and Baillie, J. Kenneth},
+  journal = {Bioinformatics},
+  title = {Systematic comparison of ranking aggregation methods for gene lists in experimental results},
+  year = {2022},
+  month = sep,
+  number = {21},
+  pages = {4927--4933},
+  volume = {38},
+  arxiv = {https://www.biorxiv.org/content/early/2022/01/10/2022.01.09.475491},
+  issn = {1367-4803},
+  url = {https://doi.org/10.1093/bioinformatics/btac621},
+  month_numeric = {9}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexWang2022a(parameter) {
+    var x= document.getElementById('aWang2022a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2022a">
+  <span class="title">Statistical applications of contrastive learning</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      S. Kleinegesse,    
+      
+      
+      
+      and B. Rhodes
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Behaviormetrika</i>
+    
+    
+    2022
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://doi.org/10.1007/s41237-022-00168-w"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2022a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2204.13999"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2022a" style="display: none;">
+    <pre>@article{Gutmann2022a,
+  author = {Gutmann, Michael U. and Kleinegesse, Steven and Rhodes, Benjamin},
+  journal = {Behaviormetrika},
+  title = {Statistical applications of contrastive learning},
+  year = {2022},
+  month = jun,
+  arxiv = {https://arxiv.org/abs/2204.13999},
+  issn = {1349-6964},
+  refid = {Gutmann2022},
+  url = {https://doi.org/10.1007/s41237-022-00168-w},
+  month_numeric = {6}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2022a(parameter) {
+    var x= document.getElementById('aGutmann2022a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Ocal2022">
+  <span class="title">Inference and uncertainty quantification of stochastic gene expression via synthetic models</span>
+  <span class="author">
+    
+      
+      
+      K. Öcal,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      G. Sanguinetti,    
+      
+      
+      
+      and R. Grima
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Journal of The Royal Society Interface</i>
+    
+    
+    2022
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://doi.org/10.1098/rsif.2022.0153"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexOcal2022()">bib</button>
+    
+    
+    <a href="https://www.biorxiv.org/content/10.1101/2022.01.25.477666v1"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aOcal2022" style="display: none;">
+    <pre>@article{Ocal2022,
+  author = {\"Ocal, Kaan and Gutmann, Michael U. and Sanguinetti, Guido and Grima, Ramon},
+  journal = {Journal of The Royal Society Interface},
+  title = {Inference and uncertainty quantification of stochastic gene expression via synthetic models},
+  year = {2022},
+  number = {192},
+  pages = {20220153},
+  volume = {19},
+  arxiv = {https://www.biorxiv.org/content/10.1101/2022.01.25.477666v1},
+  doi = {10.1098/rsif.2022.0153},
+  publisher = {Royal Society},
+  url = {https://doi.org/10.1098/rsif.2022.0153}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexOcal2022(parameter) {
+    var x= document.getElementById('aOcal2022');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Rhodes2022a">
+  <span class="title">Enhanced gradient-based MCMC in discrete spaces</span>
+  <span class="author">
+    
+      
+      
+      B. Rhodes,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Transactions on Machine Learning Research</i>
+    
+    
+    2022
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://openreview.net/forum?id=j2Mid5hFUJ"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexRhodes2022a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2208.00040"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aRhodes2022a" style="display: none;">
+    <pre>@article{Rhodes2022a,
+  author = {Rhodes, Benjamin and Gutmann, Michael U.},
+  journal = {Transactions on Machine Learning Research},
+  title = {Enhanced gradient-based {MCMC} in discrete spaces},
+  year = {2022},
+  arxiv = {https://arxiv.org/abs/2208.00040},
+  url = {https://openreview.net/forum?id=j2Mid5hFUJ}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexRhodes2022a(parameter) {
+    var x= document.getElementById('aRhodes2022a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Jarvenpaa2020">
+  <span class="title">Parallel Gaussian process surrogate Bayesian inference with noisy likelihood evaluations</span>
+  <span class="author">
+    
+      
+      
+      M. Järvenpää,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      A. Vehtari,    
+      
+      
+      
+      and P. Marttinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Bayesian Analysis</i>
+    
+    
+    2021
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Jarvenpaa2020.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://doi.org/10.1214/20-BA1200"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexJarvenpaa2020()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1905.01252"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aJarvenpaa2020" style="display: none;">
+    <pre>@article{Jarvenpaa2020,
+  author = {J\"arvenp\"a\"a, M. and Gutmann, M. U. and Vehtari, A. and Marttinen, P.},
+  journal = {Bayesian Analysis},
+  title = {Parallel {G}aussian process surrogate {B}ayesian inference with noisy likelihood evaluations},
+  year = {2021},
+  number = {1},
+  pages = {147--178},
+  volume = {16},
+  arxiv = {https://arxiv.org/abs/1905.01252},
+  doi = {10.1214/20-BA1200},
+  keywords = {expensive likelihoods, Gaussian processes, likelihood-free inference, parallel computing, sequential experiment design, surrogate modelling},
+  publisher = {International Society for Bayesian Analysis},
+  url = {https://doi.org/10.1214/20-BA1200}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexJarvenpaa2020(parameter) {
+    var x= document.getElementById('aJarvenpaa2020');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Simola2020">
+  <span class="title">Adaptive Approximate Bayesian Computation Tolerance Selection</span>
+  <span class="author">
+    
+      
+      
+      U. Simola,    
+      
+      
+      
+      J. Cisewski-Kehe,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and J. Corander
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Bayesian Analysis</i>
+    
+    
+    2021
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Simola2020.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://doi.org/10.1214/20-BA1211"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexSimola2020()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1907.01505"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aSimola2020" style="display: none;">
+    <pre>@article{Simola2020,
+  author = {Simola, U. and Cisewski-Kehe, J. and Gutmann, M. U. and Corander, J.},
+  journal = {Bayesian Analysis},
+  title = {Adaptive Approximate {B}ayesian Computation Tolerance Selection},
+  year = {2021},
+  number = {2},
+  pages = {397--423},
+  volume = {16},
+  arxiv = {https://arxiv.org/abs/1907.01505},
+  doi = {10.1214/20-BA1211},
+  keywords = {complex stochastic modeling, likelihood-free methods, sequential Monte Carlo},
+  publisher = {International Society for Bayesian Analysis},
+  url = {https://doi.org/10.1214/20-BA1211}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexSimola2020(parameter) {
+    var x= document.getElementById('aSimola2020');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Kleinegesse2020b">
+  <span class="title">Sequential Bayesian Experimental Design for Implicit Models via Mutual Information</span>
+  <span class="author">
+    
+      
+      
+      S. Kleinegesse,    
+      
+      
+      
+      C. Drovandi,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Bayesian Analysis</i>
+    
+    
+    2021
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Kleinegesse2020b.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexKleinegesse2020b()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2003.09379"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aKleinegesse2020b" style="display: none;">
+    <pre>@article{Kleinegesse2020b,
+  author = {Kleinegesse, S. and Drovandi, C. and Gutmann, M. U.},
+  journal = {Bayesian Analysis},
+  title = {Sequential {B}ayesian Experimental Design for Implicit Models via Mutual Information},
+  year = {2021},
+  number = {16},
+  pages = {773--802},
+  volume = {3},
+  arxiv = {https://arxiv.org/abs/2003.09379},
+  doi = {10.1214/20-BA1225},
+  keywords = {Approximate Bayesian Computation, Bayesian experimental design, implicit models, likelihood-free inference, mutual information},
+  publisher = {International Society for Bayesian Analysis}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexKleinegesse2020b(parameter) {
+    var x= document.getElementById('aKleinegesse2020b');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Chen2021a">
+  <span class="title">Neural Approximate Sufficient Statistics for Implicit Models</span>
+  <span class="author">
+    
+      
+      
+      Y. Chen,    
+      
+      
+      
+      D. Zhang,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      A. Courville,    
+      
+      
+      
+      and Z. Zhu
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In International Conference on Learning Representations (ICLR)</i>
+    
+    
+    2021
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Chen2021a.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://openreview.net/forum?id=SRDuJssQud"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexChen2021a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2010.10079"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aChen2021a" style="display: none;">
+    <pre>@inproceedings{Chen2021a,
+  author = {Chen, Y. and Zhang, D. and Gutmann, M. U. and Courville, A. and Zhu, Z.},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  title = {Neural Approximate Sufficient Statistics for Implicit Models},
+  year = {2021},
+  arxiv = {https://arxiv.org/abs/2010.10079},
+  keywords = {Sufficient statistics, mutual information, likelihood-free inference, implicit models, approximate Bayesian inference},
+  url = {https://openreview.net/forum?id=SRDuJssQud}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexChen2021a(parameter) {
+    var x= document.getElementById('aChen2021a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Ivanova2021">
+  <span class="title">Implicit Deep Adaptive Design: Policy-Based Experimental Design without Likelihoods</span>
+  <span class="author">
+    
+      
+      
+      D. Ivanova,    
+      
+      
+      
+      A. Foster,    
+      
+      
+      
+      S. Kleinegesse,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and T. Rainforth
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the Thirty-fifth Conference on Neural Information Processing Systems (NeuRIPS 2021)</i>
+    
+    
+    2021
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://papers.nips.cc/paper/2021/hash/d811406316b669ad3d370d78b51b1d2e-Abstract.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexIvanova2021()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2111.02329"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aIvanova2021" style="display: none;">
+    <pre>@inproceedings{Ivanova2021,
+  author = {Ivanova, Desi R and Foster, Adam and Kleinegesse, Steven and Gutmann, Michael U and Rainforth, Tom},
+  booktitle = {Proceedings of the Thirty-fifth Conference on Neural Information Processing Systems (NeuRIPS 2021)},
+  title = {Implicit Deep Adaptive Design: Policy-Based Experimental Design without Likelihoods},
+  year = {2021},
+  publisher = {Neural Information Processing Systems},
+  arxiv = {https://arxiv.org/abs/2111.02329},
+  keywords = {Experimental design},
+  url = {https://papers.nips.cc/paper/2021/hash/d811406316b669ad3d370d78b51b1d2e-Abstract.html}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexIvanova2021(parameter) {
+    var x= document.getElementById('aIvanova2021');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Valentin2021a">
+  <span class="title">Bayesian Optimal Experimental Design for Simulator Models of Cognition</span>
+  <span class="author">
+    
+      
+      
+      S. Valentin,    
+      
+      
+      
+      S. Kleinegesse,    
+      
+      
+      
+      N. Bramley,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and C. Lucas
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In NeurIPS 2021 Workshop "AI for Science"</i>
+    
+    
+    2021
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexValentin2021a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2110.15632"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aValentin2021a" style="display: none;">
+    <pre>@conference{Valentin2021a,
+  author = {Valentin, Simon and Kleinegesse, Steven and Bramley, Neil R and Gutmann, Michael U and Lucas, Christopher G},
+  title = {Bayesian Optimal Experimental Design for Simulator Models of Cognition},
+  booktitle = {NeurIPS 2021 Workshop {"}AI for Science{"}},
+  year = {2021},
+  arxiv = {https://arxiv.org/abs/2110.15632}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexValentin2021a(parameter) {
+    var x= document.getElementById('aValentin2021a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="LopezGuevara2020">
+  <span class="title">Stir to Pour: Efficient Calibration of Liquid Properties for Pouring Actions</span>
+  <span class="author">
+    
+      
+      
+      T. Lopez Guevara,    
+      
+      
+      
+      R. Pucci,    
+      
+      
+      
+      N. Taylor,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      R. Ramamoorthy,    
+      
+      
+      
+      and K. Subr
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2020)</i>
+    
+    
+    2020
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/LopezGuevara2020.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://www.iros2020.org/index.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexLopezGuevara2020()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aLopezGuevara2020" style="display: none;">
+    <pre>@inproceedings{LopezGuevara2020,
+  author = {{Lopez Guevara}, Tatiana and Pucci, Rita and Taylor, Nicholas and Gutmann, {Michael U.} and Ramamoorthy, Ram and Subr, Kartic},
+  booktitle = {Proceedings of the 2020 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2020)},
+  title = {Stir to Pour: Efficient Calibration of Liquid Properties for Pouring Actions},
+  year = {2020},
+  month = jul,
+  day = {1},
+  language = {English},
+  url = {https://www.iros2020.org/index.html},
+  month_numeric = {7}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexLopezGuevara2020(parameter) {
+    var x= document.getElementById('aLopezGuevara2020');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Li2020">
+  <span class="title">Genome-wide CRISPR screen Identifies Host Dependency Factors for Influenza A Virus Infection</span>
+  <span class="author">
+    
+      
+      
+      B. Li,    
+      
+      
+      
+      S. Clohisey,    
+      
+      
+      
+      B. Chia,    
+      
+      
+      
+      B. Wang,    
+      
+      
+      
+      A. Cui,    
+      
+      
+      
+      T. Eisenhaure,    
+      
+      
+      
+      L. Schweitzer,    
+      
+      
+      
+      P. Hoover,    
+      
+      
+      
+      N. Parkinson,    
+      
+      
+      
+      A. Nachshon,    
+      
+      
+      
+      N. Smith,    
+      
+      
+      
+      T. Regan,    
+      
+      
+      
+      D. Farr,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      S. Bukhari,    
+      
+      
+      
+      A. Law,    
+      
+      
+      
+      M. Sangesland,    
+      
+      
+      
+      I. Gat-viks,    
+      
+      
+      
+      P. Digard,    
+      
+      
+      
+      S. Vasudevan,    
+      
+      
+      
+      D. Lingwood,    
+      
+      
+      
+      D. Dockrell,    
+      
+      
+      
+      J. Doench,    
+      
+      
+      
+      J. Baillie,    
+      
+      
+      
+      and N. Hacohen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Nature Communications</i>
+    
+    
+    2020
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Li2020.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://doi.org/10.1038/s41467-019-13965-x"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexLi2020()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aLi2020" style="display: none;">
+    <pre>@article{Li2020,
+  title = {Genome-wide CRISPR screen Identifies Host Dependency Factors for Influenza A Virus Infection},
+  author = {Li, Bo and Clohisey, Sara M. and Chia, Bing Shao and Wang, Bo and Cui, Ang and Eisenhaure, Thomas and Schweitzer, Lawrence D. and Hoover, Paul and Parkinson, Nicholas J. and Nachshon, Aharon and Smith, Nikki and Regan, Tim and Farr, David and Gutmann, Michael U. and Bukhari, Syed Irfan and Law, Andrew and Sangesland, Maya and Gat-viks, Irit and Digard, Paul and Vasudevan, Shobha and Lingwood, Daniel and Dockrell, David H. and Doench, John G. and Baillie, J. Kenneth and Hacohen, Nir},
+  journal = {Nature Communications},
+  year = {2020},
+  month = jan,
+  number = {1},
+  pages = {164--},
+  volume = {11},
+  doi = {https://doi.org/10.1038/s41467-019-13965-x},
+  issn = {2041-1723},
+  url = {https://doi.org/10.1038/s41467-019-13965-x},
+  month_numeric = {1}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexLi2020(parameter) {
+    var x= document.getElementById('aLi2020');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Srivastava2020">
+  <span class="title">Generative Ratio Matching Networks</span>
+  <span class="author">
+    
+      
+      
+      A. Srivastava,    
+      
+      
+      
+      K. Xu,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and C. Sutton
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the International Conference on Learning Representations (ICLR)</i>
+    
+    
+    2020
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Srivastava2020.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://openreview.net/forum?id=SJg7spEYDS"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexSrivastava2020()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1806.00101"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aSrivastava2020" style="display: none;">
+    <pre>@inproceedings{Srivastava2020,
+  author = {Srivastava, A. and Xu, K. and Gutmann, M. U. and Sutton, C.},
+  booktitle = {Proceedings of the International Conference on Learning Representations (ICLR)},
+  title = {Generative Ratio Matching Networks},
+  year = {2020},
+  arxiv = {https://arxiv.org/abs/1806.00101},
+  url = {https://openreview.net/forum?id=SJg7spEYDS}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexSrivastava2020(parameter) {
+    var x= document.getElementById('aSrivastava2020');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Kleinegesse2020a">
+  <span class="title">Bayesian Experimental Design for Implicit Models by Mutual Information Neural Estimation</span>
+  <span class="author">
+    
+      
+      
+      S. Kleinegesse,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the 37th International Conference on Machine Learning (ICML)</i>
+    
+    
+    2020
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Kleinegesse2020a.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://proceedings.mlr.press/v119/kleinegesse20a.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexKleinegesse2020a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2002.08129"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aKleinegesse2020a" style="display: none;">
+    <pre>@inproceedings{Kleinegesse2020a,
+  author = {Kleinegesse, S. and Gutmann, M. U.},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning (ICML)},
+  title = {Bayesian Experimental Design for Implicit Models by Mutual Information Neural Estimation},
+  year = {2020},
+  editor = {Daum\'e, Hal III and Singh, Aarti},
+  month = {13--18 Jul},
+  pages = {5316--5326},
+  publisher = {PMLR},
+  series = {Proceedings of Machine Learning Research},
+  volume = {119},
+  arxiv = {https://arxiv.org/abs/2002.08129},
+  pdf = {http://proceedings.mlr.press/v119/kleinegesse20a/kleinegesse20a.pdf},
+  url = {http://proceedings.mlr.press/v119/kleinegesse20a.html}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexKleinegesse2020a(parameter) {
+    var x= document.getElementById('aKleinegesse2020a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Neyton2020">
+  <span class="title">Molecular Patterns in Acute Pancreatitis Reflect Generalizable Endotypes of the Host Response to Systemic Injury in Humans</span>
+  <span class="author">
+    
+      
+      
+      L. Neyton,    
+      
+      
+      
+      X. Zheng,    
+      
+      
+      
+      C. Skouras,    
+      
+      
+      
+      A. Doeschl-Wilson,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      I. Uings,    
+      
+      
+      
+      F. Rao,    
+      
+      
+      
+      A. Nicolas,    
+      
+      
+      
+      C. Marshall,    
+      
+      
+      
+      L. Wilson,    
+      
+      
+      
+      J. Baillie,    
+      
+      
+      
+      and D. Mole
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Annals of Surgery</i>
+    
+    
+    2020
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://journals.lww.com/annalsofsurgery/Fulltext/9000/Molecular_Patterns_in_Acute_Pancreatitis_Reflect.94475.aspx"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexNeyton2020()">bib</button>
+    
+    
+    <a href="https://www.biorxiv.org/content/10.1101/539569v3"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aNeyton2020" style="display: none;">
+    <pre>@article{Neyton2020,
+  author = {Neyton, Lucile P. A. and Zheng, Xiaozhong and Skouras, Christos and Doeschl-Wilson, Andrea and Gutmann, Michael U. and Uings, Iain and Rao, Francesco V. and Nicolas, Armel and Marshall, Craig and Wilson, Lisa-Marie and Baillie, J. Kenneth and Mole, Damian J.},
+  journal = {Annals of Surgery},
+  title = {Molecular Patterns in Acute Pancreatitis Reflect Generalizable Endotypes of the Host Response to Systemic Injury in Humans},
+  year = {2020},
+  number = {in press},
+  arxiv = {https://www.biorxiv.org/content/10.1101/539569v3},
+  doi = {https://doi.org/10.1101/539569},
+  issn = {0003-4932},
+  keywords = {acute pancreatitis, cluster analysis, critical illness trajectory, endotypes, multiomics, time series},
+  refid = {00000658-900000000-94475},
+  url = {https://journals.lww.com/annalsofsurgery/Fulltext/9000/Molecular_Patterns_in_Acute_Pancreatitis_Reflect.94475.aspx}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexNeyton2020(parameter) {
+    var x= document.getElementById('aNeyton2020');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Ikonomov2020">
+  <span class="title">Robust Optimisation Monte Carlo</span>
+  <span class="author">
+    
+      
+      
+      B. Ikonomov,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics (AISTATS)</i>
+    
+    
+    2020
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Ikonomov2020.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://proceedings.mlr.press/v108/ikonomov20a.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexIkonomov2020()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1904.00670"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aIkonomov2020" style="display: none;">
+    <pre>@inproceedings{Ikonomov2020,
+  author = {Ikonomov, B. and Gutmann, M. U.},
+  booktitle = {Proceedings of the Twenty Third International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  title = {Robust Optimisation {M}onte {C}arlo},
+  year = {2020},
+  address = {Online},
+  editor = {Chiappa, Silvia and Calandra, Roberto},
+  month = {26--28 Aug},
+  pages = {2819--2829},
+  publisher = {PMLR},
+  series = {Proceedings of Machine Learning Research},
+  volume = {108},
+  arxiv = {https://arxiv.org/abs/1904.00670},
+  pdf = {http://proceedings.mlr.press/v108/ikonomov20a/ikonomov20a.pdf},
+  url = {http://proceedings.mlr.press/v108/ikonomov20a.html}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexIkonomov2020(parameter) {
+    var x= document.getElementById('aIkonomov2020');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Thomas2020">
+  <span class="title">Likelihood-Free Inference by Ratio Estimation</span>
+  <span class="author">
+    
+      
+      
+      O. Thomas,    
+      
+      
+      
+      R. Dutta,    
+      
+      
+      
+      J. Corander,    
+      
+      
+      
+      S. Kaski,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Bayesian Analysis</i>
+    
+    
+    2020
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Thomas2020.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://projecteuclid.org/journals/bayesian-analysis/volume-17/issue-1/Likelihood-Free-Inference-by-Ratio-Estimation/10.1214/20-BA1238.full"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexThomas2020()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1611.10242"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aThomas2020" style="display: none;">
+    <pre>@article{Thomas2020,
+  author = {Thomas, O. and Dutta, R. and Corander, J. and Kaski, S. and Gutmann, M. U.},
+  journal = {Bayesian Analysis},
+  title = {Likelihood-Free Inference by Ratio Estimation},
+  year = {2020},
+  number = {advance publication},
+  arxiv = {https://arxiv.org/abs/1611.10242},
+  doi = {https://doi.org/10.1214/20-BA1238},
+  keywords = {approximate Bayesian computation, synthetic likelihood, summary statistics selection, density-ratio estimation; logistic regression; probabilistic classification, stochastic dynamical systems},
+  url = {https://projecteuclid.org/journals/bayesian-analysis/volume-17/issue-1/Likelihood-Free-Inference-by-Ratio-Estimation/10.1214/20-BA1238.full}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexThomas2020(parameter) {
+    var x= document.getElementById('aThomas2020');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Rhodes2020a">
+  <span class="title">Telescoping Density-Ratio Estimation</span>
+  <span class="author">
+    
+      
+      
+      B. Rhodes,    
+      
+      
+      
+      K. Xu,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Advances in Neural Information Processing Systems 34 (NeurIPS 2020)</i>
+    
+    
+    2020
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Rhodes2020a.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://papers.nips.cc/paper/2020/hash/33d3b157ddc0896addfb22fa2a519097-Abstract.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexRhodes2020a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2006.12204"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aRhodes2020a" style="display: none;">
+    <pre>@inproceedings{Rhodes2020a,
+  author = {Rhodes, B. and Xu, K. and Gutmann, M. U.},
+  booktitle = {Advances in Neural Information Processing Systems 34 (NeurIPS 2020)},
+  title = {Telescoping Density-Ratio Estimation},
+  year = {2020},
+  editor = {Larochelle, H. and Ranzato, M. and Hadsell, R. and Balcan, M. F. and Lin, H.},
+  note = {(Spotlight, top 4\% of submissions)},
+  pages = {4905--4916},
+  publisher = {Curran Associates, Inc.},
+  volume = {33},
+  arxiv = {https://arxiv.org/abs/2006.12204},
+  keywords = {density ratio estimation, mutual information, energy-based models},
+  url = {https://papers.nips.cc/paper/2020/hash/33d3b157ddc0896addfb22fa2a519097-Abstract.html}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexRhodes2020a(parameter) {
+    var x= document.getElementById('aRhodes2020a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Chen2019">
+  <span class="title">Adaptive Gaussian Copula ABC</span>
+  <span class="author">
+    
+      
+      
+      Y. Chen,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>
+    
+    
+    2019
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Chen2019.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://proceedings.mlr.press/v89/chen19d"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexChen2019()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1902.10704"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aChen2019" style="display: none;">
+    <pre>@inproceedings{Chen2019,
+  author = {Chen, Y. and Gutmann, M. U.},
+  booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  title = {Adaptive {G}aussian Copula {ABC}},
+  year = {2019},
+  editor = {Chaudhuri, Kamalika and Sugiyama, Masashi},
+  month = {16--18 Apr},
+  number = {89},
+  pages = {1584--1592},
+  publisher = {PMLR},
+  series = {Proceedings of Machine Learning Research},
+  volume = {89},
+  arxiv = {https://arxiv.org/abs/1902.10704},
+  url = {http://proceedings.mlr.press/v89/chen19d}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexChen2019(parameter) {
+    var x= document.getElementById('aChen2019');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Jarvenpaa2019a">
+  <span class="title">Efficient acquisition rules for model-based approximate Bayesian computation</span>
+  <span class="author">
+    
+      
+      
+      M. Järvenpää,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      A. Vehtari,    
+      
+      
+      
+      and P. Marttinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Bayesian Analysis</i>
+    
+    
+    2019
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Jarvenpaa2019a.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://projecteuclid.org/euclid.ba/1537258134"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexJarvenpaa2019a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1704.00520"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aJarvenpaa2019a" style="display: none;">
+    <pre>@article{Jarvenpaa2019a,
+  author = {J\"arvenp\"a\"a, M. and Gutmann, M. U. and Vehtari, A. and Marttinen, P.},
+  journal = {Bayesian Analysis},
+  title = {Efficient acquisition rules for model-based approximate {B}ayesian computation},
+  year = {2019},
+  number = {2},
+  pages = {595--622},
+  volume = {14},
+  arxiv = {https://arxiv.org/abs/1704.00520},
+  doi = {doi:10.1214/18-BA1121},
+  keywords = {Approximation Bayesian computation, Bayesian optimisation},
+  url = {https://projecteuclid.org/euclid.ba/1537258134}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexJarvenpaa2019a(parameter) {
+    var x= document.getElementById('aJarvenpaa2019a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Lintusaari2019a">
+  <span class="title">Resolving outbreak dynamics using approximate Bayesian computation for stochastic birth-death models</span>
+  <span class="author">
+    
+      
+      
+      J. Lintusaari,    
+      
+      
+      
+      P. Blomstedt,    
+      
+      
+      
+      B. Rose,    
+      
+      
+      
+      T. Sivula,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      S. Kaski,    
+      
+      
+      
+      and J. Corander
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Wellcome Open Research</i>
+    
+    
+    2019
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Lintusaari2019a.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://wellcomeopenresearch.org/articles/4-14/v2"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexLintusaari2019a()">bib</button>
+    
+    
+    <a href="https://www.biorxiv.org/content/10.1101/215533v2"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aLintusaari2019a" style="display: none;">
+    <pre>@article{Lintusaari2019a,
+  author = {Lintusaari, J and Blomstedt, P and Rose, B and Sivula, T and Gutmann, M. U. and Kaski, S and Corander, J},
+  journal = {Wellcome Open Research},
+  title = {Resolving outbreak dynamics using approximate {B}ayesian computation for stochastic birth-death models},
+  year = {2019},
+  number = {14},
+  volume = {4},
+  arxiv = {https://www.biorxiv.org/content/10.1101/215533v2},
+  doi = {10.12688/wellcomeopenres.15048.2},
+  url = {https://wellcomeopenresearch.org/articles/4-14/v2}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexLintusaari2019a(parameter) {
+    var x= document.getElementById('aLintusaari2019a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Rhodes2019">
+  <span class="title">Variational Noise-Contrastive Estimation</span>
+  <span class="author">
+    
+      
+      
+      B. Rhodes,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>
+    
+    
+    2019
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Rhodes2019.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://proceedings.mlr.press/v89/rhodes19a"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexRhodes2019()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1810.08010"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aRhodes2019" style="display: none;">
+    <pre>@inproceedings{Rhodes2019,
+  author = {Rhodes, B. and Gutmann, M. U.},
+  booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  title = {Variational Noise-Contrastive Estimation},
+  year = {2019},
+  editor = {Chaudhuri, Kamalika and Sugiyama, Masashi},
+  month = {16--18 Apr},
+  number = {89},
+  pages = {1584--1592},
+  publisher = {PMLR},
+  series = {Proceedings of Machine Learning Research},
+  volume = {89},
+  arxiv = {https://arxiv.org/abs/1810.08010},
+  keywords = {noise-contrastive estimation, latent variables},
+  url = {http://proceedings.mlr.press/v89/rhodes19a}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexRhodes2019(parameter) {
+    var x= document.getElementById('aRhodes2019');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Todorovic2019">
+  <span class="title">Bayesian inference of atomistic structure in functional materials</span>
+  <span class="author">
+    
+      
+      
+      M. Todorović,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      J. Corander,    
+      
+      
+      
+      and P. Rinke
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>npj Computational Materials</i>
+    
+    
+    2019
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Todorovic2019.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://www.nature.com/articles/s41524-019-0175-2"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexTodorovic2019()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1708.09274"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aTodorovic2019" style="display: none;">
+    <pre>@article{Todorovic2019,
+  author = {Todorovi\'c, M. and Gutmann, M. U. and Corander, J. and Rinke, P.},
+  journal = {npj Computational Materials},
+  title = {Bayesian inference of atomistic structure in functional materials},
+  year = {2019},
+  number = {1},
+  pages = {35},
+  volume = {5},
+  arxiv = {https://arxiv.org/abs/1708.09274},
+  doi = {https://doi.org/10.1038/s41524-019-0175-2},
+  issn = {2057-3960},
+  refid = {Todorovic2019},
+  url = {https://www.nature.com/articles/s41524-019-0175-2}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexTodorovic2019(parameter) {
+    var x= document.getElementById('aTodorovic2019');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Kleinegesse2019">
+  <span class="title">Efficient Bayesian Experimental Design for Implicit Models</span>
+  <span class="author">
+    
+      
+      
+      S. Kleinegesse,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>
+    
+    
+    2019
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Kleinegesse2019.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://proceedings.mlr.press/v89/kleinegesse19a"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexKleinegesse2019()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1810.09912"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aKleinegesse2019" style="display: none;">
+    <pre>@inproceedings{Kleinegesse2019,
+  author = {Kleinegesse, S. and Gutmann, M. U.},
+  booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  title = {Efficient {B}ayesian Experimental Design for Implicit Models},
+  year = {2019},
+  editor = {Chaudhuri, Kamalika and Sugiyama, Masashi},
+  month = {16--18 Apr},
+  number = {89},
+  pages = {1584--1592},
+  publisher = {PMLR},
+  series = {Proceedings of Machine Learning Research},
+  volume = {89},
+  arxiv = {https://arxiv.org/abs/1810.09912},
+  url = {http://proceedings.mlr.press/v89/kleinegesse19a}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexKleinegesse2019(parameter) {
+    var x= document.getElementById('aKleinegesse2019');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Arnold2018">
+  <span class="title">Weak Epistasis May Drive Adaptation in Recombining Bacteria</span>
+  <span class="author">
+    
+      
+      
+      B. Arnold,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      Y. Grad,    
+      
+      
+      
+      S. Sheppard,    
+      
+      
+      
+      J. Corander,    
+      
+      
+      
+      M. Lipsitch,    
+      
+      
+      
+      and W. Hanage
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Genetics</i>
+    
+    
+    2018
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Arnold2018.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://www.genetics.org/content/208/3/1247"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexArnold2018()">bib</button>
+    
+    
+    <a href="https://www.biorxiv.org/content/10.1101/119958v1"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aArnold2018" style="display: none;">
+    <pre>@article{Arnold2018,
+  author = {Arnold, B.J. and Gutmann, M. U. and Grad, Y.H. and Sheppard, S.K. and Corander, J. and Lipsitch, M. and Hanage, W.P.},
+  journal = {Genetics},
+  title = {Weak Epistasis May Drive Adaptation in Recombining Bacteria},
+  year = {2018},
+  month = jan,
+  number = {3},
+  pages = {1247--1260},
+  volume = {208},
+  arxiv = {https://www.biorxiv.org/content/10.1101/119958v1},
+  doi = {https://doi.org/10.1534/genetics.117.300662},
+  url = {https://www.genetics.org/content/208/3/1247},
+  month_numeric = {1}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexArnold2018(parameter) {
+    var x= document.getElementById('aArnold2018');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Ceylan2018">
+  <span class="title">Conditional Noise-Contrastive Estimation of Unnormalised Models</span>
+  <span class="author">
+    
+      
+      
+      C. Ceylan,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the 35th International Conference on Machine Learning (ICML)</i>
+    
+    
+    2018
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Ceylan2018.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://proceedings.mlr.press/v80/ceylan18a.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexCeylan2018()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1806.03664"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aCeylan2018" style="display: none;">
+    <pre>@inproceedings{Ceylan2018,
+  author = {Ceylan, C. and Gutmann, M. U.},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning (ICML)},
+  title = {Conditional Noise-Contrastive Estimation of Unnormalised Models},
+  year = {2018},
+  editor = {Dy, Jennifer and Krause, Andreas},
+  pages = {725--733},
+  series = {Proceedings of Machine Learning Research},
+  volume = {80},
+  arxiv = {https://arxiv.org/abs/1806.03664},
+  keywords = {unnormalised models, noise-contrastive estimation},
+  pdf = {http://proceedings.mlr.press/v80/ceylan18a/ceylan18a.pdf},
+  url = {http://proceedings.mlr.press/v80/ceylan18a.html}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexCeylan2018(parameter) {
+    var x= document.getElementById('aCeylan2018');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2018">
+  <span class="title">Likelihood-free inference via classification</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      R. Dutta,    
+      
+      
+      
+      S. Kaski,    
+      
+      
+      
+      and J. Corander
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Statistics and Computing</i>
+    
+    
+    2018
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2018.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://doi.org/10.1007/s11222-017-9738-6"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2018()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1407.4981"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2018" style="display: none;">
+    <pre>@article{Gutmann2018,
+  author = {Gutmann, M. U. and Dutta, R. and Kaski, S. and Corander, J.},
+  journal = {Statistics and Computing},
+  title = {Likelihood-free inference via classification},
+  year = {2018},
+  number = {2},
+  pages = {411--425},
+  volume = {28},
+  arxiv = {https://arxiv.org/abs/1407.4981},
+  day = {13},
+  doi = {10.1007/s11222-017-9738-6},
+  issn = {1573-1375},
+  keywords = {Intractable likelihoods, generative models, latent variables, approximate Bayesian computation},
+  url = {https://doi.org/10.1007/s11222-017-9738-6}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2018(parameter) {
+    var x= document.getElementById('aGutmann2018');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Jarvenpaa2018">
+  <span class="title">Gaussian process modeling in approximate Bayesian computation to estimate horizontal gene transfer in bacteria</span>
+  <span class="author">
+    
+      
+      
+      M. Järvenpää,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      A. Vehtari,    
+      
+      
+      
+      and P. Marttinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>The Annals of Applied Statistics</i>
+    
+    
+    2018
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Jarvenpaa2018.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://projecteuclid.org/euclid.aoas/1542078043"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexJarvenpaa2018()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1610.06462"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aJarvenpaa2018" style="display: none;">
+    <pre>@article{Jarvenpaa2018,
+  author = {J\"arvenp\"a\"a, M. and Gutmann, M. U. and Vehtari, A. and Marttinen, P.},
+  journal = {The Annals of Applied Statistics},
+  title = {Gaussian process modeling in approximate {B}ayesian computation to estimate horizontal gene transfer in bacteria},
+  year = {2018},
+  number = {4},
+  pages = {2228--2251},
+  volume = {12},
+  arxiv = {https://arxiv.org/abs/1610.06462},
+  doi = {https://doi.org/10.1214/18-AOAS1150},
+  keywords = {Approximation Bayesian computation, emulation, Gaussian processes, model selection},
+  url = {https://projecteuclid.org/euclid.aoas/1542078043}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexJarvenpaa2018(parameter) {
+    var x= document.getElementById('aJarvenpaa2018');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Lintusaari2018">
+  <span class="title">ELFI: Engine for Likelihood-Free Inference</span>
+  <span class="author">
+    
+      
+      
+      J. Lintusaari,    
+      
+      
+      
+      H. Vuollekoski,    
+      
+      
+      
+      A. Kangasrääsiö,    
+      
+      
+      
+      K. Skytén,    
+      
+      
+      
+      M. Järvenpää,    
+      
+      
+      
+      P. Marttinen,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      A. Vehtari,    
+      
+      
+      
+      and J. Corander
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Journal of Machine Learning Research</i>
+    
+    
+    2018
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Lintusaari2018.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://jmlr.org/papers/v19/17-374.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexLintusaari2018()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1708.00707"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aLintusaari2018" style="display: none;">
+    <pre>@article{Lintusaari2018,
+  author = {Lintusaari, Jarno and Vuollekoski, Henri and Kangasr\"a\"asi\"o, Antti and Skyt\'en, Kusti and J\"arvenp\"a\"a, Marko and Marttinen, Pekka and Gutmann, Michael U. and Vehtari, Aki and Corander, Jukka},
+  journal = {Journal of Machine Learning Research},
+  title = {{ELFI}: Engine for Likelihood-Free Inference},
+  year = {2018},
+  number = {16},
+  pages = {1--7},
+  volume = {19},
+  arxiv = {https://arxiv.org/abs/1708.00707},
+  keywords = {Likelihood-free inference, approximate Bayesian computation, Python, software, parallel computing},
+  url = {http://jmlr.org/papers/v19/17-374.html}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexLintusaari2018(parameter) {
+    var x= document.getElementById('aLintusaari2018');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="LopezGuevara2017a">
+  <span class="title">Adaptable Pouring: Teaching Robots Not to Spill using Fast but Approximate Fluid Simulation</span>
+  <span class="author">
+    
+      
+      
+      T. Lopez-Guevara,    
+      
+      
+      
+      N. Taylor,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      S. Ramamoorthy,    
+      
+      
+      
+      and K. Subr
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the 1st Annual Conference on Robot Learning (CoRL)</i>
+    
+    
+    2017
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/LopezGuevara2017a.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://proceedings.mlr.press/v78/lopez-guevara17a.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexLopezGuevara2017a()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aLopezGuevara2017a" style="display: none;">
+    <pre>@inproceedings{LopezGuevara2017a,
+  author = {Lopez-Guevara, T. and Taylor, N.K. and Gutmann, M. U. and Ramamoorthy, S. and Subr, K.},
+  booktitle = {Proceedings of the 1st Annual Conference on Robot Learning (CoRL)},
+  title = {Adaptable Pouring: Teaching Robots Not to Spill using Fast but Approximate Fluid Simulation},
+  year = {2017},
+  editor = {Levine, Sergey and Vanhoucke, Vincent and Goldberg, Ken},
+  month = nov,
+  pages = {77--86},
+  series = {Proceedings of Machine Learning Research},
+  volume = {78},
+  pdf = {http://proceedings.mlr.press/v78/lopez-guevara17a/lopez-guevara17a.pdf},
+  url = {http://proceedings.mlr.press/v78/lopez-guevara17a.html},
+  month_numeric = {11}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexLopezGuevara2017a(parameter) {
+    var x= document.getElementById('aLopezGuevara2017a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Lintusaari2017">
+  <span class="title">Fundamentals and Recent Developments in Approximate Bayesian Computation</span>
+  <span class="author">
+    
+      
+      
+      J. Lintusaari,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      R. Dutta,    
+      
+      
+      
+      S. Kaski,    
+      
+      
+      
+      and J. Corander
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Systematic Biology</i>
+    
+    
+    2017
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Lintusaari2017.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://dx.doi.org/10.1093/sysbio/syw077"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexLintusaari2017()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aLintusaari2017" style="display: none;">
+    <pre>@article{Lintusaari2017,
+  author = {Lintusaari, J. and Gutmann, M. U. and Dutta, R. and Kaski, S. and Corander, J.},
+  journal = {Systematic Biology},
+  title = {Fundamentals and Recent Developments in Approximate {B}ayesian Computation},
+  year = {2017},
+  month = jan,
+  number = {1},
+  pages = {e66--e82},
+  volume = {66},
+  doi = {10.1093/sysbio/syw077},
+  issn = {1063-5157},
+  keywords = {Intractable likelihoods, generative models, latent variables, approximate Bayesian computation},
+  url = {http://dx.doi.org/10.1093/sysbio/syw077},
+  month_numeric = {1}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexLintusaari2017(parameter) {
+    var x= document.getElementById('aLintusaari2017');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Corander2017">
+  <span class="title">Frequency-dependent selection in vaccine-associated pneumococcal population dynamics</span>
+  <span class="author">
+    
+      
+      
+      J. Corander,    
+      
+      
+      
+      C. Fraser,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      B. Arnold,    
+      
+      
+      
+      W. Hanage,    
+      
+      
+      
+      S. Bentley,    
+      
+      
+      
+      M. Lipsitch,    
+      
+      
+      
+      and N. Croucher
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Nature Ecology &amp; Evolution</i>
+    
+    
+    2017
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Corander2017.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://www.nature.com/articles/s41559-017-0337-x"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexCorander2017()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aCorander2017" style="display: none;">
+    <pre>@article{Corander2017,
+  author = {Corander, J. and Fraser, C. and Gutmann, M. U. and Arnold, B. and Hanage, W.P. and Bentley, S.D. and Lipsitch, M. and Croucher, N.J.},
+  journal = {Nature Ecology \&amp; Evolution},
+  title = {Frequency-dependent selection in vaccine-associated pneumococcal population dynamics},
+  year = {2017},
+  pages = {1950--1960},
+  volume = {1},
+  doi = {https://doi.org/10.1038/s41559-017-0337-x},
+  issn = {2397-334X},
+  refid = {Corander2017},
+  url = {https://www.nature.com/articles/s41559-017-0337-x}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexCorander2017(parameter) {
+    var x= document.getElementById('aCorander2017');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Sasaki2017">
+  <span class="title">Simultaneous Estimation of Non-Gaussian Components and their Correlation Structure</span>
+  <span class="author">
+    
+      
+      
+      H. Sasaki,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      H. Shouno,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Neural Computation</i>
+    
+    
+    2017
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Sasaki2017.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://dx.doi.org/10.1162/neco_a_01006"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexSasaki2017()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1506.05666"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aSasaki2017" style="display: none;">
+    <pre>@article{Sasaki2017,
+  author = {Sasaki, H. and Gutmann, M. U. and Shouno, H. and Hyv\"arinen, A.},
+  journal = {Neural Computation},
+  title = {Simultaneous Estimation of Non-{G}aussian Components and their Correlation Structure},
+  year = {2017},
+  number = {11},
+  pages = {2887--2924},
+  volume = {29},
+  arxiv = {https://arxiv.org/abs/1506.05666},
+  doi = {10.1162/neco_a_01006},
+  keywords = {Extensions of ICA, speech data, natural images},
+  url = {http://dx.doi.org/10.1162/neco_a_01006}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexSasaki2017(parameter) {
+    var x= document.getElementById('aSasaki2017');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Srivastava2017">
+  <span class="title">VEEGAN: Reducing Mode Collapse in GANs using Implicit Variational Learning</span>
+  <span class="author">
+    
+      
+      
+      A. Srivastava,    
+      
+      
+      
+      A. Valkov,    
+      
+      
+      
+      C. Russell,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and C. Sutton
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Advances in Neural Information Processing Systems 30 (NIPS 2017)</i>
+    
+    
+    2017
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Srivastava2017.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://papers.nips.cc/paper/6923-veegan-reducing-mode-collapse-in-gans-using-implicit-variational-learning"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexSrivastava2017()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1705.07761"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aSrivastava2017" style="display: none;">
+    <pre>@inproceedings{Srivastava2017,
+  author = {Srivastava, A. and Valkov, A. and Russell, C. and Gutmann, M. U. and Sutton, C.},
+  booktitle = {Advances in Neural Information Processing Systems 30 (NIPS 2017)},
+  title = {{VEEGAN}: Reducing Mode Collapse in {GAN}s using Implicit Variational Learning},
+  year = {2017},
+  arxiv = {https://arxiv.org/abs/1705.07761},
+  journal = {Advances in Neural Information Processing Systems 30 (NIPS 2017)},
+  url = {http://papers.nips.cc/paper/6923-veegan-reducing-mode-collapse-in-gans-using-implicit-variational-learning}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexSrivastava2017(parameter) {
+    var x= document.getElementById('aSrivastava2017');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Tietavainen2017">
+  <span class="title">Bayesian inference of physiologically meaningful parameters from body sway measurements</span>
+  <span class="author">
+    
+      
+      
+      A. Tietäväinen,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      E. Keski-Vakkuri,    
+      
+      
+      
+      J. Corander,    
+      
+      
+      
+      and E. Haeggström
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Scientific Reports</i>
+    
+    
+    2017
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Tietavainen2017.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://www.nature.com/articles/s41598-017-02372-1"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexTietavainen2017()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aTietavainen2017" style="display: none;">
+    <pre>@article{Tietavainen2017,
+  author = {Tiet\"av\"ainen, A. and Gutmann, M. U. and Keski-Vakkuri, E. and Corander, J. and Haeggstr\"om, E.},
+  journal = {Scientific Reports},
+  title = {Bayesian inference of physiologically meaningful parameters from body sway measurements},
+  year = {2017},
+  number = {3771},
+  pages = {1--14},
+  volume = {7},
+  doi = {https://doi.org/10.1038/s41598-017-02372-1},
+  issn = {2045-2322},
+  keywords = {Approximate Bayesian inference, nonlinear dynamical systems, balance and muscular control},
+  url = {https://www.nature.com/articles/s41598-017-02372-1}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexTietavainen2017(parameter) {
+    var x= document.getElementById('aTietavainen2017');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2016a">
+  <span class="title">Bayesian optimization for likelihood-free inference of simulator-based statistical models</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and J. Corander
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Journal of Machine Learning Research</i>
+    
+    
+    2016
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2016a.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://jmlr.org/papers/v17/15-017.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2016a()">bib</button>
+    
+    
+    <a href="http://arxiv.org/abs/1501.03291"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2016a" style="display: none;">
+    <pre>@article{Gutmann2016a,
+  author = {Gutmann, M. U. and Corander, J},
+  journal = {Journal of Machine Learning Research},
+  title = {Bayesian optimization for likelihood-free inference of simulator-based statistical models},
+  year = {2016},
+  number = {125},
+  pages = {1--47},
+  volume = {17},
+  arxiv = {http://arxiv.org/abs/1501.03291},
+  keywords = {Intractable likelihoods, generative models, latent variables, approximate Bayesian computation},
+  url = {http://jmlr.org/papers/v17/15-017.html}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2016a(parameter) {
+    var x= document.getElementById('aGutmann2016a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Lintusaari2016">
+  <span class="title">On the identifiability of transmission dynamic models for infectious diseases</span>
+  <span class="author">
+    
+      
+      
+      J. Lintusaari,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      S. Kaski,    
+      
+      
+      
+      and J. Corander
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Genetics</i>
+    
+    
+    2016
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Lintusaari2016.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://www.genetics.org/content/202/3/911"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexLintusaari2016()">bib</button>
+    
+    
+    <a href="https://www.biorxiv.org/content/10.1101/021972v2"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aLintusaari2016" style="display: none;">
+    <pre>@article{Lintusaari2016,
+  author = {Lintusaari, J. and Gutmann, M. U. and Kaski, S. and Corander, J.},
+  journal = {Genetics},
+  title = {On the identifiability of transmission dynamic models for infectious diseases},
+  year = {2016},
+  number = {3},
+  pages = {911--918},
+  volume = {202},
+  arxiv = {https://www.biorxiv.org/content/10.1101/021972v2},
+  doi = {https://doi.org/10.1534/genetics.115.180034},
+  keywords = {Intractable likelihoods, epidemiology of infectious disease},
+  url = {https://www.genetics.org/content/202/3/911}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexLintusaari2016(parameter) {
+    var x= document.getElementById('aLintusaari2016');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Numminen2016">
+  <span class="title">The impact of host metapopulation structure on the population genetics of colonizing bacteria</span>
+  <span class="author">
+    
+      
+      
+      E. Numminen,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      M. Shubin,    
+      
+      
+      
+      P. Marttinen,    
+      
+      
+      
+      G. Méric,    
+      
+      
+      
+      W. Schaik,    
+      
+      
+      
+      T. Coque,    
+      
+      
+      
+      F. Baquero,    
+      
+      
+      
+      R. Willems,    
+      
+      
+      
+      S. Sheppard,    
+      
+      
+      
+      E. Feil,    
+      
+      
+      
+      W. Hanage,    
+      
+      
+      
+      and J. Corander
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Journal of Theoretical Biology</i>
+    
+    
+    2016
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Numminen2016.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://www.sciencedirect.com/science/article/pii/S0022519316001156"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexNumminen2016()">bib</button>
+    
+    
+    <a href="https://www.biorxiv.org/content/10.1101/027581v1"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aNumminen2016" style="display: none;">
+    <pre>@article{Numminen2016,
+  author = {Numminen, E. and Gutmann, Michael U and Shubin, Mikhail and Marttinen, Pekka and M\'eric, Guillaume and van Schaik, Willem and Coque, Teresa and Baquero, Fernando and Willems, R.J.L. and Sheppard, S.K. and Feil, E.J. and Hanage, W.P. and Corander, Jukka},
+  journal = {Journal of Theoretical Biology},
+  title = {The impact of host metapopulation structure on the population genetics of colonizing bacteria},
+  year = {2016},
+  pages = {53--62},
+  volume = {396},
+  arxiv = {https://www.biorxiv.org/content/10.1101/027581v1},
+  doi = {https://doi.org/10.1016/j.jtbi.2016.02.019},
+  keywords = {Bacterial evolution, Genetic structure, Migration, Population dynamics},
+  url = {http://www.sciencedirect.com/science/article/pii/S0022519316001156}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexNumminen2016(parameter) {
+    var x= document.getElementById('aNumminen2016');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Marttinen2015">
+  <span class="title">Recombination produces coherent bacterial species clusters in both core and accessory genomes</span>
+  <span class="author">
+    
+      
+      
+      P. Marttinen,    
+      
+      
+      
+      N. Croucher,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      J. Corander,    
+      
+      
+      
+      and W. Hanage
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Microbial Genomics</i>
+    
+    
+    2015
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Marttinen2015.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000038"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexMarttinen2015()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aMarttinen2015" style="display: none;">
+    <pre>@article{Marttinen2015,
+  author = {Marttinen, P. and Croucher, N.J. and Gutmann, M. U. and Corander, J. and Hanage, W.P.},
+  journal = {Microbial Genomics},
+  title = {Recombination produces coherent bacterial species clusters in both core and accessory genomes},
+  year = {2015},
+  number = {5},
+  volume = {1},
+  doi = {http://dx.doi.org/10.1099/mgen.0.000038},
+  keywords = {core/accessory genome, evolution, computational modeling, speciation, recombination},
+  url = {https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000038}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexMarttinen2015(parameter) {
+    var x= document.getElementById('aMarttinen2015');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2014">
+  <span class="title">Spatio-chromatic adaptation via higher-order canonical correlation analysis of natural images</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      V. Laparra,    
+      
+      
+      
+      A. Hyvärinen,    
+      
+      
+      
+      and J. Malo
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>PLOS ONE</i>
+    
+    
+    2014
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2014.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0086481"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2014()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2014" style="display: none;">
+    <pre>@article{Gutmann2014,
+  author = {Gutmann, M. U. and Laparra, V. and Hyv\"arinen, A. and Malo, J.},
+  journal = {PLOS ONE},
+  title = {Spatio-chromatic adaptation via higher-order canonical correlation analysis of natural images},
+  year = {2014},
+  number = {2},
+  pages = {e86481},
+  volume = {9},
+  doi = {https://doi.org/10.1371/journal.pone.0086481},
+  keywords = {Generalization of canonical correlation analysis, data fusion, natural image statistics, spatio-chromatic adaptation},
+  publisher = {Public Library of Science},
+  url = {https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0086481}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2014(parameter) {
+    var x= document.getElementById('aGutmann2014');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Liu2014">
+  <span class="title">Direct learning of sparse changes in Markov networks by density ratio estimation</span>
+  <span class="author">
+    
+      
+      
+      S. Liu,    
+      
+      
+      
+      J. Quinn,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      T. Suzuki,    
+      
+      
+      
+      and M. Sugiyama
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Neural Computation</i>
+    
+    
+    2014
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Liu2014.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00589"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexLiu2014()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1304.6803"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aLiu2014" style="display: none;">
+    <pre>@article{Liu2014,
+  author = {Liu, S. and Quinn, J.A. and Gutmann, M. U. and Suzuki, T. and Sugiyama, M.},
+  journal = {Neural Computation},
+  title = {Direct learning of sparse changes in {M}arkov networks by density ratio estimation},
+  year = {2014},
+  number = {6},
+  pages = {1169--1197},
+  volume = {26},
+  arxiv = {https://arxiv.org/abs/1304.6803},
+  doi = {http://dx.doi.org/10.1162/NECO_a_00589},
+  keywords = {Undirected graphical models, density ratio estimation},
+  url = {https://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00589}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexLiu2014(parameter) {
+    var x= document.getElementById('aLiu2014');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Sasaki2014">
+  <span class="title">Estimating dependency structures for non-Gaussian components with linear and energy correlations</span>
+  <span class="author">
+    
+      
+      
+      H. Sasaki,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      H. Shouno,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>
+    
+    
+    2014
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Sasaki2014.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://proceedings.mlr.press/v33/sasaki14.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexSasaki2014()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aSasaki2014" style="display: none;">
+    <pre>@inproceedings{Sasaki2014,
+  author = {Sasaki, H. and Gutmann, M. U. and Shouno, H. and Hyv\"arinen, A.},
+  booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  title = {Estimating dependency structures for non-{G}aussian components with linear and energy correlations},
+  year = {2014},
+  keywords = {Extensions of ICA, natural image statistics},
+  url = {http://proceedings.mlr.press/v33/sasaki14.html}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexSasaki2014(parameter) {
+    var x= document.getElementById('aSasaki2014');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2013">
+  <span class="title">A three-layer model of natural image statistics</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Journal of Physiology-Paris</i>
+    
+    
+    2013
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2013.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://www.sciencedirect.com/science/article/pii/S0928425713000028"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2013()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2013" style="display: none;">
+    <pre>@article{Gutmann2013,
+  author = {Gutmann, M. U. and Hyv\"arinen, A.},
+  journal = {Journal of Physiology-Paris},
+  title = {A three-layer model of natural image statistics},
+  year = {2013},
+  number = {5},
+  pages = {369--398},
+  volume = {107},
+  booktitle = {Special issue: Neural Coding and Natural Image Statistics},
+  doi = {10.1016/j.jphysparis.2013.01.001},
+  issn = {0928-4257},
+  keywords = {Natural images, probabilistic modeling, visual processing, selectivity, invariance, sparse coding, unsupervised deep learning},
+  url = {http://www.sciencedirect.com/science/article/pii/S0928425713000028}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2013(parameter) {
+    var x= document.getElementById('aGutmann2013');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2013b">
+  <span class="title">Estimation of unnormalized statistical models without numerical integration</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the Workshop on Information Theoretic Methods in Science and Engineering</i>
+    
+    
+    2013
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2013b.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://www.me.inf.kyushu-u.ac.jp/witmse2013/"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2013b()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2013b" style="display: none;">
+    <pre>@inproceedings{Gutmann2013b,
+  author = {Gutmann, M. U. and Hyv\"arinen, A.},
+  booktitle = {Proceedings of the Workshop on Information Theoretic Methods in Science and Engineering},
+  title = {Estimation of unnormalized statistical models without numerical integration},
+  year = {2013},
+  keywords = {Unnormalized models, energy-based models, intractable likelihood},
+  url = {http://www.me.inf.kyushu-u.ac.jp/witmse2013/}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2013b(parameter) {
+    var x= document.getElementById('aGutmann2013b');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Liu2013">
+  <span class="title">Direct learning of sparse changes in Markov networks by density ratio estimation</span>
+  <span class="author">
+    
+      
+      
+      S. Liu,    
+      
+      
+      
+      J. Quinn,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and M. Sugiyama
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Machine Learning and Knowledge Discovery in Databases (ECML PKDD)</i>
+    
+    
+    2013
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Liu2013.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://link.springer.com/chapter/10.1007%2F978-3-642-40991-2_38"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexLiu2013()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aLiu2013" style="display: none;">
+    <pre>@inproceedings{Liu2013,
+  author = {Liu, Song and Quinn, JohnA. and Gutmann, Michael U. and Sugiyama, Masashi},
+  booktitle = {Machine Learning and Knowledge Discovery in Databases (ECML PKDD)},
+  title = {Direct learning of sparse changes in {M}arkov networks by density ratio estimation},
+  year = {2013},
+  doi = {http://dx.doi.org/10.1007/978-3-642-40991-2_38},
+  issn = {978-3-642-40990-5},
+  keywords = {Undirected graphical models},
+  url = {https://link.springer.com/chapter/10.1007%2F978-3-642-40991-2_38}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexLiu2013(parameter) {
+    var x= document.getElementById('aLiu2013');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Sasaki2013">
+  <span class="title">Correlated topographic analysis: estimating an ordering of correlated components</span>
+  <span class="author">
+    
+      
+      
+      H. Sasaki,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      H. Shouno,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Machine Learning</i>
+    
+    
+    2013
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Sasaki2013.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://link.springer.com/article/10.1007/s10994-013-5351-x"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexSasaki2013()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aSasaki2013" style="display: none;">
+    <pre>@article{Sasaki2013,
+  author = {Sasaki, Hiroaki and Gutmann, Michael U. and Shouno, Hayaru and Hyv\"arinen, Aapo},
+  journal = {Machine Learning},
+  title = {Correlated topographic analysis: estimating an ordering of correlated components},
+  year = {2013},
+  number = {2-3},
+  pages = {285--317},
+  volume = {92},
+  doi = {http://dx.doi.org/10.1007/s10994-013-5351-x},
+  issn = {0885-6125},
+  keywords = {independent component analysis, topographic representation, natural image statistics, higher order features, natural language processing},
+  publisher = {Springer US},
+  url = {https://link.springer.com/article/10.1007/s10994-013-5351-x}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexSasaki2013(parameter) {
+    var x= document.getElementById('aSasaki2013');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2012a">
+  <span class="title">Noise-contrastive estimation of unnormalized statistical models, with applications to natural image statistics</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Journal of Machine Learning Research</i>
+    
+    
+    2012
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2012a.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://www.jmlr.org/papers/v13/gutmann12a.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2012a()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2012a" style="display: none;">
+    <pre>@article{Gutmann2012a,
+  author = {Gutmann, M. U. and Hyv\"arinen, A.},
+  journal = {Journal of Machine Learning Research},
+  title = {{N}oise-contrastive estimation of unnormalized statistical models, with applications to natural image statistics},
+  year = {2012},
+  pages = {307--361},
+  volume = {13},
+  keywords = {unnormalised models, unsupervised deep learning, natural image statistics},
+  url = {http://www.jmlr.org/papers/v13/gutmann12a.html}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2012a(parameter) {
+    var x= document.getElementById('aGutmann2012a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2012b">
+  <span class="title">Learning a selectivity–invariance–selectivity feature extraction architecture for images</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the International Conference on Pattern Recognition (ICPR)</i>
+    
+    
+    2012
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2012b.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://ieeexplore.ieee.org/document/6460284"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2012b()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2012b" style="display: none;">
+    <pre>@inproceedings{Gutmann2012b,
+  author = {Gutmann, M. U. and Hyv\"arinen, A.},
+  booktitle = {Proceedings of the International Conference on Pattern Recognition (ICPR)},
+  title = {Learning a selectivity--invariance--selectivity feature extraction architecture for images},
+  year = {2012},
+  keywords = {Natural image statistics,unnormalised model, unsupervised deep learning},
+  url = {https://ieeexplore.ieee.org/document/6460284}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2012b(parameter) {
+    var x= document.getElementById('aGutmann2012b');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Sasaki2012">
+  <span class="title">Topographic analysis of correlated components</span>
+  <span class="author">
+    
+      
+      
+      H. Sasaki,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      H. Shouno,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In JMLR: Workshop and Conference Proceedings</i>
+    
+    
+    2012
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Sasaki2012.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://proceedings.mlr.press/v25/sasaki12"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexSasaki2012()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aSasaki2012" style="display: none;">
+    <pre>@inproceedings{Sasaki2012,
+  author = {Sasaki, H. and Gutmann, M. U. and Shouno, H. and Hyv\"arinen, A.},
+  booktitle = {JMLR: Workshop and Conference Proceedings},
+  title = {Topographic analysis of correlated components},
+  year = {2012},
+  pages = {1--14},
+  series = {Asian Conference on Machine Learning (ACML)},
+  volume = {25},
+  keywords = {independent component analysis, topographic representation, higher order correlation, linear correlation, natural image statistics, natural language processing.},
+  url = {http://proceedings.mlr.press/v25/sasaki12}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexSasaki2012(parameter) {
+    var x= document.getElementById('aSasaki2012');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2011b">
+  <span class="title">Bregman divergence as general framework to estimate unnormalized statistical models</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and J. Hirayama
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the Conference on Uncertainty in Artificial Intelligence (UAI)</i>
+    
+    
+    2011
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2011b.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://arxiv.org/abs/1202.3727"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2011b()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1202.3727"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2011b" style="display: none;">
+    <pre>@inproceedings{Gutmann2011b,
+  author = {Gutmann, M. U. and Hirayama, J.},
+  booktitle = {Proceedings of the Conference on Uncertainty in Artificial Intelligence (UAI)},
+  title = {{B}regman divergence as general framework to estimate unnormalized statistical models},
+  year = {2011},
+  arxiv = {https://arxiv.org/abs/1202.3727},
+  keywords = {Unnormalized (energy-based) models, estimation theory, density ratio estimation},
+  url = {https://arxiv.org/abs/1202.3727}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2011b(parameter) {
+    var x= document.getElementById('aGutmann2011b');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2011a">
+  <span class="title">Extracting coactivated features from multiple data sets</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the International Conference on Artificial Neural Networks (ICANN)</i>
+    
+    
+    2011
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2011a.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://link.springer.com/chapter/10.1007/978-3-642-21735-7_40"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2011a()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2011a" style="display: none;">
+    <pre>@inproceedings{Gutmann2011a,
+  author = {Gutmann, M. U. and Hyv{\"a}rinen, A.},
+  booktitle = {Proceedings of the International Conference on Artificial Neural Networks (ICANN)},
+  title = {{E}xtracting coactivated features from multiple data sets},
+  year = {2011},
+  doi = {10.1007/978-3-642-21735-7_40},
+  keywords = {Data fusion, natural image statistics},
+  url = {https://link.springer.com/chapter/10.1007/978-3-642-21735-7_40}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2011a(parameter) {
+    var x= document.getElementById('aGutmann2011a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Laparra2011">
+  <span class="title">Complex-valued independent component analysis of natural images</span>
+  <span class="author">
+    
+      
+      
+      V. Laparra,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      J. Malo,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the International Conference on Artificial Neural Networks (ICANN)</i>
+    
+    
+    2011
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Laparra2011.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://link.springer.com/chapter/10.1007/978-3-642-21738-8_28"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexLaparra2011()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aLaparra2011" style="display: none;">
+    <pre>@inproceedings{Laparra2011,
+  author = {Laparra, V. and Gutmann, M. U. and Malo, J. and Hyv{\"a}rinen, A.},
+  booktitle = {Proceedings of the International Conference on Artificial Neural Networks (ICANN)},
+  title = {{C}omplex-valued independent component analysis of natural images},
+  year = {2011},
+  doi = {10.1007/978-3-642-21738-8_28},
+  keywords = {complex independent components analysis, natural image statistics, modeling Fourier phase distribution},
+  url = {https://link.springer.com/chapter/10.1007/978-3-642-21738-8_28}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexLaparra2011(parameter) {
+    var x= document.getElementById('aLaparra2011');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2010">
+  <span class="title">Noise-contrastive estimation: A new estimation principle for unnormalized statistical models</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)</i>
+    
+    
+    2010
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2010.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://proceedings.mlr.press/v9/gutmann10a.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2010()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2010" style="display: none;">
+    <pre>@inproceedings{Gutmann2010,
+  author = {Gutmann, M. U. and Hyv\"arinen, A.},
+  booktitle = {Proceedings of the International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  title = {{N}oise-contrastive estimation: {A} new estimation principle for unnormalized statistical models},
+  year = {2010},
+  address = {Chia Laguna Resort, Sardinia, Italy},
+  editor = {Teh, Yee Whye and Titterington, Mike},
+  month = {13--15 May},
+  pages = {297--304},
+  publisher = {JMLR Workshop and Conference Proceedings},
+  series = {Proceedings of Machine Learning Research},
+  volume = {9},
+  keywords = {unnormalized models, energy-based models, estimation theory, natural image statistics},
+  url = {http://proceedings.mlr.press/v9/gutmann10a.html}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2010(parameter) {
+    var x= document.getElementById('aGutmann2010');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Pihlaja2010">
+  <span class="title">A family of computationally efficient and simple estimators for unnormalized statistical models</span>
+  <span class="author">
+    
+      
+      
+      M. Pihlaja,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the Conference on Uncertainty in Artificial Intelligence (UAI)</i>
+    
+    
+    2010
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Pihlaja2010.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexPihlaja2010()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1203.3506"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aPihlaja2010" style="display: none;">
+    <pre>@inproceedings{Pihlaja2010,
+  author = {Pihlaja, M. and Gutmann, M. U. and Hyv\"arinen, A.},
+  booktitle = {Proceedings of the Conference on Uncertainty in Artificial Intelligence (UAI)},
+  title = {{A} family of computationally efficient and simple estimators for unnormalized statistical models},
+  year = {2010},
+  arxiv = {https://arxiv.org/abs/1203.3506},
+  keywords = {unnormalized models, energy-based models, estimation theory}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexPihlaja2010(parameter) {
+    var x= document.getElementById('aPihlaja2010');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2009b">
+  <span class="title">Learning features by contrasting natural images with noise</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the International Conference on Artificial Neural Networks (ICANN)</i>
+    
+    
+    2009
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2009b.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://link.springer.com/chapter/10.1007/978-3-642-04277-5_63"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2009b()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2009b" style="display: none;">
+    <pre>@inproceedings{Gutmann2009b,
+  author = {Gutmann, M. U. and Hyv{\"a}rinen, A.},
+  booktitle = {Proceedings of the International Conference on Artificial Neural Networks (ICANN)},
+  title = {{L}earning features by contrasting natural images with noise},
+  year = {2009},
+  doi = {https://doi.org/10.1007/978-3-642-04277-5_63},
+  keywords = {natural image statistics, learning by comparison, unnormalized models, energy-based models},
+  url = {https://link.springer.com/chapter/10.1007/978-3-642-04277-5_63}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2009b(parameter) {
+    var x= document.getElementById('aGutmann2009b');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2009">
+  <span class="title">Learning reconstruction and prediction of natural stimuli by a population of spiking neurons</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In European Symposium on Artificial Neural Networks (ESANN)</i>
+    
+    
+    2009
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2009.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://www.esann.org/proceedings/2009"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2009()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2009" style="display: none;">
+    <pre>@inproceedings{Gutmann2009,
+  author = {Gutmann, M. U. and Hyv\"arinen, A.},
+  booktitle = {European Symposium on Artificial Neural Networks (ESANN)},
+  title = {{L}earning reconstruction and prediction of natural stimuli by a population of spiking neurons},
+  year = {2009},
+  keywords = {Learning data representations, spiking neurons},
+  url = {https://www.esann.org/proceedings/2009}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2009(parameter) {
+    var x= document.getElementById('aGutmann2009');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Koster2009">
+  <span class="title">Learning natural image structure with a horizonal product model</span>
+  <span class="author">
+    
+      
+      
+      U. Köster,    
+      
+      
+      
+      J. Lindgren,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings on the International Conference on Independent Component Analysis and Signal Separation</i>
+    
+    
+    2009
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Koster2009.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://link.springer.com/chapter/10.1007/978-3-642-00599-2_64"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexKoster2009()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aKoster2009" style="display: none;">
+    <pre>@inproceedings{Koster2009,
+  author = {K\"oster, U. and Lindgren, J. and Gutmann, M. U. and Hyv\"arinen, A.},
+  booktitle = {Proceedings on the International Conference on Independent Component Analysis and Signal Separation},
+  title = {{L}earning natural image structure with a horizonal product model},
+  year = {2009},
+  url = {https://link.springer.com/chapter/10.1007/978-3-642-00599-2_64}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexKoster2009(parameter) {
+    var x= document.getElementById('aKoster2009');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2008">
+  <span class="title">Toward data representation with spiking neurons</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and K. Aihara
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>Artificial Life and Robotics</i>
+    
+    
+    2008
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2008.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://link.springer.com/article/10.1007/s10015-007-0471-7"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2008()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2008" style="display: none;">
+    <pre>@article{Gutmann2008,
+  author = {Gutmann, M. U. and Aihara, K.},
+  journal = {Artificial Life and Robotics},
+  title = {{T}oward data representation with spiking neurons},
+  year = {2008},
+  pages = {223-226},
+  volume = {12},
+  doi = {10.1007/s10015-007-0471-7},
+  keywords = {spiking neuron, encoding, decoding, learning data representation},
+  url = {https://link.springer.com/article/10.1007/s10015-007-0471-7}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2008(parameter) {
+    var x= document.getElementById('aGutmann2008');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2008c">
+  <span class="title">Learning encoding and decoding filters for data representation with a spiking neuron</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      A. Hyvärinen,    
+      
+      
+      
+      and K. Aihara
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the International Joint Conference on Neural Networks (IJCNN)</i>
+    
+    
+    2008
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2008c.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://doi.org/10.1109/IJCNN.2008.4633797"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2008c()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2008c" style="display: none;">
+    <pre>@inproceedings{Gutmann2008c,
+  author = {Gutmann, M. and Hyv{\"a}rinen, A. and Aihara, K.},
+  booktitle = {Proceedings of the International Joint Conference on Neural Networks (IJCNN)},
+  title = {{L}earning encoding and decoding filters for data representation with a spiking neuron},
+  year = {2008},
+  doi = {https://ieeexplore.ieee.org/document/4633797},
+  keywords = {spiking neurons, data representation},
+  url = {https://doi.org/10.1109/IJCNN.2008.4633797}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2008c(parameter) {
+    var x= document.getElementById('aGutmann2008c');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Hyvarinen2005">
+  <span class="title">Statistical model of natural stimuli predicts edge-like pooling of spatial frequency channels in V2</span>
+  <span class="author">
+    
+      
+      
+      A. Hyvärinen,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and P. Hoyer
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>BMC Neuroscience</i>
+    
+    
+    2005
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Hyvarinen2005.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://bmcneurosci.biomedcentral.com/articles/10.1186/1471-2202-6-12"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexHyvarinen2005()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aHyvarinen2005" style="display: none;">
+    <pre>@article{Hyvarinen2005,
+  author = {Hyv{\"a}rinen, A. and Gutmann, M. and Hoyer, P.O.},
+  journal = {BMC Neuroscience},
+  title = {{S}tatistical model of natural stimuli predicts edge-like pooling of spatial frequency channels in {V}2},
+  year = {2005},
+  volume = {6:12},
+  doi = {https://doi.org/10.1186/1471-2202-6-12},
+  keywords = {Natural image statistics, computational neuroscience, V2},
+  url = {https://bmcneurosci.biomedcentral.com/articles/10.1186/1471-2202-6-12}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexHyvarinen2005(parameter) {
+    var x= document.getElementById('aHyvarinen2005');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Hyvarinen2005b">
+  <span class="title">Statistical models of images and early vision</span>
+  <span class="author">
+    
+      
+      
+      A. Hyvärinen,    
+      
+      
+      
+      P. Hoyer,    
+      
+      
+      
+      J. Hurri,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Proceedings of the International and Interdisciplinary Conference on Adaptive Knowledge Representation and Reasoning (AKRR)</i>
+    
+    
+    2005
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Hyvarinen2005b.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.147.3281"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexHyvarinen2005b()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aHyvarinen2005b" style="display: none;">
+    <pre>@inproceedings{Hyvarinen2005b,
+  title = {{S}tatistical models of images and early vision},
+  author = {Hyv\"arinen, A. and Hoyer, P.O. and Hurri, J. and Gutmann, M.},
+  booktitle = {Proceedings of the International and Interdisciplinary Conference on Adaptive Knowledge Representation and Reasoning (AKRR)},
+  year = {2005},
+  keywords = {natural image statistics, computational neuroscience},
+  url = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.147.3281}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexHyvarinen2005b(parameter) {
+    var x= document.getElementById('aHyvarinen2005b');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li></ul>
+
+<h2 id="teaching-materials">Teaching materials</h2>
+<ul class="bibliography"><li>
+  
+
+
+
+<div id="Gutmann2022b">
+  <span class="title">Pen and Paper Exercises in Machine Learning</span>
+  <span class="author">
+    
+         
+        M. Gutmann
+    
+  </span>
+
+  <span class="periodical">
+    
+    <i> University of Edinburgh </i>
+    
+    
+    2022
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://github.com/michaelgutmann/ml-pen-and-paper-exercises"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2022b()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2206.13446"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2022b" style="display: none;">
+    <pre>@techreport{Gutmann2022b,
+  author = {Gutmann, Michael U.},
+  title = {Pen and Paper Exercises in Machine Learning},
+  institution = {University of Edinburgh},
+  year = {2022},
+  arxiv = {https://arxiv.org/abs/2206.13446},
+  url = {https://github.com/michaelgutmann/ml-pen-and-paper-exercises}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2022b(parameter) {
+    var x= document.getElementById('aGutmann2022b');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li></ul>
+
+<h2 id="workshop-and-other-papers">Workshop and other papers</h2>
+<ul class="bibliography"><li>
+  
+
+
+
+<div id="Valentin2021">
+  <span class="title">Bayesian Optimal Experimental Design for Simulator Models of Cognition</span>
+  <span class="author">
+    
+      
+      
+      S. Valentin,    
+      
+      
+      
+      S. Kleinegesse,    
+      
+      
+      
+      N. Bramley,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and C. Lucas
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In NeurIPS 2021 Workshop "AI for Science"</i>
+    
+    
+    2021
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://ai4sciencecommunity.github.io/index.html"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexValentin2021()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2110.15632"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aValentin2021" style="display: none;">
+    <pre>@inproceedings{Valentin2021,
+  author = {Valentin, Simon and Kleinegesse, Steven and Bramley, {Neil R} and Gutmann, {Michael U} and Lucas, {Christopher G}},
+  booktitle = {NeurIPS 2021 Workshop {"}AI for Science{"}},
+  title = {Bayesian Optimal Experimental Design for Simulator Models of Cognition},
+  year = {2021},
+  month = oct,
+  arxiv = {https://arxiv.org/abs/2110.15632},
+  day = {22},
+  language = {English},
+  url = {https://ai4sciencecommunity.github.io/index.html},
+  month_numeric = {10}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexValentin2021(parameter) {
+    var x= document.getElementById('aValentin2021');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Kleinegesse2021a">
+  <span class="title">Gradient-based Bayesian Experimental Design for Implicit Models using Mutual Information Lower Bounds</span>
+  <span class="author">
+    
+      
+      
+      S. Kleinegesse,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>arXiv:2105.04379</i>
+    
+    
+    2021
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    <a href="https://arxiv.org/abs/2105.04379"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexKleinegesse2021a()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/2105.04379"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aKleinegesse2021a" style="display: none;">
+    <pre>@article{Kleinegesse2021a,
+  author = {Kleinegesse, Steven and Gutmann, Michael U.},
+  journal = {arXiv:2105.04379},
+  title = {Gradient-based {B}ayesian Experimental Design for Implicit Models using Mutual Information Lower Bounds},
+  year = {2021},
+  arxiv = {https://arxiv.org/abs/2105.04379},
+  keywords = {Bayesian Experimental Design, Likelihood-Free Inference, Mutual Information, Implicit Models, Parameter Estimation, Model Discrimination},
+  url = {https://arxiv.org/abs/2105.04379}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexKleinegesse2021a(parameter) {
+    var x= document.getElementById('aKleinegesse2021a');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="LopezGuevara2018">
+  <span class="title">To Stir or Not to Stir: Online Estimation of Liquid Properties for Pouring Actions</span>
+  <span class="author">
+    
+      
+      
+      T. Lopez Guevara,    
+      
+      
+      
+      R. Pucci,    
+      
+      
+      
+      N. Taylor,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      S. Ramamoorthy,    
+      
+      
+      
+      and K. Subr
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Workshop on Learning and Inference in Robotics: Integrating Structure, Priors and Models</i>
+    
+    
+    2018
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/LopezGuevara2018.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://drive.google.com/file/d/1qHdn03oZZe6aQiKxEyFTIiy_Y68OzQ1N/view"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexLopezGuevara2018()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1904.02431"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aLopezGuevara2018" style="display: none;">
+    <pre>@inproceedings{LopezGuevara2018,
+  author = {Lopez Guevara, Tatiana and Pucci, Rita and Taylor, Nicholas and Gutmann, Michael U. and Ramamoorthy, Subramanian and Subr, Kartic},
+  booktitle = {Workshop on Learning and Inference in Robotics: Integrating Structure, Priors and Models},
+  title = {To Stir or Not to Stir: Online Estimation of Liquid Properties for Pouring Actions},
+  year = {2018},
+  arxiv = {https://arxiv.org/abs/1904.02431},
+  url = {https://drive.google.com/file/d/1qHdn03oZZe6aQiKxEyFTIiy_Y68OzQ1N/view}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexLopezGuevara2018(parameter) {
+    var x= document.getElementById('aLopezGuevara2018');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Dinev2018">
+  <span class="title">Dynamic Likelihood-free Inference via Ratio Estimation (DIRE)</span>
+  <span class="author">
+    
+      
+      
+      T. Dinev,    
+      
+      
+      
+      and M. Gutmann
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>arXiv:1810.09899</i>
+    
+    
+    2018
+    
+  </span>
+  
+  <span class="links">
+    
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexDinev2018()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1810.09899"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aDinev2018" style="display: none;">
+    <pre>@article{Dinev2018,
+  author = {Dinev, T. and Gutmann, M.U.},
+  journal = {arXiv:1810.09899},
+  title = {Dynamic Likelihood-free Inference via Ratio Estimation ({DIRE})},
+  year = {2018},
+  arxiv = {https://arxiv.org/abs/1810.09899},
+  keywords = {likelihood-free inference, approximate Bayesian computation, time-series}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexDinev2018(parameter) {
+    var x= document.getElementById('aDinev2018');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2015b">
+  <span class="title">Classification and Bayesian Optimization for Likelihood-Free Inference</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      J. Corander,    
+      
+      
+      
+      R. Dutta,    
+      
+      
+      
+      and S. Kaski
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>arXiv:1502.05503</i>
+    
+    
+    2015
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2015b.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2015b()">bib</button>
+    
+    
+    <a href="https://arxiv.org/abs/1502.05503"><button class="btn btn--inverse btn--small">arxiv</button></a>
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2015b" style="display: none;">
+    <pre>@article{Gutmann2015b,
+  author = {Gutmann, M.U. and Corander, J. and Dutta, R. and Kaski, S.},
+  journal = {arXiv:1502.05503},
+  title = {Classification and {B}ayesian Optimization for Likelihood-Free Inference},
+  year = {2015},
+  arxiv = {https://arxiv.org/abs/1502.05503}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2015b(parameter) {
+    var x= document.getElementById('aGutmann2015b');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Sasaki2011">
+  <span class="title">Learning topographic representations for linearly correlated components</span>
+  <span class="author">
+    
+      
+      
+      H. Sasaki,    
+      
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      H. Shouno,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In Workshop on Deep Learning and Unsupervised Feature Learning, NIPS</i>
+    
+    
+    2011
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Sasaki2011.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://deeplearningworkshopnips2011.wordpress.com/contributions/"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexSasaki2011()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aSasaki2011" style="display: none;">
+    <pre>@inproceedings{Sasaki2011,
+  author = {Sasaki, H. and Gutmann, M.U. and Shouno, H. and Hyv\"arinen, A.},
+  booktitle = {Workshop on Deep Learning and Unsupervised Feature Learning, NIPS},
+  title = {{L}earning topographic representations for linearly correlated components},
+  year = {2011},
+  url = {https://deeplearningworkshopnips2011.wordpress.com/contributions/}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexSasaki2011(parameter) {
+    var x= document.getElementById('aSasaki2011');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2009c">
+  <span class="title">Learning spike-timings based representations of sensory stimuli with leaky integrate-and-fire neurons</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>BMC Neuroscience</i>
+    
+    
+    2009
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2009c.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="https://link.springer.com/article/10.1186/1471-2202-10-S1-P144"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2009c()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2009c" style="display: none;">
+    <pre>@article{Gutmann2009c,
+  author = {Gutmann, Michael and Hyv\"arinen, Aapo},
+  journal = {BMC Neuroscience},
+  title = {Learning spike-timings based representations of sensory stimuli with leaky integrate-and-fire neurons},
+  year = {2009},
+  month = jul,
+  number = {1},
+  pages = {P144},
+  volume = {10},
+  doi = {https://doi.org/10.1186/1471-2202-10-S1-P144},
+  issn = {1471-2202},
+  refid = {Gutmann2009},
+  url = {https://link.springer.com/article/10.1186/1471-2202-10-S1-P144},
+  month_numeric = {7}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2009c(parameter) {
+    var x= document.getElementById('aGutmann2009c');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li>
+<li>
+  
+
+
+
+<div id="Gutmann2009d">
+  <span class="title">Unsupervised learning by discriminating data from artificial noise</span>
+  <span class="author">
+    
+      
+      
+      M. Gutmann,    
+      
+      
+      
+      and A. Hyvärinen
+      
+      
+     
+  </span>
+
+  <span class="periodical">
+    
+    <i>In NIPS Workshop on Generative Discriminative Learning Interface</i>
+    
+    
+    2009
+    
+  </span>
+  
+  <span class="links">
+    
+    <a href="/assets/papers/Gutmann2009d.pdf"><button class="btn btn--inverse btn--small">pdf</button></a>
+    
+    
+    <a href="http://gen-disc2009.wikidot.com/"><button class="btn btn--inverse btn--small">url</button></a>
+    
+    
+    <button class="btn btn--inverse btn--small" onclick="toggleBibtexGutmann2009d()">bib</button>
+    
+    
+    
+    
+  </span>
+
+  <!-- Toggle bib block -->
+  
+  <div id="aGutmann2009d" style="display: none;">
+    <pre>@inproceedings{Gutmann2009d,
+  author = {Gutmann, M. and Hyv\"arinen, A.},
+  booktitle = {NIPS Workshop on Generative Discriminative Learning Interface},
+  title = {{U}nsupervised learning by discriminating data from artificial noise},
+  year = {2009},
+  url = {http://gen-disc2009.wikidot.com/}
+}
+</pre>
+  </div>
+  
+  
+</div>
+
+
+
+
+<script>
+function toggleBibtexGutmann2009d(parameter) {
+    var x= document.getElementById('aGutmann2009d');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</li></ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="/accessibility" rel="nofollow noopener noreferrer"><i class="fas fa-check-circle" aria-hidden="true"></i> Accessibility</a></li>
+        
+      
+    
+
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Michael Gutmann. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>,  <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a> &amp; <a href="https://github.com/inukshuk/jekyll-scholar" rel="nofollow">Jekyll-Scholar</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
