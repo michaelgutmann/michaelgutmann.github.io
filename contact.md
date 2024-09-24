@@ -13,8 +13,7 @@ School of Informatics, University of Edinburgh \\
 Informatics Forum, 10 Crichton Street\\
 Edinburgh, EH8 9AB, United Kingdom
 
-email: michael.gutmann@ed.ac.uk \\
-tel: +44 (0) 131 650 5190 \\
+email: firstname.lastname@ed.ac.uk \\
 office: 2.50a in the [Informatics Forum](http://www.ed.ac.uk/informatics/about/location)
 
 ## Identifiers
