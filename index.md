@@ -18,8 +18,8 @@ My research is in machine learning for science, with a focus on developing metho
 
 ## Recent papers
 
+* BioRxiv: Risk-averse optimization of genetic circuits under uncertainty [[link]](publications/index.html#Kobiela2024a)
 * TMLR: Improving Variational Autoencoder Estimation from Incomplete Data with Mixture Variational Families [[link]](publications/index.html#Simkus2024a)
 * eLife: Designing Optimal Behavioral Experiments Using Machine Learning [[link]](publications/index.html#Valentin2023a)
 * TMLR: Conditional Sampling of Variational Autoencoders via Iterated Approximate Ancestral Sampling [[link]](publications/index.html#Simkus2023b)
 * JMLR: Variational Gibbs Inference for Statistical Model Estimation from Incomplete Data [[link]](publications/index.html#Simkus2023a)
-* ICML: Is Learning Summary Statistics Necessary for Likelihood-free Inference? [[link]](publications/index.html#Chen2023a)
