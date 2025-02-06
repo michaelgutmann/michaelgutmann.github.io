@@ -1,6 +1,5 @@
 # Michael U. Gutmann
 
-
 @@row
 @@portrait ![](/assets/michael.jpg)
 @@
