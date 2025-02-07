@@ -6,9 +6,11 @@
 I am a [Senior Lecturer](https://en.wikipedia.org/wiki/Senior_lecturer)
 (Assoc Prof) in Machine Learning at the [School of Informatics](http://www.ed.ac.uk/informatics) of the
 [University of Edinburgh](https://www.ed.ac.uk/), affiliated with the Institute for [Adaptive & Neural
-Computation](http://www.anc.ed.ac.uk).
+Computation](http://www.anc.ed.ac.uk). 
 
 My research is in machine learning for science, with a focus on developing methods for (Bayesian) inference and design.
+
+A short biography is available [here](bio/index.html).
 
 ~~~
 <div style="clear: both"></div>
