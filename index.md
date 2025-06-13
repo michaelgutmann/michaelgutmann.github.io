@@ -19,8 +19,8 @@ A short biography is available [here](bio/index.html).
 
 ## Recent papers
 
+* arXiv: CFMI: Flow Matching for Missing Data Imputation [[link]](publications/index.html#Simkus2025a)
+* arXiv: Simulation-based Bayesian inference under model misspecification [[link]](publications/index.html#Kelly2025a)
 * BioRxiv: Risk-averse optimization of genetic circuits under uncertainty [[link]](publications/index.html#Kobiela2024a)
 * TMLR: Improving Variational Autoencoder Estimation from Incomplete Data with Mixture Variational Families [[link]](publications/index.html#Simkus2024a)
 * eLife: Designing Optimal Behavioral Experiments Using Machine Learning [[link]](publications/index.html#Valentin2023a)
-* TMLR: Conditional Sampling of Variational Autoencoders via Iterated Approximate Ancestral Sampling [[link]](publications/index.html#Simkus2023b)
-* JMLR: Variational Gibbs Inference for Statistical Model Estimation from Incomplete Data [[link]](publications/index.html#Simkus2023a)
