@@ -116,7 +116,7 @@ function abbreviate_first_names(names)
     end
     str *= ", "
   end
-  return str
+  return str[1:end-2]  # remove ", " for the last name
 end
 
 latex_conversion = Dict(
