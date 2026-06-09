@@ -264,7 +264,7 @@
   url       = {http://proceedings.mlr.press/v9/gutmann10a.html},
 }
 
-@Inproceedings{Gutmann2009,
+@InProceedings{Gutmann2009c,
   author    = {Gutmann, M. U. and Hyv\"arinen, A.},
   booktitle = {European Symposium on Artificial Neural Networks (ESANN)},
   title     = {{L}earning reconstruction and prediction of natural stimuli by a population of spiking neurons},
@@ -885,6 +885,7 @@ The model does not include explicit selection on individual genes, suggesting th
   owner     = {mgutmann},
   publisher = {International Society for Bayesian Analysis},
   timestamp = {2020.03.23},
+  url       = {https://doi.org/10.1214/20-BA1225},
 }
 
 @Article{Thomas2020,
@@ -1070,15 +1071,16 @@ The model does not include explicit selection on individual genes, suggesting th
   journal   = {Journal of Statistical Software},
   title     = {An Extendable {P}ython Implementation of {R}obust {O}ptimisation {M}onte {C}arlo},
   year      = {2023},
+  issn      = {1548-7660},
   month     = sep,
   pages     = {1--25},
   abstract  = {Performing inference in statistical models with an intractable likelihood is challenging, therefore, most likelihood-free inference (LFI) methods encounter accuracy and efficiency limitations. In this paper, we present the implementation of the LFI method Robust Optimisation Monte Carlo (ROMC) in the Python package ELFI. ROMC is a novel and efficient (highly-parallelizable) LFI framework that provides accurate weighted samples from the posterior. Our implementation can be used in two ways. First, a scientist may use it as an out-of-the-box LFI algorithm; we provide an easy-to-use API harmonized with the principles of ELFI, enabling effortless comparisons with the rest of the methods included in the package. Additionally, we have carefully split ROMC into isolated components for supporting extensibility. A researcher may experiment with novel method(s) for solving part(s) of ROMC without reimplementing everything from scratch. In both scenarios, the ROMC parts can run in a fully-parallelized manner, exploiting all CPU cores. We also provide helpful functionalities for (i) inspecting the inference process and (ii) evaluating the obtained samples. Finally, we test the robustness of our implementation on some typical LFI examples.},
   arxiv     = {https://arxiv.org/abs/2309.10612},
   day       = {15},
-  issn      = {1548-7660},
   keywords  = {Bayesian inference, implicit models, likelihood-free, Python, ELFI},
   language  = {English},
   publisher = {University of California at Los Angeles},
+  url       = {https://www.jstatsoft.org/article/view/v110i02},
 }
 
 @Article{Simkus2023b,
@@ -1138,6 +1140,16 @@ The model does not include explicit selection on individual genes, suggesting th
   url       = {https://openreview.net/forum?id=FYbe7r0mxu},
 }
 
+@InProceedings{Gkolemis2026a,
+  author    = {Vasilis Gkolemis and Christos Diou an Michael U Gutmann},
+  booktitle = {Proceedings of the Twenty-Ninth International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  title     = {Fast and Robust Simulation-Based Inference With Optimization {M}onte {C}arlo},
+  year      = {2026},
+  abstract  = {Bayesian parameter inference for complex stochastic simulators is challenging due to intractable likelihood functions. Existing simulation-based inference methods often require large number of simulations and become costly to use in high-dimensional parameter spaces or in problems with partially uninformative outputs. We propose a new method for differentiable simulators that delivers accurate posterior inference with substantially reduced runtimes. Building on the Optimization Monte Carlo framework, our approach reformulates inference for stochastic simulators in terms of deterministic optimization problems. Gradient-based methods are then applied to efficiently navigate toward high-density posterior regions and avoid wasteful simulations in low-probability areas. A JAX-based implementation further enhances the performance through vectorization of key method components. Extensive experiments, including high-dimensional parameter spaces, uninformative outputs, multiple observations and multimodal posteriors show that our method consistently matches, and often exceeds, the accuracy of state-of-the-art approaches, while reducing the runtime by a substantial margin.},
+  arxiv     = {https://arxiv.org/abs/2511.13394},
+  url       = {https://arxiv.org/abs/2511.13394},
+}
+
 @Article{Kobiela2026a,
   author   = {Michal Kobiela and Diego A. Oyarzún and Michael U. Gutmann},
   journal  = {Cell Systems},
@@ -1153,6 +1165,50 @@ Engineering biological systems with specified functions requires navigating an e
   doi      = {https://doi.org/10.1016/j.cels.2025.101476},
   keywords = {automated design, genetic circuits, synthetic biology, machine learning, uncertainty quantification, Thompson sampling, risk-averse optimization, risk-management, robustness},
   url      = {https://doi.org/10.1016/j.cels.2025.101476},
+}
+
+@InProceedings{Yu2025,
+  author    = {Hanlin Yu and Michael U. Gutmann and Arto Klami and Omar Chehab},
+  booktitle = {EurIPS 2025 Workshop on Principles of Generative Modeling (PriGM)},
+  title     = {Conditional Noise-Contrastive Estimation of Energy-Based Models by Jumping Between Modes},
+  year      = {2025},
+  url       = {https://openreview.net/pdf?id=07OWUWmUHp},
+}
+
+@Inproceedings{LopezGuevara2018,
+  author    = {Lopez Guevara, Tatiana and Pucci, Rita and Taylor, Nicholas and Gutmann, Michael U. and Ramamoorthy, Subramanian and Subr, Kartic},
+  booktitle = {Workshop on Learning and Inference in Robotics: Integrating Structure, Priors and Models},
+  title     = {To Stir or Not to Stir: Online Estimation of Liquid Properties for Pouring Actions},
+  year      = {2018},
+  abstract  = {Our brains are able to exploit coarse physical models of fluids to solve complex manipulation tasks. There has been considerable interest in developing such a capability in robots so that they can autonomously manipulate fluids adapting to different conditions. In this paper, we investigate the problem of adaptation to liquids with different characteristics. We develop a simple training task (stirring with a stick) that enables rapid inference of the parameters of the liquid with relatively inexpensive measurement equipment (standard webcams) that robots may be assumed to have access to in the wild. We perform the inference in the space of simulation parameters rather than on physically accurate parameters. This facilitates prediction and optimization tasks since the inferred parameters may be fed directly to the simulator. First, we +demonstrate that our âstirringâ learner performs better than when the robot is trained with pouring actions. Further, we show that our method is able to infer properties of three very different liquids â water, glycerin and gel â and improve spillage with increased training. We present various experimental results performed by executing stirring and pouring actions on a UR10. We believe that this decoupling of the training actions from the goal task is a significant first step towards simple and autonomous learning of the behavior of different fluids in unstructured environments.
+Our brains are able to exploit coarse physical models of fluids to solve complex manipulation tasks. There has been considerable interest in developing such a capability in robots so that they can autonomously manipulate fluids adapting to different conditions. In this paper, we investigate the problem of adaptation to liquids with different characteristics. We develop a simple training task (stirring with a stick) that enables rapid inference of the parameters of the liquid with relatively inexpensive measurement equipment (standard webcams) that robots may be assumed to have access to in the wild. We perform the inference in the space of simulation parameters rather than on physically accurate parameters. This facilitates prediction and optimization tasks since the inferred parameters may be fed directly to the simulator. First, we +demonstrate that our âstirringâ learner performs better than when the robot is trained with pouring actions. Further, we show that our method is able to infer properties of three very different liquids â water, glycerin and gel â and improve spillage with increased training. We present various experimental results performed by executing stirring and pouring actions on a UR10. We believe that this decoupling of the training actions from the goal task is a significant first step towards simple and autonomous learning of the behavior of different fluids in unstructured environments.},
+  arxiv     = {https://arxiv.org/abs/1904.02431},
+  file      = {LopezGuevara2018.pdf:LopezGuevara2018.pdf:PDF},
+  owner     = {mgutmann},
+  timestamp = {2020.03.02},
+  url       = {https://drive.google.com/file/d/1qHdn03oZZe6aQiKxEyFTIiy_Y68OzQ1N/view},
+}
+
+@Inproceedings{Sasaki2011,
+  author    = {Sasaki, H. and Gutmann, M.U. and Shouno, H. and Hyv\"arinen, A.},
+  booktitle = {Workshop on Deep Learning and Unsupervised Feature Learning, NIPS},
+  title     = {{L}earning topographic representations for linearly correlated components},
+  year      = {2011},
+  file      = {:/home/mgutmann/2-Reference/Michael-Gutmann/myPapers/Sasaki2011.pdf:PDF},
+  owner     = {gutmann},
+  timestamp = {2011.12.19},
+  url       = {https://deeplearningworkshopnips2011.wordpress.com/contributions/},
+}
+
+@InProceedings{Gutmann2009a,
+  author    = {Gutmann, M. and Hyv\"arinen, A.},
+  booktitle = {NIPS Workshop on Generative Discriminative Learning Interface},
+  title     = {{U}nsupervised learning by discriminating data from artificial noise},
+  year      = {2009},
+  file      = {Gutmann2009d.pdf:/home/mgutmann/2-Reference/Michael-Gutmann/myPapers/Gutmann2009d.pdf:PDF},
+  owner     = {gutmann},
+  timestamp = {2010.01.19},
+  url       = {http://gen-disc2009.wikidot.com/},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
