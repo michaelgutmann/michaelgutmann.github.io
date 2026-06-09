@@ -1,9 +1,29 @@
 % Encoding: UTF-8
 
-@Article{Kelly2025,
+@Article{Yu2026a,
+  author   = {Hanlin Yu and RuiKang OuYang and Partha Kaushik and Arto Klami and Michael U. Gutmann and Omar Chehab},
+  journal  = {arXiv:2605.26850},
+  title    = {Learning Energy-Based Models from Stochastic Interpolants using Spatiotemporal Differences},
+  year     = {2026},
+  abstract = {Learning an energy-based model from data samples is a central problem in machine learning. Many recent and popular methods, such as denoising score matching for training energy-based diffusion models, use stochastic interpolants to corrupt data samples at different noise levels indexed by a time variable. This defines a joint density over both the data space and time, and most methods learn its energy through either spatial or temporal differences. We identify distinct failure modes for both of these approaches. To solve them, we propose Spatiotemporal Noise-Contrastive Estimation (stNCE), a framework for learning the energy through joint spatiotemporal differences. stNCE unifies many existing methods and leads to new training objectives. Experiments on images and molecules demonstrate performance competitive with state-of-the-art density estimation methods.},
+  arxiv    = {https://arxiv.org/abs/2605.26850},
+  url      = {https://doi.org/10.48550/arXiv.2605.26850},
+}
+
+@Article{Kobiela2026b,
+  author   = {Michal Kobiela and Diego A. Oyarzún and Michael U. Gutmann},
+  journal  = {arXiv:2605.06552},
+  title    = {Sequential Design of Genetic Circuits Under Uncertainty With Reinforcement Learning},
+  year     = {2026},
+  abstract = {The design of biological systems is hindered by uncertainty arising from both intrinsic stochasticity of biomolecular reactions and variability across laboratory or experimental conditions. In this work, we present a sequential framework to optimize genetic circuits under both forms of uncertainty. By employing simulator models based on differential equations or Markov jump processes alongside a reinforcement learning (RL) policy-based approach, our method suggests experiments that adapt to unknown laboratory conditions while accounting for inherent stochasticity. While previous Bayesian methods address uncertainty through iterative experiment-inference-optimization cycles, they typically require computationally expensive inference and optimization steps after each experimental round, leading to delays. To overcome this bottleneck, we propose an amortized approach trained up-front across a distribution of possible uncertain parameters. This strategy sidesteps the need for explicit parameter inference during the design cycle, enabling immediate, observation-based adaptation. We demonstrate our framework on models for heterologous gene expression and a repressilator circuit, showing that it efficiently handles both molecular noise and cross-laboratory variability.},
+  arxiv    = {https://arxiv.org/abs/2605.06552},
+  url      = {https://doi.org/10.48550/arXiv.2605.06552},
+}
+
+@Article{Kelly2025a,
   author   = {Ryan P. Kelly and David J. Warne and David T. Frazier and David J. Nott and Michael U. Gutmann and Christopher Drovandi},
   journal  = {arXiv:2503.12315},
-  title    = {Simulation-based Bayesian inference under model misspecification},
+  title    = {Simulation-based {B}ayesian inference under model misspecification},
   year     = {2025},
   abstract = {Simulation-based Bayesian inference (SBI) methods are widely used for parameter estimation in complex models where evaluating the likelihood is challenging but generating simulations is relatively straightforward. However, these methods commonly assume that the simulation model accurately reflects the true data-generating process, an assumption that is frequently violated in realistic scenarios. In this paper, we focus on the challenges faced by SBI methods under model misspecification. We consolidate recent research aimed at mitigating the effects of misspecification, highlighting three key strategies: i) robust summary statistics, ii) generalised Bayesian inference, and iii) error modelling and adjustment parameters. To illustrate both the vulnerabilities of popular SBI methods and the effectiveness of misspecification-robust alternatives, we present empirical results on an illustrative example.},
   arxiv    = {https://arxiv.org/abs/2503.12315},
