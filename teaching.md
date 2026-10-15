@@ -12,7 +12,9 @@ _University of Edinburgh_ 2022\
 
 ## Courses at the University of Edinburgh
 
-* 2023/24: [Probabilistic Modelling and Reasoning](https://opencourse.inf.ed.ac.uk/pmr)
+* 2026/27: [Probabilistic Machine Learning](https://opencourse.inf.ed.ac.uk/pml)
+* 2024/25: [Probabilistic Modelling and Reasoning](https://opencourse.inf.ed.ac.uk/archives/25-26/node/2298.html)
+* 2023/24: [Probabilistic Modelling and Reasoning](https://opencourse.inf.ed.ac.uk/archives/25-26/node/2298.html)
 * 2023/24: [Informatics 2 - Foundations of Data Science](https://opencourse.inf.ed.ac.uk/inf2-fds)
 * 2022/23: [Probabilistic Modelling and Reasoning](http://www.inf.ed.ac.uk/teaching/courses/pmr/22-23)
 * 2021/22: [Probabilistic Modelling and Reasoning](http://www.inf.ed.ac.uk/teaching/courses/pmr/21-22)

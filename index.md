@@ -18,7 +18,7 @@ A short biography is available [here](bio/index.html).
 
 ## Recent papers
 
-* arXiv: Learning Energy-Based Models from Stochastic Interpolants using Spatiotemporal Differences [[link]](publications/index.html#Yu2026a)
+* accepted to NeurIPS: Learning Energy-Based Models from Stochastic Interpolants using Spatiotemporal Differences [[link]](publications/index.html#Yu2026a)
 * arXiv: Sequential Design of Genetic Circuits Under Uncertainty With Reinforcement Learning [[link]](publications/index.html#Kobiela2026b)
 * Cell Systems: Risk-averse optimization of genetic circuits under uncertainty [[link]](publications/index.html#Kobiela2026a)
 * NeurIPS: Neural Mutual Information Estimation with Vector Copulas [[link]](publications/index.html#Chen2025a)
